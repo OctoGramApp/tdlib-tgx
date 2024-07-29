@@ -1,7 +1,7 @@
 [submodule "source/td"]
 	path = source/td
-	url = https://github.com/tdlib/td
-	branch = master
+	url = https://github.com/OctoGramApp/tdlib
+	branch = main
 [submodule "source/openssl"]
 	path = source/openssl
 	url = https://github.com/openssl/openssl

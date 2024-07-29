@@ -12,8 +12,8 @@ REMOTE="https://${USERNAME}:${PASSWORD}@$(git remote get-url origin | cut -c 9-)
 git checkout main > /dev/null
 git pull origin main > /dev/null
 cd source/td
-git checkout master > /dev/null
-git pull origin master
+git checkout main > /dev/null
+git pull origin main
 cd ..
 echo "Building..."
 ./rebuild.sh > /dev/null 2>&1
