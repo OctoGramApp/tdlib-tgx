@@ -14353,6 +14353,10 @@ public class TdApi {
          * Sticker-based version of the chat photo; may be null.
          */
         @Nullable public ChatPhotoSticker sticker;
+        /**
+         * Datacenter identifier.
+         */
+        public int dcId;
 
         /**
          * Describes a chat or user profile photo.
@@ -14370,8 +14374,9 @@ public class TdApi {
          * @param animation A big (up to 1280x1280) animated variant of the photo in MPEG4 format; may be null.
          * @param smallAnimation A small (160x160) animated variant of the photo in MPEG4 format; may be null even the big animation is available.
          * @param sticker Sticker-based version of the chat photo; may be null.
+         * @param dcId Datacenter identifier.
          */
-        public ChatPhoto(long id, int addedDate, Minithumbnail minithumbnail, PhotoSize[] sizes, AnimatedChatPhoto animation, AnimatedChatPhoto smallAnimation, ChatPhotoSticker sticker) {
+        public ChatPhoto(long id, int addedDate, Minithumbnail minithumbnail, PhotoSize[] sizes, AnimatedChatPhoto animation, AnimatedChatPhoto smallAnimation, ChatPhotoSticker sticker, int dcId) {
             this.id = id;
             this.addedDate = addedDate;
             this.minithumbnail = minithumbnail;
@@ -14379,12 +14384,13 @@ public class TdApi {
             this.animation = animation;
             this.smallAnimation = smallAnimation;
             this.sticker = sticker;
+            this.dcId = dcId;
         }
 
         /**
          * Identifier uniquely determining type of the object.
          */
-        public static final int CONSTRUCTOR = -1430870201;
+        public static final int CONSTRUCTOR = -120009565;
 
         /**
          * @return this.CONSTRUCTOR
@@ -14419,6 +14425,10 @@ public class TdApi {
          * True, if the photo is visible only for the current user.
          */
         public boolean isPersonal;
+        /**
+         * Datacenter identifier.
+         */
+        public int dcId;
 
         /**
          * Contains basic information about the photo of a chat.
@@ -14434,19 +14444,21 @@ public class TdApi {
          * @param minithumbnail Chat photo minithumbnail; may be null.
          * @param hasAnimation True, if the photo has animated variant.
          * @param isPersonal True, if the photo is visible only for the current user.
+         * @param dcId Datacenter identifier.
          */
-        public ChatPhotoInfo(File small, File big, Minithumbnail minithumbnail, boolean hasAnimation, boolean isPersonal) {
+        public ChatPhotoInfo(File small, File big, Minithumbnail minithumbnail, boolean hasAnimation, boolean isPersonal, int dcId) {
             this.small = small;
             this.big = big;
             this.minithumbnail = minithumbnail;
             this.hasAnimation = hasAnimation;
             this.isPersonal = isPersonal;
+            this.dcId = dcId;
         }
 
         /**
          * Identifier uniquely determining type of the object.
          */
-        public static final int CONSTRUCTOR = 281195686;
+        public static final int CONSTRUCTOR = 521549411;
 
         /**
          * @return this.CONSTRUCTOR
@@ -47604,6 +47616,10 @@ public class TdApi {
          * True, if the photo is visible only for the current user.
          */
         public boolean isPersonal;
+        /**
+         * Datacenter identifier.
+         */
+        public int dcId;
 
         /**
          * Describes a user profile photo.
@@ -47620,20 +47636,22 @@ public class TdApi {
          * @param minithumbnail User profile photo minithumbnail; may be null.
          * @param hasAnimation True, if the photo has animated variant.
          * @param isPersonal True, if the photo is visible only for the current user.
+         * @param dcId Datacenter identifier.
          */
-        public ProfilePhoto(long id, File small, File big, Minithumbnail minithumbnail, boolean hasAnimation, boolean isPersonal) {
+        public ProfilePhoto(long id, File small, File big, Minithumbnail minithumbnail, boolean hasAnimation, boolean isPersonal, int dcId) {
             this.id = id;
             this.small = small;
             this.big = big;
             this.minithumbnail = minithumbnail;
             this.hasAnimation = hasAnimation;
             this.isPersonal = isPersonal;
+            this.dcId = dcId;
         }
 
         /**
          * Identifier uniquely determining type of the object.
          */
-        public static final int CONSTRUCTOR = -1025754018;
+        public static final int CONSTRUCTOR = -1907406470;
 
         /**
          * @return this.CONSTRUCTOR
