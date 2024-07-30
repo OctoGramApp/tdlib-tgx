@@ -44445,6 +44445,10 @@ public class TdApi {
          */
         @Nullable public Minithumbnail minithumbnail;
         /**
+         * Datacenter identifier.
+         */
+        public int dcId;
+        /**
          * Available variants of the photo, in different sizes.
          */
         public PhotoSize[] sizes;
@@ -44460,18 +44464,20 @@ public class TdApi {
          *
          * @param hasStickers True, if stickers were added to the photo. The list of corresponding sticker sets can be received using getAttachedStickerSets.
          * @param minithumbnail Photo minithumbnail; may be null.
+         * @param dcId Datacenter identifier.
          * @param sizes Available variants of the photo, in different sizes.
          */
-        public Photo(boolean hasStickers, Minithumbnail minithumbnail, PhotoSize[] sizes) {
+        public Photo(boolean hasStickers, Minithumbnail minithumbnail, int dcId, PhotoSize[] sizes) {
             this.hasStickers = hasStickers;
             this.minithumbnail = minithumbnail;
+            this.dcId = dcId;
             this.sizes = sizes;
         }
 
         /**
          * Identifier uniquely determining type of the object.
          */
-        public static final int CONSTRUCTOR = -2022871583;
+        public static final int CONSTRUCTOR = 221428415;
 
         /**
          * @return this.CONSTRUCTOR
