@@ -13,7 +13,7 @@ import java.lang.annotation.RetentionPolicy;
  * It has no inner classes, functions or public members.
  */
 public class TdApi {
-    private static final String GIT_COMMIT_HASH = "c5b0291fe65ddb2e24aad644bcbde49d48268a31";
+    private static final String GIT_COMMIT_HASH = "7d92620ac2cf6b443fa5b4cd0e158f7273dcdb2c";
 
     private TdApi() {
     }
@@ -121,6 +121,7 @@ public class TdApi {
             CheckQuickReplyShortcutName.CONSTRUCTOR,
             CheckRecoveryEmailAddressCode.CONSTRUCTOR,
             CheckStickerSetName.CONSTRUCTOR,
+            CheckWebAppFileDownload.CONSTRUCTOR,
             CleanFileName.CONSTRUCTOR,
             ClearAllDraftMessages.CONSTRUCTOR,
             ClearAutosaveSettingsExceptions.CONSTRUCTOR,
@@ -141,6 +142,7 @@ public class TdApi {
             CommitPendingPaidMessageReactions.CONSTRUCTOR,
             ConfirmQrCodeAuthentication.CONSTRUCTOR,
             ConfirmSession.CONSTRUCTOR,
+            ConnectAffiliateProgram.CONSTRUCTOR,
             CreateBasicGroupChat.CONSTRUCTOR,
             CreateBusinessChatLink.CONSTRUCTOR,
             CreateCall.CONSTRUCTOR,
@@ -149,6 +151,7 @@ public class TdApi {
             CreateChatInviteLink.CONSTRUCTOR,
             CreateChatSubscriptionInviteLink.CONSTRUCTOR,
             CreateForumTopic.CONSTRUCTOR,
+            CreateGroupCall.CONSTRUCTOR,
             CreateInvoiceLink.CONSTRUCTOR,
             CreateNewBasicGroupChat.CONSTRUCTOR,
             CreateNewSecretChat.CONSTRUCTOR,
@@ -194,6 +197,7 @@ public class TdApi {
             DisableAllSupergroupUsernames.CONSTRUCTOR,
             DisableProxy.CONSTRUCTOR,
             DiscardCall.CONSTRUCTOR,
+            DisconnectAffiliateProgram.CONSTRUCTOR,
             DisconnectAllWebsites.CONSTRUCTOR,
             DisconnectWebsite.CONSTRUCTOR,
             DownloadFile.CONSTRUCTOR,
@@ -226,6 +230,7 @@ public class TdApi {
             EditStarSubscription.CONSTRUCTOR,
             EditStory.CONSTRUCTOR,
             EditStoryCover.CONSTRUCTOR,
+            EditUserStarSubscription.CONSTRUCTOR,
             EnableProxy.CONSTRUCTOR,
             EndGroupCall.CONSTRUCTOR,
             EndGroupCallRecording.CONSTRUCTOR,
@@ -258,6 +263,8 @@ public class TdApi {
             GetBotMediaPreviewInfo.CONSTRUCTOR,
             GetBotMediaPreviews.CONSTRUCTOR,
             GetBotName.CONSTRUCTOR,
+            GetBotSimilarBotCount.CONSTRUCTOR,
+            GetBotSimilarBots.CONSTRUCTOR,
             GetBusinessChatLinkInfo.CONSTRUCTOR,
             GetBusinessChatLinks.CONSTRUCTOR,
             GetBusinessConnectedBot.CONSTRUCTOR,
@@ -314,6 +321,8 @@ public class TdApi {
             GetCloseFriends.CONSTRUCTOR,
             GetCollectibleItemInfo.CONSTRUCTOR,
             GetCommands.CONSTRUCTOR,
+            GetConnectedAffiliateProgram.CONSTRUCTOR,
+            GetConnectedAffiliatePrograms.CONSTRUCTOR,
             GetConnectedWebsites.CONSTRUCTOR,
             GetContacts.CONSTRUCTOR,
             GetCountries.CONSTRUCTOR,
@@ -348,6 +357,7 @@ public class TdApi {
             GetForumTopicLink.CONSTRUCTOR,
             GetForumTopics.CONSTRUCTOR,
             GetGameHighScores.CONSTRUCTOR,
+            GetGiftUpgradePreview.CONSTRUCTOR,
             GetGiveawayInfo.CONSTRUCTOR,
             GetGreetingStickers.CONSTRUCTOR,
             GetGrossingWebAppBots.CONSTRUCTOR,
@@ -404,6 +414,7 @@ public class TdApi {
             GetNetworkStatistics.CONSTRUCTOR,
             GetNewChatPrivacySettings.CONSTRUCTOR,
             GetOption.CONSTRUCTOR,
+            GetOwnedBots.CONSTRUCTOR,
             GetOwnedStickerSets.CONSTRUCTOR,
             GetPassportAuthorizationForm.CONSTRUCTOR,
             GetPassportAuthorizationFormAvailableElements.CONSTRUCTOR,
@@ -422,10 +433,13 @@ public class TdApi {
             GetPremiumState.CONSTRUCTOR,
             GetPremiumStickerExamples.CONSTRUCTOR,
             GetPremiumStickers.CONSTRUCTOR,
+            GetPreparedInlineMessage.CONSTRUCTOR,
             GetProxies.CONSTRUCTOR,
             GetProxyLink.CONSTRUCTOR,
             GetPushReceiverId.CONSTRUCTOR,
             GetReadDatePrivacySettings.CONSTRUCTOR,
+            GetReceivedGift.CONSTRUCTOR,
+            GetReceivedGifts.CONSTRUCTOR,
             GetRecentEmojiStatuses.CONSTRUCTOR,
             GetRecentInlineBots.CONSTRUCTOR,
             GetRecentStickers.CONSTRUCTOR,
@@ -456,6 +470,7 @@ public class TdApi {
             GetStarWithdrawalUrl.CONSTRUCTOR,
             GetStatisticalGraph.CONSTRUCTOR,
             GetStickerEmojis.CONSTRUCTOR,
+            GetStickerOutline.CONSTRUCTOR,
             GetStickerSet.CONSTRUCTOR,
             GetStickerSetName.CONSTRUCTOR,
             GetStickers.CONSTRUCTOR,
@@ -484,10 +499,12 @@ public class TdApi {
             GetTimeZones.CONSTRUCTOR,
             GetTopChats.CONSTRUCTOR,
             GetTrendingStickerSets.CONSTRUCTOR,
+            GetUpgradedGift.CONSTRUCTOR,
+            GetUpgradedGiftEmojiStatuses.CONSTRUCTOR,
+            GetUpgradedGiftWithdrawalUrl.CONSTRUCTOR,
             GetUser.CONSTRUCTOR,
             GetUserChatBoosts.CONSTRUCTOR,
             GetUserFullInfo.CONSTRUCTOR,
-            GetUserGifts.CONSTRUCTOR,
             GetUserLink.CONSTRUCTOR,
             GetUserPrivacySettingRules.CONSTRUCTOR,
             GetUserProfilePhotos.CONSTRUCTOR,
@@ -495,6 +512,7 @@ public class TdApi {
             GetVideoChatAvailableParticipants.CONSTRUCTOR,
             GetVideoChatRtmpUrl.CONSTRUCTOR,
             GetWebAppLinkUrl.CONSTRUCTOR,
+            GetWebAppPlaceholder.CONSTRUCTOR,
             GetWebAppUrl.CONSTRUCTOR,
             GetWebPageInstantView.CONSTRUCTOR,
             HideContactCloseBirthdays.CONSTRUCTOR,
@@ -515,6 +533,7 @@ public class TdApi {
             LoadQuickReplyShortcuts.CONSTRUCTOR,
             LoadSavedMessagesTopics.CONSTRUCTOR,
             LogOut.CONSTRUCTOR,
+            OpenBotSimilarBot.CONSTRUCTOR,
             OpenChat.CONSTRUCTOR,
             OpenChatSimilarChat.CONSTRUCTOR,
             OpenMessageContent.CONSTRUCTOR,
@@ -552,6 +571,7 @@ public class TdApi {
             RemoveFileFromDownloads.CONSTRUCTOR,
             RemoveInstalledBackground.CONSTRUCTOR,
             RemoveMessageReaction.CONSTRUCTOR,
+            RemoveMessageSenderBotVerification.CONSTRUCTOR,
             RemoveNotification.CONSTRUCTOR,
             RemoveNotificationGroup.CONSTRUCTOR,
             RemovePendingPaidMessageReactions.CONSTRUCTOR,
@@ -601,8 +621,11 @@ public class TdApi {
             RevokeChatInviteLink.CONSTRUCTOR,
             RevokeGroupCallInviteLink.CONSTRUCTOR,
             SaveApplicationLogEvent.CONSTRUCTOR,
+            SavePreparedInlineMessage.CONSTRUCTOR,
+            SearchAffiliatePrograms.CONSTRUCTOR,
             SearchBackground.CONSTRUCTOR,
             SearchCallMessages.CONSTRUCTOR,
+            SearchChatAffiliateProgram.CONSTRUCTOR,
             SearchChatMembers.CONSTRUCTOR,
             SearchChatMessages.CONSTRUCTOR,
             SearchChatRecentLocationMessages.CONSTRUCTOR,
@@ -681,6 +704,7 @@ public class TdApi {
             SetBusinessStartPage.CONSTRUCTOR,
             SetChatAccentColor.CONSTRUCTOR,
             SetChatActiveStoriesList.CONSTRUCTOR,
+            SetChatAffiliateProgram.CONSTRUCTOR,
             SetChatAvailableReactions.CONSTRUCTOR,
             SetChatBackground.CONSTRUCTOR,
             SetChatClientData.CONSTRUCTOR,
@@ -728,6 +752,7 @@ public class TdApi {
             SetMessageFactCheck.CONSTRUCTOR,
             SetMessageReactions.CONSTRUCTOR,
             SetMessageSenderBlockList.CONSTRUCTOR,
+            SetMessageSenderBotVerification.CONSTRUCTOR,
             SetName.CONSTRUCTOR,
             SetNetworkType.CONSTRUCTOR,
             SetNewChatPrivacySettings.CONSTRUCTOR,
@@ -761,6 +786,7 @@ public class TdApi {
             SetSupergroupUnrestrictBoostCount.CONSTRUCTOR,
             SetSupergroupUsername.CONSTRUCTOR,
             SetTdlibParameters.CONSTRUCTOR,
+            SetUserEmojiStatus.CONSTRUCTOR,
             SetUserPersonalProfilePhoto.CONSTRUCTOR,
             SetUserPrivacySettingRules.CONSTRUCTOR,
             SetUserSupportInfo.CONSTRUCTOR,
@@ -792,11 +818,13 @@ public class TdApi {
             TestSquareInt.CONSTRUCTOR,
             TestUseUpdate.CONSTRUCTOR,
             ToggleAllDownloadsArePaused.CONSTRUCTOR,
+            ToggleBotCanManageEmojiStatus.CONSTRUCTOR,
             ToggleBotIsAddedToAttachmentMenu.CONSTRUCTOR,
             ToggleBotUsernameIsActive.CONSTRUCTOR,
             ToggleBusinessConnectedBotChatIsPaused.CONSTRUCTOR,
             ToggleChatDefaultDisableNotification.CONSTRUCTOR,
             ToggleChatFolderTags.CONSTRUCTOR,
+            ToggleChatGiftNotifications.CONSTRUCTOR,
             ToggleChatHasProtectedContent.CONSTRUCTOR,
             ToggleChatIsMarkedAsUnread.CONSTRUCTOR,
             ToggleChatIsPinned.CONSTRUCTOR,
@@ -832,12 +860,14 @@ public class TdApi {
             ToggleSupergroupUsernameIsActive.CONSTRUCTOR,
             ToggleUsernameIsActive.CONSTRUCTOR,
             TransferChatOwnership.CONSTRUCTOR,
+            TransferGift.CONSTRUCTOR,
             TranslateMessageText.CONSTRUCTOR,
             TranslateText.CONSTRUCTOR,
             UnpinAllChatMessages.CONSTRUCTOR,
             UnpinAllMessageThreadMessages.CONSTRUCTOR,
             UnpinChatMessage.CONSTRUCTOR,
             UpgradeBasicGroupChatToSupergroupChat.CONSTRUCTOR,
+            UpgradeGift.CONSTRUCTOR,
             UploadStickerFile.CONSTRUCTOR,
             ValidateOrderInfo.CONSTRUCTOR,
             ViewMessages.CONSTRUCTOR,
@@ -1142,7 +1172,385 @@ public class TdApi {
     }
 
     /**
-     * Describes an alternative reencoded quality of a video file.
+     * Contains information about an affiliate that received commission from a Telegram Star transaction.
+     */
+    public static class AffiliateInfo extends Object {
+        /**
+         * The number of Telegram Stars received by the affiliate for each 1000 Telegram Stars received by the program owner.
+         */
+        public int commissionPerMille;
+        /**
+         * Identifier of the chat which received the commission.
+         */
+        public long affiliateChatId;
+        /**
+         * The amount of Telegram Stars that were received by the affiliate; can be negative for refunds.
+         */
+        public StarAmount starAmount;
+
+        /**
+         * Contains information about an affiliate that received commission from a Telegram Star transaction.
+         */
+        public AffiliateInfo() {
+        }
+
+        /**
+         * Contains information about an affiliate that received commission from a Telegram Star transaction.
+         *
+         * @param commissionPerMille The number of Telegram Stars received by the affiliate for each 1000 Telegram Stars received by the program owner.
+         * @param affiliateChatId Identifier of the chat which received the commission.
+         * @param starAmount The amount of Telegram Stars that were received by the affiliate; can be negative for refunds.
+         */
+        public AffiliateInfo(int commissionPerMille, long affiliateChatId, StarAmount starAmount) {
+            this.commissionPerMille = commissionPerMille;
+            this.affiliateChatId = affiliateChatId;
+            this.starAmount = starAmount;
+        }
+
+        /**
+         * Identifier uniquely determining type of the object.
+         */
+        public static final int CONSTRUCTOR = -1312695046;
+
+        /**
+         * @return this.CONSTRUCTOR
+         */
+        @Override
+        public int getConstructor() {
+            return CONSTRUCTOR;
+        }
+    }
+
+    /**
+     * Contains information about an active affiliate program.
+     */
+    public static class AffiliateProgramInfo extends Object {
+        /**
+         * Parameters of the affiliate program.
+         */
+        public AffiliateProgramParameters parameters;
+        /**
+         * Point in time (Unix timestamp) when the affiliate program will be closed; 0 if the affiliate program isn't scheduled to be closed. If positive, then the program can't be connected using connectAffiliateProgram, but active connections will work until the date.
+         */
+        public int endDate;
+        /**
+         * The amount of daily revenue per user in Telegram Stars of the bot that created the affiliate program.
+         */
+        public StarAmount dailyRevenuePerUserAmount;
+
+        /**
+         * Contains information about an active affiliate program.
+         */
+        public AffiliateProgramInfo() {
+        }
+
+        /**
+         * Contains information about an active affiliate program.
+         *
+         * @param parameters Parameters of the affiliate program.
+         * @param endDate Point in time (Unix timestamp) when the affiliate program will be closed; 0 if the affiliate program isn't scheduled to be closed. If positive, then the program can't be connected using connectAffiliateProgram, but active connections will work until the date.
+         * @param dailyRevenuePerUserAmount The amount of daily revenue per user in Telegram Stars of the bot that created the affiliate program.
+         */
+        public AffiliateProgramInfo(AffiliateProgramParameters parameters, int endDate, StarAmount dailyRevenuePerUserAmount) {
+            this.parameters = parameters;
+            this.endDate = endDate;
+            this.dailyRevenuePerUserAmount = dailyRevenuePerUserAmount;
+        }
+
+        /**
+         * Identifier uniquely determining type of the object.
+         */
+        public static final int CONSTRUCTOR = -1761810251;
+
+        /**
+         * @return this.CONSTRUCTOR
+         */
+        @Override
+        public int getConstructor() {
+            return CONSTRUCTOR;
+        }
+    }
+
+    /**
+     * Describes parameters of an affiliate program.
+     */
+    public static class AffiliateProgramParameters extends Object {
+        /**
+         * The number of Telegram Stars received by the affiliate for each 1000 Telegram Stars received by the program owner; getOption(&quot;affiliate_program_commission_per_mille_min&quot;)-getOption(&quot;affiliate_program_commission_per_mille_max&quot;).
+         */
+        public int commissionPerMille;
+        /**
+         * Number of months the program will be active; 0-36. If 0, then the program is eternal.
+         */
+        public int monthCount;
+
+        /**
+         * Describes parameters of an affiliate program.
+         */
+        public AffiliateProgramParameters() {
+        }
+
+        /**
+         * Describes parameters of an affiliate program.
+         *
+         * @param commissionPerMille The number of Telegram Stars received by the affiliate for each 1000 Telegram Stars received by the program owner; getOption(&quot;affiliate_program_commission_per_mille_min&quot;)-getOption(&quot;affiliate_program_commission_per_mille_max&quot;).
+         * @param monthCount Number of months the program will be active; 0-36. If 0, then the program is eternal.
+         */
+        public AffiliateProgramParameters(int commissionPerMille, int monthCount) {
+            this.commissionPerMille = commissionPerMille;
+            this.monthCount = monthCount;
+        }
+
+        /**
+         * Identifier uniquely determining type of the object.
+         */
+        public static final int CONSTRUCTOR = 1642662996;
+
+        /**
+         * @return this.CONSTRUCTOR
+         */
+        @Override
+        public int getConstructor() {
+            return CONSTRUCTOR;
+        }
+    }
+
+    /**
+     * This class is an abstract base class.
+     * Describes the order of the found affiliate programs.
+     */
+    public abstract static class AffiliateProgramSortOrder extends Object {
+        /**
+         * Describes possible values returned by getConstructor().
+         */
+        @Retention(RetentionPolicy.SOURCE)
+        @IntDef({
+            AffiliateProgramSortOrderProfitability.CONSTRUCTOR,
+            AffiliateProgramSortOrderCreationDate.CONSTRUCTOR,
+            AffiliateProgramSortOrderRevenue.CONSTRUCTOR
+        })
+        public @interface Constructors {}
+
+        /**
+         * @return identifier uniquely determining type of the object.
+         */
+        @Constructors
+        @Override
+        public abstract int getConstructor();
+        /**
+         * Default class constructor.
+         */
+        public AffiliateProgramSortOrder() {
+        }
+    }
+
+    /**
+     * The affiliate programs must be sorted by the profitability.
+     */
+    public static class AffiliateProgramSortOrderProfitability extends AffiliateProgramSortOrder {
+
+        /**
+         * The affiliate programs must be sorted by the profitability.
+         */
+        public AffiliateProgramSortOrderProfitability() {
+        }
+
+        /**
+         * Identifier uniquely determining type of the object.
+         */
+        public static final int CONSTRUCTOR = -1963282585;
+
+        /**
+         * @return this.CONSTRUCTOR
+         */
+        @Override
+        public int getConstructor() {
+            return CONSTRUCTOR;
+        }
+    }
+
+    /**
+     * The affiliate programs must be sorted by creation date.
+     */
+    public static class AffiliateProgramSortOrderCreationDate extends AffiliateProgramSortOrder {
+
+        /**
+         * The affiliate programs must be sorted by creation date.
+         */
+        public AffiliateProgramSortOrderCreationDate() {
+        }
+
+        /**
+         * Identifier uniquely determining type of the object.
+         */
+        public static final int CONSTRUCTOR = -1558628083;
+
+        /**
+         * @return this.CONSTRUCTOR
+         */
+        @Override
+        public int getConstructor() {
+            return CONSTRUCTOR;
+        }
+    }
+
+    /**
+     * The affiliate programs must be sorted by the expected revenue.
+     */
+    public static class AffiliateProgramSortOrderRevenue extends AffiliateProgramSortOrder {
+
+        /**
+         * The affiliate programs must be sorted by the expected revenue.
+         */
+        public AffiliateProgramSortOrderRevenue() {
+        }
+
+        /**
+         * Identifier uniquely determining type of the object.
+         */
+        public static final int CONSTRUCTOR = 1923269304;
+
+        /**
+         * @return this.CONSTRUCTOR
+         */
+        @Override
+        public int getConstructor() {
+            return CONSTRUCTOR;
+        }
+    }
+
+    /**
+     * This class is an abstract base class.
+     * Describes type of affiliate for an affiliate program.
+     */
+    public abstract static class AffiliateType extends Object {
+        /**
+         * Describes possible values returned by getConstructor().
+         */
+        @Retention(RetentionPolicy.SOURCE)
+        @IntDef({
+            AffiliateTypeCurrentUser.CONSTRUCTOR,
+            AffiliateTypeBot.CONSTRUCTOR,
+            AffiliateTypeChannel.CONSTRUCTOR
+        })
+        public @interface Constructors {}
+
+        /**
+         * @return identifier uniquely determining type of the object.
+         */
+        @Constructors
+        @Override
+        public abstract int getConstructor();
+        /**
+         * Default class constructor.
+         */
+        public AffiliateType() {
+        }
+    }
+
+    /**
+     * The affiliate is the current user.
+     */
+    public static class AffiliateTypeCurrentUser extends AffiliateType {
+
+        /**
+         * The affiliate is the current user.
+         */
+        public AffiliateTypeCurrentUser() {
+        }
+
+        /**
+         * Identifier uniquely determining type of the object.
+         */
+        public static final int CONSTRUCTOR = 1453785589;
+
+        /**
+         * @return this.CONSTRUCTOR
+         */
+        @Override
+        public int getConstructor() {
+            return CONSTRUCTOR;
+        }
+    }
+
+    /**
+     * The affiliate is a bot owned by the current user.
+     */
+    public static class AffiliateTypeBot extends AffiliateType {
+        /**
+         * User identifier of the bot.
+         */
+        public long userId;
+
+        /**
+         * The affiliate is a bot owned by the current user.
+         */
+        public AffiliateTypeBot() {
+        }
+
+        /**
+         * The affiliate is a bot owned by the current user.
+         *
+         * @param userId User identifier of the bot.
+         */
+        public AffiliateTypeBot(long userId) {
+            this.userId = userId;
+        }
+
+        /**
+         * Identifier uniquely determining type of the object.
+         */
+        public static final int CONSTRUCTOR = -1032587200;
+
+        /**
+         * @return this.CONSTRUCTOR
+         */
+        @Override
+        public int getConstructor() {
+            return CONSTRUCTOR;
+        }
+    }
+
+    /**
+     * The affiliate is a channel chat where the current user has canPostMessages administrator right.
+     */
+    public static class AffiliateTypeChannel extends AffiliateType {
+        /**
+         * Identifier of the channel chat.
+         */
+        public long chatId;
+
+        /**
+         * The affiliate is a channel chat where the current user has canPostMessages administrator right.
+         */
+        public AffiliateTypeChannel() {
+        }
+
+        /**
+         * The affiliate is a channel chat where the current user has canPostMessages administrator right.
+         *
+         * @param chatId Identifier of the channel chat.
+         */
+        public AffiliateTypeChannel(long chatId) {
+            this.chatId = chatId;
+        }
+
+        /**
+         * Identifier uniquely determining type of the object.
+         */
+        public static final int CONSTRUCTOR = -683939735;
+
+        /**
+         * @return this.CONSTRUCTOR
+         */
+        @Override
+        public int getConstructor() {
+            return CONSTRUCTOR;
+        }
+    }
+
+    /**
+     * Describes an alternative re-encoded quality of a video file.
      */
     public static class AlternativeVideo extends Object {
         /**
@@ -1167,13 +1575,13 @@ public class TdApi {
         public File video;
 
         /**
-         * Describes an alternative reencoded quality of a video file.
+         * Describes an alternative re-encoded quality of a video file.
          */
         public AlternativeVideo() {
         }
 
         /**
-         * Describes an alternative reencoded quality of a video file.
+         * Describes an alternative re-encoded quality of a video file.
          *
          * @param width Video width.
          * @param height Video height.
@@ -4447,6 +4855,38 @@ public class TdApi {
          */
         @Nullable public ChatAdministratorRights defaultChannelAdministratorRights;
         /**
+         * Information about the affiliate program of the bot; may be null if none.
+         */
+        @Nullable public AffiliateProgramInfo affiliateProgram;
+        /**
+         * Default light background color for bot Web Apps; -1 if not specified.
+         */
+        public int webAppBackgroundLightColor;
+        /**
+         * Default dark background color for bot Web Apps; -1 if not specified.
+         */
+        public int webAppBackgroundDarkColor;
+        /**
+         * Default light header color for bot Web Apps; -1 if not specified.
+         */
+        public int webAppHeaderLightColor;
+        /**
+         * Default dark header color for bot Web Apps; -1 if not specified.
+         */
+        public int webAppHeaderDarkColor;
+        /**
+         * Parameters of the verification that can be provided by the bot; may be null if none or the current user isn't the owner of the bot.
+         */
+        @Nullable public BotVerificationParameters verificationParameters;
+        /**
+         * True, if the bot's revenue statistics are available to the current user.
+         */
+        public boolean canGetRevenueStatistics;
+        /**
+         * True, if the bot can manage emoji status of the current user.
+         */
+        public boolean canManageEmojiStatus;
+        /**
          * True, if the bot has media previews.
          */
         public boolean hasMediaPreviews;
@@ -4485,13 +4925,21 @@ public class TdApi {
          * @param privacyPolicyUrl The HTTP link to the privacy policy of the bot. If empty, then /privacy command must be used if supported by the bot. If the command isn't supported, then https://telegram.org/privacy-tpa must be opened.
          * @param defaultGroupAdministratorRights Default administrator rights for adding the bot to basic group and supergroup chats; may be null.
          * @param defaultChannelAdministratorRights Default administrator rights for adding the bot to channels; may be null.
+         * @param affiliateProgram Information about the affiliate program of the bot; may be null if none.
+         * @param webAppBackgroundLightColor Default light background color for bot Web Apps; -1 if not specified.
+         * @param webAppBackgroundDarkColor Default dark background color for bot Web Apps; -1 if not specified.
+         * @param webAppHeaderLightColor Default light header color for bot Web Apps; -1 if not specified.
+         * @param webAppHeaderDarkColor Default dark header color for bot Web Apps; -1 if not specified.
+         * @param verificationParameters Parameters of the verification that can be provided by the bot; may be null if none or the current user isn't the owner of the bot.
+         * @param canGetRevenueStatistics True, if the bot's revenue statistics are available to the current user.
+         * @param canManageEmojiStatus True, if the bot can manage emoji status of the current user.
          * @param hasMediaPreviews True, if the bot has media previews.
          * @param editCommandsLink The internal link, which can be used to edit bot commands; may be null.
          * @param editDescriptionLink The internal link, which can be used to edit bot description; may be null.
          * @param editDescriptionMediaLink The internal link, which can be used to edit the photo or animation shown in the chat with the bot if the chat is empty; may be null.
          * @param editSettingsLink The internal link, which can be used to edit bot settings; may be null.
          */
-        public BotInfo(String shortDescription, String description, Photo photo, Animation animation, BotMenuButton menuButton, BotCommand[] commands, String privacyPolicyUrl, ChatAdministratorRights defaultGroupAdministratorRights, ChatAdministratorRights defaultChannelAdministratorRights, boolean hasMediaPreviews, InternalLinkType editCommandsLink, InternalLinkType editDescriptionLink, InternalLinkType editDescriptionMediaLink, InternalLinkType editSettingsLink) {
+        public BotInfo(String shortDescription, String description, Photo photo, Animation animation, BotMenuButton menuButton, BotCommand[] commands, String privacyPolicyUrl, ChatAdministratorRights defaultGroupAdministratorRights, ChatAdministratorRights defaultChannelAdministratorRights, AffiliateProgramInfo affiliateProgram, int webAppBackgroundLightColor, int webAppBackgroundDarkColor, int webAppHeaderLightColor, int webAppHeaderDarkColor, BotVerificationParameters verificationParameters, boolean canGetRevenueStatistics, boolean canManageEmojiStatus, boolean hasMediaPreviews, InternalLinkType editCommandsLink, InternalLinkType editDescriptionLink, InternalLinkType editDescriptionMediaLink, InternalLinkType editSettingsLink) {
             this.shortDescription = shortDescription;
             this.description = description;
             this.photo = photo;
@@ -4501,6 +4949,14 @@ public class TdApi {
             this.privacyPolicyUrl = privacyPolicyUrl;
             this.defaultGroupAdministratorRights = defaultGroupAdministratorRights;
             this.defaultChannelAdministratorRights = defaultChannelAdministratorRights;
+            this.affiliateProgram = affiliateProgram;
+            this.webAppBackgroundLightColor = webAppBackgroundLightColor;
+            this.webAppBackgroundDarkColor = webAppBackgroundDarkColor;
+            this.webAppHeaderLightColor = webAppHeaderLightColor;
+            this.webAppHeaderDarkColor = webAppHeaderDarkColor;
+            this.verificationParameters = verificationParameters;
+            this.canGetRevenueStatistics = canGetRevenueStatistics;
+            this.canManageEmojiStatus = canManageEmojiStatus;
             this.hasMediaPreviews = hasMediaPreviews;
             this.editCommandsLink = editCommandsLink;
             this.editDescriptionLink = editDescriptionLink;
@@ -4511,7 +4967,7 @@ public class TdApi {
         /**
          * Identifier uniquely determining type of the object.
          */
-        public static final int CONSTRUCTOR = 136810594;
+        public static final int CONSTRUCTOR = 1771886272;
 
         /**
          * @return this.CONSTRUCTOR
@@ -4693,67 +5149,45 @@ public class TdApi {
     }
 
     /**
-     * This class is an abstract base class.
-     * Describes purpose of a transaction with a bot.
+     * Describes verification status provided by a bot.
      */
-    public abstract static class BotTransactionPurpose extends Object {
+    public static class BotVerification extends Object {
         /**
-         * Describes possible values returned by getConstructor().
+         * Identifier of the bot that provided the verification.
          */
-        @Retention(RetentionPolicy.SOURCE)
-        @IntDef({
-            BotTransactionPurposePaidMedia.CONSTRUCTOR,
-            BotTransactionPurposeInvoicePayment.CONSTRUCTOR
-        })
-        public @interface Constructors {}
+        public long botUserId;
+        /**
+         * Identifier of the custom emoji that is used as the verification sign.
+         */
+        public long iconCustomEmojiId;
+        /**
+         * Custom description of verification reason set by the bot. Can contain only Mention, Hashtag, Cashtag, PhoneNumber, BankCardNumber, Url, and EmailAddress entities.
+         */
+        public FormattedText customDescription;
 
         /**
-         * @return identifier uniquely determining type of the object.
+         * Describes verification status provided by a bot.
          */
-        @Constructors
-        @Override
-        public abstract int getConstructor();
-        /**
-         * Default class constructor.
-         */
-        public BotTransactionPurpose() {
-        }
-    }
-
-    /**
-     * Paid media were bought.
-     */
-    public static class BotTransactionPurposePaidMedia extends BotTransactionPurpose {
-        /**
-         * The bought media if the transaction wasn't refunded.
-         */
-        public PaidMedia[] media;
-        /**
-         * Bot-provided payload; for bots only.
-         */
-        public String payload;
-
-        /**
-         * Paid media were bought.
-         */
-        public BotTransactionPurposePaidMedia() {
+        public BotVerification() {
         }
 
         /**
-         * Paid media were bought.
+         * Describes verification status provided by a bot.
          *
-         * @param media The bought media if the transaction wasn't refunded.
-         * @param payload Bot-provided payload; for bots only.
+         * @param botUserId Identifier of the bot that provided the verification.
+         * @param iconCustomEmojiId Identifier of the custom emoji that is used as the verification sign.
+         * @param customDescription Custom description of verification reason set by the bot. Can contain only Mention, Hashtag, Cashtag, PhoneNumber, BankCardNumber, Url, and EmailAddress entities.
          */
-        public BotTransactionPurposePaidMedia(PaidMedia[] media, String payload) {
-            this.media = media;
-            this.payload = payload;
+        public BotVerification(long botUserId, long iconCustomEmojiId, FormattedText customDescription) {
+            this.botUserId = botUserId;
+            this.iconCustomEmojiId = iconCustomEmojiId;
+            this.customDescription = customDescription;
         }
 
         /**
          * Identifier uniquely determining type of the object.
          */
-        public static final int CONSTRUCTOR = -1522205325;
+        public static final int CONSTRUCTOR = -1319061774;
 
         /**
          * @return this.CONSTRUCTOR
@@ -4765,39 +5199,51 @@ public class TdApi {
     }
 
     /**
-     * User bought a product from the bot.
+     * Describes parameters of verification that is provided by a bot.
      */
-    public static class BotTransactionPurposeInvoicePayment extends BotTransactionPurpose {
+    public static class BotVerificationParameters extends Object {
         /**
-         * Information about the bought product; may be null if not applicable.
+         * Identifier of the custom emoji that is used as the verification sign.
          */
-        @Nullable public ProductInfo productInfo;
+        public long iconCustomEmojiId;
         /**
-         * Invoice payload; for bots only.
+         * Name of the organization that provides verification.
          */
-        public byte[] invoicePayload;
+        public String organizationName;
+        /**
+         * Default custom description of verification reason to be used as placeholder in setMessageSenderBotVerification; may be null if none.
+         */
+        @Nullable public FormattedText defaultCustomDescription;
+        /**
+         * True, if the bot is allowed to provide custom description for verified entities.
+         */
+        public boolean canSetCustomDescription;
 
         /**
-         * User bought a product from the bot.
+         * Describes parameters of verification that is provided by a bot.
          */
-        public BotTransactionPurposeInvoicePayment() {
+        public BotVerificationParameters() {
         }
 
         /**
-         * User bought a product from the bot.
+         * Describes parameters of verification that is provided by a bot.
          *
-         * @param productInfo Information about the bought product; may be null if not applicable.
-         * @param invoicePayload Invoice payload; for bots only.
+         * @param iconCustomEmojiId Identifier of the custom emoji that is used as the verification sign.
+         * @param organizationName Name of the organization that provides verification.
+         * @param defaultCustomDescription Default custom description of verification reason to be used as placeholder in setMessageSenderBotVerification; may be null if none.
+         * @param canSetCustomDescription True, if the bot is allowed to provide custom description for verified entities.
          */
-        public BotTransactionPurposeInvoicePayment(ProductInfo productInfo, byte[] invoicePayload) {
-            this.productInfo = productInfo;
-            this.invoicePayload = invoicePayload;
+        public BotVerificationParameters(long iconCustomEmojiId, String organizationName, FormattedText defaultCustomDescription, boolean canSetCustomDescription) {
+            this.iconCustomEmojiId = iconCustomEmojiId;
+            this.organizationName = organizationName;
+            this.defaultCustomDescription = defaultCustomDescription;
+            this.canSetCustomDescription = canSetCustomDescription;
         }
 
         /**
          * Identifier uniquely determining type of the object.
          */
-        public static final int CONSTRUCTOR = 1771593900;
+        public static final int CONSTRUCTOR = -723737249;
 
         /**
          * @return this.CONSTRUCTOR
@@ -6341,6 +6787,10 @@ public class TdApi {
          * Call state.
          */
         public CallState state;
+        /**
+         * Identifier of the group call associated with the call; 0 if the group call isn't created yet. The group call can be received through the method getGroupCall.
+         */
+        public int groupCallId;
 
         /**
          * Describes a call.
@@ -6356,19 +6806,21 @@ public class TdApi {
          * @param isOutgoing True, if the call is outgoing.
          * @param isVideo True, if the call is a video call.
          * @param state Call state.
+         * @param groupCallId Identifier of the group call associated with the call; 0 if the group call isn't created yet. The group call can be received through the method getGroupCall.
          */
-        public Call(int id, long userId, boolean isOutgoing, boolean isVideo, CallState state) {
+        public Call(int id, long userId, boolean isOutgoing, boolean isVideo, CallState state, int groupCallId) {
             this.id = id;
             this.userId = userId;
             this.isOutgoing = isOutgoing;
             this.isVideo = isVideo;
             this.state = state;
+            this.groupCallId = groupCallId;
         }
 
         /**
          * Identifier uniquely determining type of the object.
          */
-        public static final int CONSTRUCTOR = 920360804;
+        public static final int CONSTRUCTOR = -1643259734;
 
         /**
          * @return this.CONSTRUCTOR
@@ -6393,7 +6845,8 @@ public class TdApi {
             CallDiscardReasonMissed.CONSTRUCTOR,
             CallDiscardReasonDeclined.CONSTRUCTOR,
             CallDiscardReasonDisconnected.CONSTRUCTOR,
-            CallDiscardReasonHungUp.CONSTRUCTOR
+            CallDiscardReasonHungUp.CONSTRUCTOR,
+            CallDiscardReasonAllowGroupCall.CONSTRUCTOR
         })
         public @interface Constructors {}
 
@@ -6525,6 +6978,44 @@ public class TdApi {
          * Identifier uniquely determining type of the object.
          */
         public static final int CONSTRUCTOR = 438216166;
+
+        /**
+         * @return this.CONSTRUCTOR
+         */
+        @Override
+        public int getConstructor() {
+            return CONSTRUCTOR;
+        }
+    }
+
+    /**
+     * The call was ended because it has been used successfully to transfer private encryption key for the associated group call.
+     */
+    public static class CallDiscardReasonAllowGroupCall extends CallDiscardReason {
+        /**
+         * Encrypted using the call private key encryption key for the associated group call.
+         */
+        public byte[] encryptedGroupCallKey;
+
+        /**
+         * The call was ended because it has been used successfully to transfer private encryption key for the associated group call.
+         */
+        public CallDiscardReasonAllowGroupCall() {
+        }
+
+        /**
+         * The call was ended because it has been used successfully to transfer private encryption key for the associated group call.
+         *
+         * @param encryptedGroupCallKey Encrypted using the call private key encryption key for the associated group call.
+         */
+        public CallDiscardReasonAllowGroupCall(byte[] encryptedGroupCallKey) {
+            this.encryptedGroupCallKey = encryptedGroupCallKey;
+        }
+
+        /**
+         * Identifier uniquely determining type of the object.
+         */
+        public static final int CONSTRUCTOR = -1357414443;
 
         /**
          * @return this.CONSTRUCTOR
@@ -12620,9 +13111,9 @@ public class TdApi {
      */
     public static class ChatFolder extends Object {
         /**
-         * The title of the folder; 1-12 characters without line feeds.
+         * The name of the folder.
          */
-        public String title;
+        public ChatFolderName name;
         /**
          * The chosen icon for the chat folder; may be null. If null, use getChatFolderDefaultIconName to get default icon name for the folder.
          */
@@ -12689,7 +13180,7 @@ public class TdApi {
         /**
          * Represents a folder for user chats.
          *
-         * @param title The title of the folder; 1-12 characters without line feeds.
+         * @param name The name of the folder.
          * @param icon The chosen icon for the chat folder; may be null. If null, use getChatFolderDefaultIconName to get default icon name for the folder.
          * @param colorId The identifier of the chosen color for the chat folder icon; from -1 to 6. If -1, then color is disabled. Can't be changed if folder tags are disabled or the current user doesn't have Telegram Premium subscription.
          * @param isShareable True, if at least one link has been created for the folder.
@@ -12705,8 +13196,8 @@ public class TdApi {
          * @param includeGroups True, if basic groups and supergroups need to be included.
          * @param includeChannels True, if channels need to be included.
          */
-        public ChatFolder(String title, ChatFolderIcon icon, int colorId, boolean isShareable, long[] pinnedChatIds, long[] includedChatIds, long[] excludedChatIds, boolean excludeMuted, boolean excludeRead, boolean excludeArchived, boolean includeContacts, boolean includeNonContacts, boolean includeBots, boolean includeGroups, boolean includeChannels) {
-            this.title = title;
+        public ChatFolder(ChatFolderName name, ChatFolderIcon icon, int colorId, boolean isShareable, long[] pinnedChatIds, long[] includedChatIds, long[] excludedChatIds, boolean excludeMuted, boolean excludeRead, boolean excludeArchived, boolean includeContacts, boolean includeNonContacts, boolean includeBots, boolean includeGroups, boolean includeChannels) {
+            this.name = name;
             this.icon = icon;
             this.colorId = colorId;
             this.isShareable = isShareable;
@@ -12726,7 +13217,7 @@ public class TdApi {
         /**
          * Identifier uniquely determining type of the object.
          */
-        public static final int CONSTRUCTOR = -474905057;
+        public static final int CONSTRUCTOR = 1596164696;
 
         /**
          * @return this.CONSTRUCTOR
@@ -12784,9 +13275,9 @@ public class TdApi {
          */
         public int id;
         /**
-         * The title of the folder; 1-12 characters without line feeds.
+         * The name of the folder.
          */
-        public String title;
+        public ChatFolderName name;
         /**
          * The chosen or default icon for the chat folder.
          */
@@ -12814,15 +13305,15 @@ public class TdApi {
          * Contains basic information about a chat folder.
          *
          * @param id Unique chat folder identifier.
-         * @param title The title of the folder; 1-12 characters without line feeds.
+         * @param name The name of the folder.
          * @param icon The chosen or default icon for the chat folder.
          * @param colorId The identifier of the chosen color for the chat folder icon; from -1 to 6. If -1, then color is disabled.
          * @param isShareable True, if at least one link has been created for the folder.
          * @param hasMyInviteLinks True, if the chat folder has invite links created by the current user.
          */
-        public ChatFolderInfo(int id, String title, ChatFolderIcon icon, int colorId, boolean isShareable, boolean hasMyInviteLinks) {
+        public ChatFolderInfo(int id, ChatFolderName name, ChatFolderIcon icon, int colorId, boolean isShareable, boolean hasMyInviteLinks) {
             this.id = id;
-            this.title = title;
+            this.name = name;
             this.icon = icon;
             this.colorId = colorId;
             this.isShareable = isShareable;
@@ -12832,7 +13323,7 @@ public class TdApi {
         /**
          * Identifier uniquely determining type of the object.
          */
-        public static final int CONSTRUCTOR = 190948485;
+        public static final int CONSTRUCTOR = 815535117;
 
         /**
          * @return this.CONSTRUCTOR
@@ -12971,6 +13462,50 @@ public class TdApi {
          * Identifier uniquely determining type of the object.
          */
         public static final int CONSTRUCTOR = 1853351525;
+
+        /**
+         * @return this.CONSTRUCTOR
+         */
+        @Override
+        public int getConstructor() {
+            return CONSTRUCTOR;
+        }
+    }
+
+    /**
+     * Describes name of a chat folder.
+     */
+    public static class ChatFolderName extends Object {
+        /**
+         * The text of the chat folder name; 1-12 characters without line feeds. May contain only CustomEmoji entities.
+         */
+        public FormattedText text;
+        /**
+         * True, if custom emoji in the name must be animated.
+         */
+        public boolean animateCustomEmoji;
+
+        /**
+         * Describes name of a chat folder.
+         */
+        public ChatFolderName() {
+        }
+
+        /**
+         * Describes name of a chat folder.
+         *
+         * @param text The text of the chat folder name; 1-12 characters without line feeds. May contain only CustomEmoji entities.
+         * @param animateCustomEmoji True, if custom emoji in the name must be animated.
+         */
+        public ChatFolderName(FormattedText text, boolean animateCustomEmoji) {
+            this.text = text;
+            this.animateCustomEmoji = animateCustomEmoji;
+        }
+
+        /**
+         * Identifier uniquely determining type of the object.
+         */
+        public static final int CONSTRUCTOR = -330482274;
 
         /**
          * @return this.CONSTRUCTOR
@@ -13238,17 +13773,9 @@ public class TdApi {
          */
         public boolean isPublic;
         /**
-         * True, if the chat is verified.
+         * Information about verification status of the chat; may be null if none.
          */
-        public boolean isVerified;
-        /**
-         * True, if many users reported this chat as a scam.
-         */
-        public boolean isScam;
-        /**
-         * True, if many users reported this chat as a fake account.
-         */
-        public boolean isFake;
+        @Nullable public VerificationStatus verificationStatus;
 
         /**
          * Contains information about a chat invite link.
@@ -13271,11 +13798,9 @@ public class TdApi {
          * @param subscriptionInfo Information about subscription plan that must be paid by the user to use the link; may be null if the link doesn't require subscription.
          * @param createsJoinRequest True, if the link only creates join request.
          * @param isPublic True, if the chat is a public supergroup or channel, i.e. it has a username or it is a location-based supergroup.
-         * @param isVerified True, if the chat is verified.
-         * @param isScam True, if many users reported this chat as a scam.
-         * @param isFake True, if many users reported this chat as a fake account.
+         * @param verificationStatus Information about verification status of the chat; may be null if none.
          */
-        public ChatInviteLinkInfo(long chatId, int accessibleFor, InviteLinkChatType type, String title, ChatPhotoInfo photo, int accentColorId, String description, int memberCount, long[] memberUserIds, ChatInviteLinkSubscriptionInfo subscriptionInfo, boolean createsJoinRequest, boolean isPublic, boolean isVerified, boolean isScam, boolean isFake) {
+        public ChatInviteLinkInfo(long chatId, int accessibleFor, InviteLinkChatType type, String title, ChatPhotoInfo photo, int accentColorId, String description, int memberCount, long[] memberUserIds, ChatInviteLinkSubscriptionInfo subscriptionInfo, boolean createsJoinRequest, boolean isPublic, VerificationStatus verificationStatus) {
             this.chatId = chatId;
             this.accessibleFor = accessibleFor;
             this.type = type;
@@ -13288,15 +13813,13 @@ public class TdApi {
             this.subscriptionInfo = subscriptionInfo;
             this.createsJoinRequest = createsJoinRequest;
             this.isPublic = isPublic;
-            this.isVerified = isVerified;
-            this.isScam = isScam;
-            this.isFake = isFake;
+            this.verificationStatus = verificationStatus;
         }
 
         /**
          * Identifier uniquely determining type of the object.
          */
-        public static final int CONSTRUCTOR = 2052328938;
+        public static final int CONSTRUCTOR = -1145310535;
 
         /**
          * @return this.CONSTRUCTOR
@@ -16328,194 +16851,6 @@ public class TdApi {
 
     /**
      * This class is an abstract base class.
-     * Describes purpose of a transaction with a supergroup or a channel.
-     */
-    public abstract static class ChatTransactionPurpose extends Object {
-        /**
-         * Describes possible values returned by getConstructor().
-         */
-        @Retention(RetentionPolicy.SOURCE)
-        @IntDef({
-            ChatTransactionPurposePaidMedia.CONSTRUCTOR,
-            ChatTransactionPurposeJoin.CONSTRUCTOR,
-            ChatTransactionPurposeReaction.CONSTRUCTOR,
-            ChatTransactionPurposeGiveaway.CONSTRUCTOR
-        })
-        public @interface Constructors {}
-
-        /**
-         * @return identifier uniquely determining type of the object.
-         */
-        @Constructors
-        @Override
-        public abstract int getConstructor();
-        /**
-         * Default class constructor.
-         */
-        public ChatTransactionPurpose() {
-        }
-    }
-
-    /**
-     * Paid media were bought.
-     */
-    public static class ChatTransactionPurposePaidMedia extends ChatTransactionPurpose {
-        /**
-         * Identifier of the corresponding message with paid media; can be 0 or an identifier of a deleted message.
-         */
-        public long messageId;
-        /**
-         * The bought media if the transaction wasn't refunded.
-         */
-        public PaidMedia[] media;
-
-        /**
-         * Paid media were bought.
-         */
-        public ChatTransactionPurposePaidMedia() {
-        }
-
-        /**
-         * Paid media were bought.
-         *
-         * @param messageId Identifier of the corresponding message with paid media; can be 0 or an identifier of a deleted message.
-         * @param media The bought media if the transaction wasn't refunded.
-         */
-        public ChatTransactionPurposePaidMedia(long messageId, PaidMedia[] media) {
-            this.messageId = messageId;
-            this.media = media;
-        }
-
-        /**
-         * Identifier uniquely determining type of the object.
-         */
-        public static final int CONSTRUCTOR = 54133151;
-
-        /**
-         * @return this.CONSTRUCTOR
-         */
-        @Override
-        public int getConstructor() {
-            return CONSTRUCTOR;
-        }
-    }
-
-    /**
-     * User joined the channel and subscribed to regular payments in Telegram Stars.
-     */
-    public static class ChatTransactionPurposeJoin extends ChatTransactionPurpose {
-        /**
-         * The number of seconds between consecutive Telegram Star debiting.
-         */
-        public int period;
-
-        /**
-         * User joined the channel and subscribed to regular payments in Telegram Stars.
-         */
-        public ChatTransactionPurposeJoin() {
-        }
-
-        /**
-         * User joined the channel and subscribed to regular payments in Telegram Stars.
-         *
-         * @param period The number of seconds between consecutive Telegram Star debiting.
-         */
-        public ChatTransactionPurposeJoin(int period) {
-            this.period = period;
-        }
-
-        /**
-         * Identifier uniquely determining type of the object.
-         */
-        public static final int CONSTRUCTOR = 1529950842;
-
-        /**
-         * @return this.CONSTRUCTOR
-         */
-        @Override
-        public int getConstructor() {
-            return CONSTRUCTOR;
-        }
-    }
-
-    /**
-     * User paid for a reaction.
-     */
-    public static class ChatTransactionPurposeReaction extends ChatTransactionPurpose {
-        /**
-         * Identifier of the reacted message; can be 0 or an identifier of a deleted message.
-         */
-        public long messageId;
-
-        /**
-         * User paid for a reaction.
-         */
-        public ChatTransactionPurposeReaction() {
-        }
-
-        /**
-         * User paid for a reaction.
-         *
-         * @param messageId Identifier of the reacted message; can be 0 or an identifier of a deleted message.
-         */
-        public ChatTransactionPurposeReaction(long messageId) {
-            this.messageId = messageId;
-        }
-
-        /**
-         * Identifier uniquely determining type of the object.
-         */
-        public static final int CONSTRUCTOR = 2053085320;
-
-        /**
-         * @return this.CONSTRUCTOR
-         */
-        @Override
-        public int getConstructor() {
-            return CONSTRUCTOR;
-        }
-    }
-
-    /**
-     * User received Telegram Stars from a giveaway.
-     */
-    public static class ChatTransactionPurposeGiveaway extends ChatTransactionPurpose {
-        /**
-         * Identifier of the message with giveaway; can be 0 or an identifier of a deleted message.
-         */
-        public long giveawayMessageId;
-
-        /**
-         * User received Telegram Stars from a giveaway.
-         */
-        public ChatTransactionPurposeGiveaway() {
-        }
-
-        /**
-         * User received Telegram Stars from a giveaway.
-         *
-         * @param giveawayMessageId Identifier of the message with giveaway; can be 0 or an identifier of a deleted message.
-         */
-        public ChatTransactionPurposeGiveaway(long giveawayMessageId) {
-            this.giveawayMessageId = giveawayMessageId;
-        }
-
-        /**
-         * Identifier uniquely determining type of the object.
-         */
-        public static final int CONSTRUCTOR = 944540543;
-
-        /**
-         * @return this.CONSTRUCTOR
-         */
-        @Override
-        public int getConstructor() {
-            return CONSTRUCTOR;
-        }
-    }
-
-    /**
-     * This class is an abstract base class.
      * Describes the type of chat.
      */
     public abstract static class ChatType extends Object {
@@ -17083,7 +17418,7 @@ public class TdApi {
     }
 
     /**
-     * Represents a closed vector path. The path begins at the end point of the last command.
+     * Represents a closed vector path. The path begins at the end point of the last command. The coordinate system origin is in the upper-left corner.
      */
     public static class ClosedVectorPath extends Object {
         /**
@@ -17092,13 +17427,13 @@ public class TdApi {
         public VectorPathCommand[] commands;
 
         /**
-         * Represents a closed vector path. The path begins at the end point of the last command.
+         * Represents a closed vector path. The path begins at the end point of the last command. The coordinate system origin is in the upper-left corner.
          */
         public ClosedVectorPath() {
         }
 
         /**
-         * Represents a closed vector path. The path begins at the end point of the last command.
+         * Represents a closed vector path. The path begins at the end point of the last command. The coordinate system origin is in the upper-left corner.
          *
          * @param commands List of vector path commands.
          */
@@ -17282,6 +17617,130 @@ public class TdApi {
          * Identifier uniquely determining type of the object.
          */
         public static final int CONSTRUCTOR = 1256251714;
+
+        /**
+         * @return this.CONSTRUCTOR
+         */
+        @Override
+        public int getConstructor() {
+            return CONSTRUCTOR;
+        }
+    }
+
+    /**
+     * Describes an affiliate program that was connected to an affiliate.
+     */
+    public static class ConnectedAffiliateProgram extends Object {
+        /**
+         * The link that can be used to refer users if the program is still active.
+         */
+        public String url;
+        /**
+         * User identifier of the bot created the program.
+         */
+        public long botUserId;
+        /**
+         * The parameters of the affiliate program.
+         */
+        public AffiliateProgramParameters parameters;
+        /**
+         * Point in time (Unix timestamp) when the affiliate program was connected.
+         */
+        public int connectionDate;
+        /**
+         * True, if the program was canceled by the bot, or disconnected by the chat owner and isn't available anymore.
+         */
+        public boolean isDisconnected;
+        /**
+         * The number of users that used the affiliate program.
+         */
+        public long userCount;
+        /**
+         * The number of Telegram Stars that were earned by the affiliate program.
+         */
+        public long revenueStarCount;
+
+        /**
+         * Describes an affiliate program that was connected to an affiliate.
+         */
+        public ConnectedAffiliateProgram() {
+        }
+
+        /**
+         * Describes an affiliate program that was connected to an affiliate.
+         *
+         * @param url The link that can be used to refer users if the program is still active.
+         * @param botUserId User identifier of the bot created the program.
+         * @param parameters The parameters of the affiliate program.
+         * @param connectionDate Point in time (Unix timestamp) when the affiliate program was connected.
+         * @param isDisconnected True, if the program was canceled by the bot, or disconnected by the chat owner and isn't available anymore.
+         * @param userCount The number of users that used the affiliate program.
+         * @param revenueStarCount The number of Telegram Stars that were earned by the affiliate program.
+         */
+        public ConnectedAffiliateProgram(String url, long botUserId, AffiliateProgramParameters parameters, int connectionDate, boolean isDisconnected, long userCount, long revenueStarCount) {
+            this.url = url;
+            this.botUserId = botUserId;
+            this.parameters = parameters;
+            this.connectionDate = connectionDate;
+            this.isDisconnected = isDisconnected;
+            this.userCount = userCount;
+            this.revenueStarCount = revenueStarCount;
+        }
+
+        /**
+         * Identifier uniquely determining type of the object.
+         */
+        public static final int CONSTRUCTOR = 1488942101;
+
+        /**
+         * @return this.CONSTRUCTOR
+         */
+        @Override
+        public int getConstructor() {
+            return CONSTRUCTOR;
+        }
+    }
+
+    /**
+     * Represents a list of affiliate programs that were connected to an affiliate.
+     */
+    public static class ConnectedAffiliatePrograms extends Object {
+        /**
+         * The total number of affiliate programs that were connected to the affiliate.
+         */
+        public int totalCount;
+        /**
+         * The list of connected affiliate programs.
+         */
+        public ConnectedAffiliateProgram[] programs;
+        /**
+         * The offset for the next request. If empty, then there are no more results.
+         */
+        public String nextOffset;
+
+        /**
+         * Represents a list of affiliate programs that were connected to an affiliate.
+         */
+        public ConnectedAffiliatePrograms() {
+        }
+
+        /**
+         * Represents a list of affiliate programs that were connected to an affiliate.
+         *
+         * @param totalCount The total number of affiliate programs that were connected to the affiliate.
+         * @param programs The list of connected affiliate programs.
+         * @param nextOffset The offset for the next request. If empty, then there are no more results.
+         */
+        public ConnectedAffiliatePrograms(int totalCount, ConnectedAffiliateProgram[] programs, String nextOffset) {
+            this.totalCount = totalCount;
+            this.programs = programs;
+            this.nextOffset = nextOffset;
+        }
+
+        /**
+         * Identifier uniquely determining type of the object.
+         */
+        public static final int CONSTRUCTOR = 1505880847;
 
         /**
          * @return this.CONSTRUCTOR
@@ -19731,39 +20190,39 @@ public class TdApi {
     }
 
     /**
-     * Describes a custom emoji to be shown instead of the Telegram Premium badge.
+     * Describes an emoji to be shown instead of the Telegram Premium badge.
      */
     public static class EmojiStatus extends Object {
         /**
-         * Identifier of the custom emoji in stickerFormatTgs format.
+         * Type of the emoji status.
          */
-        public long customEmojiId;
+        public EmojiStatusType type;
         /**
          * Point in time (Unix timestamp) when the status will expire; 0 if never.
          */
         public int expirationDate;
 
         /**
-         * Describes a custom emoji to be shown instead of the Telegram Premium badge.
+         * Describes an emoji to be shown instead of the Telegram Premium badge.
          */
         public EmojiStatus() {
         }
 
         /**
-         * Describes a custom emoji to be shown instead of the Telegram Premium badge.
+         * Describes an emoji to be shown instead of the Telegram Premium badge.
          *
-         * @param customEmojiId Identifier of the custom emoji in stickerFormatTgs format.
+         * @param type Type of the emoji status.
          * @param expirationDate Point in time (Unix timestamp) when the status will expire; 0 if never.
          */
-        public EmojiStatus(long customEmojiId, int expirationDate) {
-            this.customEmojiId = customEmojiId;
+        public EmojiStatus(EmojiStatusType type, int expirationDate) {
+            this.type = type;
             this.expirationDate = expirationDate;
         }
 
         /**
          * Identifier uniquely determining type of the object.
          */
-        public static final int CONSTRUCTOR = -606529994;
+        public static final int CONSTRUCTOR = 973424912;
 
         /**
          * @return this.CONSTRUCTOR
@@ -19777,7 +20236,7 @@ public class TdApi {
     /**
      * Contains a list of custom emoji identifiers for emoji statuses.
      */
-    public static class EmojiStatuses extends Object {
+    public static class EmojiStatusCustomEmojis extends Object {
         /**
          * The list of custom emoji identifiers.
          */
@@ -19786,7 +20245,7 @@ public class TdApi {
         /**
          * Contains a list of custom emoji identifiers for emoji statuses.
          */
-        public EmojiStatuses() {
+        public EmojiStatusCustomEmojis() {
         }
 
         /**
@@ -19794,14 +20253,186 @@ public class TdApi {
          *
          * @param customEmojiIds The list of custom emoji identifiers.
          */
-        public EmojiStatuses(long[] customEmojiIds) {
+        public EmojiStatusCustomEmojis(long[] customEmojiIds) {
             this.customEmojiIds = customEmojiIds;
         }
 
         /**
          * Identifier uniquely determining type of the object.
          */
-        public static final int CONSTRUCTOR = -377859594;
+        public static final int CONSTRUCTOR = 917123337;
+
+        /**
+         * @return this.CONSTRUCTOR
+         */
+        @Override
+        public int getConstructor() {
+            return CONSTRUCTOR;
+        }
+    }
+
+    /**
+     * This class is an abstract base class.
+     * Describes type of emoji status.
+     */
+    public abstract static class EmojiStatusType extends Object {
+        /**
+         * Describes possible values returned by getConstructor().
+         */
+        @Retention(RetentionPolicy.SOURCE)
+        @IntDef({
+            EmojiStatusTypeCustomEmoji.CONSTRUCTOR,
+            EmojiStatusTypeUpgradedGift.CONSTRUCTOR
+        })
+        public @interface Constructors {}
+
+        /**
+         * @return identifier uniquely determining type of the object.
+         */
+        @Constructors
+        @Override
+        public abstract int getConstructor();
+        /**
+         * Default class constructor.
+         */
+        public EmojiStatusType() {
+        }
+    }
+
+    /**
+     * A custom emoji set as emoji status.
+     */
+    public static class EmojiStatusTypeCustomEmoji extends EmojiStatusType {
+        /**
+         * Identifier of the custom emoji in stickerFormatTgs format.
+         */
+        public long customEmojiId;
+
+        /**
+         * A custom emoji set as emoji status.
+         */
+        public EmojiStatusTypeCustomEmoji() {
+        }
+
+        /**
+         * A custom emoji set as emoji status.
+         *
+         * @param customEmojiId Identifier of the custom emoji in stickerFormatTgs format.
+         */
+        public EmojiStatusTypeCustomEmoji(long customEmojiId) {
+            this.customEmojiId = customEmojiId;
+        }
+
+        /**
+         * Identifier uniquely determining type of the object.
+         */
+        public static final int CONSTRUCTOR = -1666780939;
+
+        /**
+         * @return this.CONSTRUCTOR
+         */
+        @Override
+        public int getConstructor() {
+            return CONSTRUCTOR;
+        }
+    }
+
+    /**
+     * An upgraded gift set as emoji status.
+     */
+    public static class EmojiStatusTypeUpgradedGift extends EmojiStatusType {
+        /**
+         * Identifier of the upgraded gift.
+         */
+        public long upgradedGiftId;
+        /**
+         * The title of the upgraded gift.
+         */
+        public String giftTitle;
+        /**
+         * Unique name of the upgraded gift that can be used with internalLinkTypeUpgradedGift.
+         */
+        public String giftName;
+        /**
+         * Custom emoji identifier of the model of the upgraded gift.
+         */
+        public long modelCustomEmojiId;
+        /**
+         * Custom emoji identifier of the symbol of the upgraded gift.
+         */
+        public long symbolCustomEmojiId;
+        /**
+         * Colors of the backdrop of the upgraded gift.
+         */
+        public UpgradedGiftBackdropColors backdropColors;
+
+        /**
+         * An upgraded gift set as emoji status.
+         */
+        public EmojiStatusTypeUpgradedGift() {
+        }
+
+        /**
+         * An upgraded gift set as emoji status.
+         *
+         * @param upgradedGiftId Identifier of the upgraded gift.
+         * @param giftTitle The title of the upgraded gift.
+         * @param giftName Unique name of the upgraded gift that can be used with internalLinkTypeUpgradedGift.
+         * @param modelCustomEmojiId Custom emoji identifier of the model of the upgraded gift.
+         * @param symbolCustomEmojiId Custom emoji identifier of the symbol of the upgraded gift.
+         * @param backdropColors Colors of the backdrop of the upgraded gift.
+         */
+        public EmojiStatusTypeUpgradedGift(long upgradedGiftId, String giftTitle, String giftName, long modelCustomEmojiId, long symbolCustomEmojiId, UpgradedGiftBackdropColors backdropColors) {
+            this.upgradedGiftId = upgradedGiftId;
+            this.giftTitle = giftTitle;
+            this.giftName = giftName;
+            this.modelCustomEmojiId = modelCustomEmojiId;
+            this.symbolCustomEmojiId = symbolCustomEmojiId;
+            this.backdropColors = backdropColors;
+        }
+
+        /**
+         * Identifier uniquely determining type of the object.
+         */
+        public static final int CONSTRUCTOR = -837921804;
+
+        /**
+         * @return this.CONSTRUCTOR
+         */
+        @Override
+        public int getConstructor() {
+            return CONSTRUCTOR;
+        }
+    }
+
+    /**
+     * Contains a list of emoji statuses.
+     */
+    public static class EmojiStatuses extends Object {
+        /**
+         * The list of emoji statuses identifiers.
+         */
+        public EmojiStatus[] emojiStatuses;
+
+        /**
+         * Contains a list of emoji statuses.
+         */
+        public EmojiStatuses() {
+        }
+
+        /**
+         * Contains a list of emoji statuses.
+         *
+         * @param emojiStatuses The list of emoji statuses identifiers.
+         */
+        public EmojiStatuses(EmojiStatus[] emojiStatuses) {
+            this.emojiStatuses = emojiStatuses;
+        }
+
+        /**
+         * Identifier uniquely determining type of the object.
+         */
+        public static final int CONSTRUCTOR = 1186104146;
 
         /**
          * @return this.CONSTRUCTOR
@@ -20383,6 +21014,10 @@ public class TdApi {
             FileTypeSecret.CONSTRUCTOR,
             FileTypeSecretThumbnail.CONSTRUCTOR,
             FileTypeSecure.CONSTRUCTOR,
+            FileTypeSelfDestructingPhoto.CONSTRUCTOR,
+            FileTypeSelfDestructingVideo.CONSTRUCTOR,
+            FileTypeSelfDestructingVideoNote.CONSTRUCTOR,
+            FileTypeSelfDestructingVoiceNote.CONSTRUCTOR,
             FileTypeSticker.CONSTRUCTOR,
             FileTypeThumbnail.CONSTRUCTOR,
             FileTypeUnknown.CONSTRUCTOR,
@@ -20672,6 +21307,106 @@ public class TdApi {
          * Identifier uniquely determining type of the object.
          */
         public static final int CONSTRUCTOR = -1419133146;
+
+        /**
+         * @return this.CONSTRUCTOR
+         */
+        @Override
+        public int getConstructor() {
+            return CONSTRUCTOR;
+        }
+    }
+
+    /**
+     * The file is a self-destructing photo in a private chat.
+     */
+    public static class FileTypeSelfDestructingPhoto extends FileType {
+
+        /**
+         * The file is a self-destructing photo in a private chat.
+         */
+        public FileTypeSelfDestructingPhoto() {
+        }
+
+        /**
+         * Identifier uniquely determining type of the object.
+         */
+        public static final int CONSTRUCTOR = 2077176475;
+
+        /**
+         * @return this.CONSTRUCTOR
+         */
+        @Override
+        public int getConstructor() {
+            return CONSTRUCTOR;
+        }
+    }
+
+    /**
+     * The file is a self-destructing video in a private chat.
+     */
+    public static class FileTypeSelfDestructingVideo extends FileType {
+
+        /**
+         * The file is a self-destructing video in a private chat.
+         */
+        public FileTypeSelfDestructingVideo() {
+        }
+
+        /**
+         * Identifier uniquely determining type of the object.
+         */
+        public static final int CONSTRUCTOR = -1223900123;
+
+        /**
+         * @return this.CONSTRUCTOR
+         */
+        @Override
+        public int getConstructor() {
+            return CONSTRUCTOR;
+        }
+    }
+
+    /**
+     * The file is a self-destructing video note in a private chat.
+     */
+    public static class FileTypeSelfDestructingVideoNote extends FileType {
+
+        /**
+         * The file is a self-destructing video note in a private chat.
+         */
+        public FileTypeSelfDestructingVideoNote() {
+        }
+
+        /**
+         * Identifier uniquely determining type of the object.
+         */
+        public static final int CONSTRUCTOR = 1495274177;
+
+        /**
+         * @return this.CONSTRUCTOR
+         */
+        @Override
+        public int getConstructor() {
+            return CONSTRUCTOR;
+        }
+    }
+
+    /**
+     * The file is a self-destructing voice note in a private chat.
+     */
+    public static class FileTypeSelfDestructingVoiceNote extends FileType {
+
+        /**
+         * The file is a self-destructing voice note in a private chat.
+         */
+        public FileTypeSelfDestructingVoiceNote() {
+        }
+
+        /**
+         * Identifier uniquely determining type of the object.
+         */
+        public static final int CONSTRUCTOR = 1691409181;
 
         /**
          * @return this.CONSTRUCTOR
@@ -21486,6 +22221,100 @@ public class TdApi {
     }
 
     /**
+     * Describes a found affiliate program.
+     */
+    public static class FoundAffiliateProgram extends Object {
+        /**
+         * User identifier of the bot created the program.
+         */
+        public long botUserId;
+        /**
+         * Information about the affiliate program.
+         */
+        public AffiliateProgramInfo info;
+
+        /**
+         * Describes a found affiliate program.
+         */
+        public FoundAffiliateProgram() {
+        }
+
+        /**
+         * Describes a found affiliate program.
+         *
+         * @param botUserId User identifier of the bot created the program.
+         * @param info Information about the affiliate program.
+         */
+        public FoundAffiliateProgram(long botUserId, AffiliateProgramInfo info) {
+            this.botUserId = botUserId;
+            this.info = info;
+        }
+
+        /**
+         * Identifier uniquely determining type of the object.
+         */
+        public static final int CONSTRUCTOR = -966565242;
+
+        /**
+         * @return this.CONSTRUCTOR
+         */
+        @Override
+        public int getConstructor() {
+            return CONSTRUCTOR;
+        }
+    }
+
+    /**
+     * Represents a list of found affiliate programs.
+     */
+    public static class FoundAffiliatePrograms extends Object {
+        /**
+         * The total number of found affiliate programs.
+         */
+        public int totalCount;
+        /**
+         * The list of affiliate programs.
+         */
+        public FoundAffiliateProgram[] programs;
+        /**
+         * The offset for the next request. If empty, then there are no more results.
+         */
+        public String nextOffset;
+
+        /**
+         * Represents a list of found affiliate programs.
+         */
+        public FoundAffiliatePrograms() {
+        }
+
+        /**
+         * Represents a list of found affiliate programs.
+         *
+         * @param totalCount The total number of found affiliate programs.
+         * @param programs The list of affiliate programs.
+         * @param nextOffset The offset for the next request. If empty, then there are no more results.
+         */
+        public FoundAffiliatePrograms(int totalCount, FoundAffiliateProgram[] programs, String nextOffset) {
+            this.totalCount = totalCount;
+            this.programs = programs;
+            this.nextOffset = nextOffset;
+        }
+
+        /**
+         * Identifier uniquely determining type of the object.
+         */
+        public static final int CONSTRUCTOR = 186317057;
+
+        /**
+         * @return this.CONSTRUCTOR
+         */
+        @Override
+        public int getConstructor() {
+            return CONSTRUCTOR;
+        }
+    }
+
+    /**
      * Contains a list of boosts applied to a chat.
      */
     public static class FoundChatBoosts extends Object {
@@ -22074,7 +22903,7 @@ public class TdApi {
     }
 
     /**
-     * Describes a gift that can be sent to another user.
+     * Describes a gift that can be sent to another user or channel chat.
      */
     public static class Gift extends Object {
         /**
@@ -22090,47 +22919,71 @@ public class TdApi {
          */
         public long starCount;
         /**
-         * Number of Telegram Stars that can be claimed by the receiver instead of the gift by default. If the gift was paid with just bought Telegram Stars, then full value can be claimed.
+         * Number of Telegram Stars that can be claimed by the receiver instead of the regular gift by default. If the gift was paid with just bought Telegram Stars, then full value can be claimed.
          */
         public long defaultSellStarCount;
         /**
-         * Number of remaining times the gift can be purchased by all users; 0 if not limited or the gift was sold out.
+         * Number of Telegram Stars that must be paid to upgrade the gift; 0 if upgrade isn't possible.
+         */
+        public long upgradeStarCount;
+        /**
+         * True, if the gift is a birthday gift.
+         */
+        public boolean isForBirthday;
+        /**
+         * Number of remaining times the gift can be purchased; 0 if not limited or the gift was sold out.
          */
         public int remainingCount;
         /**
-         * Number of total times the gift can be purchased by all users; 0 if not limited.
+         * Number of total times the gift can be purchased; 0 if not limited.
          */
         public int totalCount;
+        /**
+         * Point in time (Unix timestamp) when the gift was send for the first time; for sold out gifts only.
+         */
+        public int firstSendDate;
+        /**
+         * Point in time (Unix timestamp) when the gift was send for the last time; for sold out gifts only.
+         */
+        public int lastSendDate;
 
         /**
-         * Describes a gift that can be sent to another user.
+         * Describes a gift that can be sent to another user or channel chat.
          */
         public Gift() {
         }
 
         /**
-         * Describes a gift that can be sent to another user.
+         * Describes a gift that can be sent to another user or channel chat.
          *
          * @param id Unique identifier of the gift.
          * @param sticker The sticker representing the gift.
          * @param starCount Number of Telegram Stars that must be paid for the gift.
-         * @param defaultSellStarCount Number of Telegram Stars that can be claimed by the receiver instead of the gift by default. If the gift was paid with just bought Telegram Stars, then full value can be claimed.
-         * @param remainingCount Number of remaining times the gift can be purchased by all users; 0 if not limited or the gift was sold out.
-         * @param totalCount Number of total times the gift can be purchased by all users; 0 if not limited.
+         * @param defaultSellStarCount Number of Telegram Stars that can be claimed by the receiver instead of the regular gift by default. If the gift was paid with just bought Telegram Stars, then full value can be claimed.
+         * @param upgradeStarCount Number of Telegram Stars that must be paid to upgrade the gift; 0 if upgrade isn't possible.
+         * @param isForBirthday True, if the gift is a birthday gift.
+         * @param remainingCount Number of remaining times the gift can be purchased; 0 if not limited or the gift was sold out.
+         * @param totalCount Number of total times the gift can be purchased; 0 if not limited.
+         * @param firstSendDate Point in time (Unix timestamp) when the gift was send for the first time; for sold out gifts only.
+         * @param lastSendDate Point in time (Unix timestamp) when the gift was send for the last time; for sold out gifts only.
          */
-        public Gift(long id, Sticker sticker, long starCount, long defaultSellStarCount, int remainingCount, int totalCount) {
+        public Gift(long id, Sticker sticker, long starCount, long defaultSellStarCount, long upgradeStarCount, boolean isForBirthday, int remainingCount, int totalCount, int firstSendDate, int lastSendDate) {
             this.id = id;
             this.sticker = sticker;
             this.starCount = starCount;
             this.defaultSellStarCount = defaultSellStarCount;
+            this.upgradeStarCount = upgradeStarCount;
+            this.isForBirthday = isForBirthday;
             this.remainingCount = remainingCount;
             this.totalCount = totalCount;
+            this.firstSendDate = firstSendDate;
+            this.lastSendDate = lastSendDate;
         }
 
         /**
          * Identifier uniquely determining type of the object.
          */
-        public static final int CONSTRUCTOR = 717966710;
+        public static final int CONSTRUCTOR = 2096710701;
 
         /**
          * @return this.CONSTRUCTOR
@@ -22142,7 +22995,57 @@ public class TdApi {
     }
 
     /**
-     * Contains a list of gifts that can be sent to another user.
+     * Contains examples of possible upgraded gifts for the given regular gift.
+     */
+    public static class GiftUpgradePreview extends Object {
+        /**
+         * Examples of possible models that can be chosen for the gift after upgrade.
+         */
+        public UpgradedGiftModel[] models;
+        /**
+         * Examples of possible symbols that can be chosen for the gift after upgrade.
+         */
+        public UpgradedGiftSymbol[] symbols;
+        /**
+         * Examples of possible backdrops that can be chosen for the gift after upgrade.
+         */
+        public UpgradedGiftBackdrop[] backdrops;
+
+        /**
+         * Contains examples of possible upgraded gifts for the given regular gift.
+         */
+        public GiftUpgradePreview() {
+        }
+
+        /**
+         * Contains examples of possible upgraded gifts for the given regular gift.
+         *
+         * @param models Examples of possible models that can be chosen for the gift after upgrade.
+         * @param symbols Examples of possible symbols that can be chosen for the gift after upgrade.
+         * @param backdrops Examples of possible backdrops that can be chosen for the gift after upgrade.
+         */
+        public GiftUpgradePreview(UpgradedGiftModel[] models, UpgradedGiftSymbol[] symbols, UpgradedGiftBackdrop[] backdrops) {
+            this.models = models;
+            this.symbols = symbols;
+            this.backdrops = backdrops;
+        }
+
+        /**
+         * Identifier uniquely determining type of the object.
+         */
+        public static final int CONSTRUCTOR = 729908218;
+
+        /**
+         * @return this.CONSTRUCTOR
+         */
+        @Override
+        public int getConstructor() {
+            return CONSTRUCTOR;
+        }
+    }
+
+    /**
+     * Contains a list of gifts that can be sent to another user or channel chat.
      */
     public static class Gifts extends Object {
         /**
@@ -22151,13 +23054,13 @@ public class TdApi {
         public Gift[] gifts;
 
         /**
-         * Contains a list of gifts that can be sent to another user.
+         * Contains a list of gifts that can be sent to another user or channel chat.
          */
         public Gifts() {
         }
 
         /**
-         * Contains a list of gifts that can be sent to another user.
+         * Contains a list of gifts that can be sent to another user or channel chat.
          *
          * @param gifts The list of gifts.
          */
@@ -24067,10 +24970,6 @@ public class TdApi {
          */
         public String url;
         /**
-         * True, if the URL must be not shown.
-         */
-        public boolean hideUrl;
-        /**
          * Title of the result.
          */
         public String title;
@@ -24094,15 +24993,13 @@ public class TdApi {
          *
          * @param id Unique identifier of the query result.
          * @param url URL of the result, if it exists.
-         * @param hideUrl True, if the URL must be not shown.
          * @param title Title of the result.
          * @param description A short description of the result.
          * @param thumbnail Result thumbnail in JPEG format; may be null.
          */
-        public InlineQueryResultArticle(String id, String url, boolean hideUrl, String title, String description, Thumbnail thumbnail) {
+        public InlineQueryResultArticle(String id, String url, String title, String description, Thumbnail thumbnail) {
             this.id = id;
             this.url = url;
-            this.hideUrl = hideUrl;
             this.title = title;
             this.description = description;
             this.thumbnail = thumbnail;
@@ -24111,7 +25008,7 @@ public class TdApi {
         /**
          * Identifier uniquely determining type of the object.
          */
-        public static final int CONSTRUCTOR = 206340825;
+        public static final int CONSTRUCTOR = 269930522;
 
         /**
          * @return this.CONSTRUCTOR
@@ -25906,10 +26803,6 @@ public class TdApi {
          */
         public String url;
         /**
-         * True, if the URL must be not shown.
-         */
-        public boolean hideUrl;
-        /**
          * Title of the result.
          */
         public String title;
@@ -25949,7 +26842,6 @@ public class TdApi {
          *
          * @param id Unique identifier of the query result.
          * @param url URL of the result, if it exists.
-         * @param hideUrl True, if the URL must be not shown.
          * @param title Title of the result.
          * @param description A short description of the result.
          * @param thumbnailUrl URL of the result thumbnail, if it exists.
@@ -25958,10 +26850,9 @@ public class TdApi {
          * @param replyMarkup The message reply markup; pass null if none. Must be of type replyMarkupInlineKeyboard or null.
          * @param inputMessageContent The content of the message to be sent. Must be one of the following types: inputMessageText, inputMessageInvoice, inputMessageLocation, inputMessageVenue or inputMessageContact.
          */
-        public InputInlineQueryResultArticle(String id, String url, boolean hideUrl, String title, String description, String thumbnailUrl, int thumbnailWidth, int thumbnailHeight, ReplyMarkup replyMarkup, InputMessageContent inputMessageContent) {
+        public InputInlineQueryResultArticle(String id, String url, String title, String description, String thumbnailUrl, int thumbnailWidth, int thumbnailHeight, ReplyMarkup replyMarkup, InputMessageContent inputMessageContent) {
             this.id = id;
             this.url = url;
-            this.hideUrl = hideUrl;
             this.title = title;
             this.description = description;
             this.thumbnailUrl = thumbnailUrl;
@@ -25974,7 +26865,7 @@ public class TdApi {
         /**
          * Identifier uniquely determining type of the object.
          */
-        public static final int CONSTRUCTOR = 1973670156;
+        public static final int CONSTRUCTOR = 1983218620;
 
         /**
          * @return this.CONSTRUCTOR
@@ -27430,13 +28321,21 @@ public class TdApi {
      */
     public static class InputMessageVideo extends InputMessageContent {
         /**
-         * Video to be sent. The video is expected to be reencoded to MPEG4 format with H.264 codec by the sender.
+         * Video to be sent. The video is expected to be re-encoded to MPEG4 format with H.264 codec by the sender.
          */
         public InputFile video;
         /**
          * Video thumbnail; pass null to skip thumbnail uploading.
          */
         public InputThumbnail thumbnail;
+        /**
+         * Cover of the video; pass null to skip cover uploading; not supported in secret chats and for self-destructing messages.
+         */
+        public InputFile cover;
+        /**
+         * Timestamp from which the video playing must start, in seconds.
+         */
+        public int startTimestamp;
         /**
          * File identifiers of the stickers added to the video, if applicable.
          */
@@ -27483,8 +28382,10 @@ public class TdApi {
         /**
          * A video message.
          *
-         * @param video Video to be sent. The video is expected to be reencoded to MPEG4 format with H.264 codec by the sender.
+         * @param video Video to be sent. The video is expected to be re-encoded to MPEG4 format with H.264 codec by the sender.
          * @param thumbnail Video thumbnail; pass null to skip thumbnail uploading.
+         * @param cover Cover of the video; pass null to skip cover uploading; not supported in secret chats and for self-destructing messages.
+         * @param startTimestamp Timestamp from which the video playing must start, in seconds.
          * @param addedStickerFileIds File identifiers of the stickers added to the video, if applicable.
          * @param duration Duration of the video, in seconds.
          * @param width Video width.
@@ -27495,9 +28396,11 @@ public class TdApi {
          * @param selfDestructType Video self-destruct type; pass null if none; private chats only.
          * @param hasSpoiler True, if the video preview must be covered by a spoiler animation; not supported in secret chats.
          */
-        public InputMessageVideo(InputFile video, InputThumbnail thumbnail, int[] addedStickerFileIds, int duration, int width, int height, boolean supportsStreaming, FormattedText caption, boolean showCaptionAboveMedia, MessageSelfDestructType selfDestructType, boolean hasSpoiler) {
+        public InputMessageVideo(InputFile video, InputThumbnail thumbnail, InputFile cover, int startTimestamp, int[] addedStickerFileIds, int duration, int width, int height, boolean supportsStreaming, FormattedText caption, boolean showCaptionAboveMedia, MessageSelfDestructType selfDestructType, boolean hasSpoiler) {
             this.video = video;
             this.thumbnail = thumbnail;
+            this.cover = cover;
+            this.startTimestamp = startTimestamp;
             this.addedStickerFileIds = addedStickerFileIds;
             this.duration = duration;
             this.width = width;
@@ -27512,7 +28415,7 @@ public class TdApi {
         /**
          * Identifier uniquely determining type of the object.
          */
-        public static final int CONSTRUCTOR = 615537686;
+        public static final int CONSTRUCTOR = -605958271;
 
         /**
          * @return this.CONSTRUCTOR
@@ -27528,7 +28431,7 @@ public class TdApi {
      */
     public static class InputMessageVideoNote extends InputMessageContent {
         /**
-         * Video note to be sent.
+         * Video note to be sent. The video is expected to be encoded to MPEG4 format with H.264 codec and have no data outside of the visible circle.
          */
         public InputFile videoNote;
         /**
@@ -27557,7 +28460,7 @@ public class TdApi {
         /**
          * A video note message.
          *
-         * @param videoNote Video note to be sent.
+         * @param videoNote Video note to be sent. The video is expected to be encoded to MPEG4 format with H.264 codec and have no data outside of the visible circle.
          * @param thumbnail Video thumbnail; may be null if empty; pass null to skip thumbnail uploading.
          * @param duration Duration of the video, in seconds; 0-60.
          * @param length Video width and height; must be positive and not greater than 640.
@@ -28108,9 +29011,17 @@ public class TdApi {
          */
         public long messageId;
         /**
-         * True, if a game message is being shared from a launched game; applies only to game messages.
+         * Pass true if a game message is being shared from a launched game; applies only to game messages.
          */
         public boolean inGameShare;
+        /**
+         * Pass true to replace video start timestamp in the forwarded message.
+         */
+        public boolean replaceVideoStartTimestamp;
+        /**
+         * The new video start timestamp; ignored if replaceVideoStartTimestamp == false.
+         */
+        public int newVideoStartTimestamp;
         /**
          * Options to be used to copy content of the message without reference to the original sender; pass null to forward the message as usual.
          */
@@ -28127,20 +29038,24 @@ public class TdApi {
          *
          * @param fromChatId Identifier for the chat this forwarded message came from.
          * @param messageId Identifier of the message to forward. A message can be forwarded only if messageProperties.canBeForwarded.
-         * @param inGameShare True, if a game message is being shared from a launched game; applies only to game messages.
+         * @param inGameShare Pass true if a game message is being shared from a launched game; applies only to game messages.
+         * @param replaceVideoStartTimestamp Pass true to replace video start timestamp in the forwarded message.
+         * @param newVideoStartTimestamp The new video start timestamp; ignored if replaceVideoStartTimestamp == false.
          * @param copyOptions Options to be used to copy content of the message without reference to the original sender; pass null to forward the message as usual.
          */
-        public InputMessageForwarded(long fromChatId, long messageId, boolean inGameShare, MessageCopyOptions copyOptions) {
+        public InputMessageForwarded(long fromChatId, long messageId, boolean inGameShare, boolean replaceVideoStartTimestamp, int newVideoStartTimestamp, MessageCopyOptions copyOptions) {
             this.fromChatId = fromChatId;
             this.messageId = messageId;
             this.inGameShare = inGameShare;
+            this.replaceVideoStartTimestamp = replaceVideoStartTimestamp;
+            this.newVideoStartTimestamp = newVideoStartTimestamp;
             this.copyOptions = copyOptions;
         }
 
         /**
          * Identifier uniquely determining type of the object.
          */
-        public static final int CONSTRUCTOR = 1696232440;
+        public static final int CONSTRUCTOR = -1076506316;
 
         /**
          * @return this.CONSTRUCTOR
@@ -28444,6 +29359,14 @@ public class TdApi {
      */
     public static class InputPaidMediaTypeVideo extends InputPaidMediaType {
         /**
+         * Cover of the video; pass null to skip cover uploading.
+         */
+        public InputFile cover;
+        /**
+         * Timestamp from which the video playing must start, in seconds.
+         */
+        public int startTimestamp;
+        /**
          * Duration of the video, in seconds.
          */
         public int duration;
@@ -28461,10 +29384,14 @@ public class TdApi {
         /**
          * The media is a video.
          *
+         * @param cover Cover of the video; pass null to skip cover uploading.
+         * @param startTimestamp Timestamp from which the video playing must start, in seconds.
          * @param duration Duration of the video, in seconds.
          * @param supportsStreaming True, if the video is expected to be streamed.
          */
-        public InputPaidMediaTypeVideo(int duration, boolean supportsStreaming) {
+        public InputPaidMediaTypeVideo(InputFile cover, int startTimestamp, int duration, boolean supportsStreaming) {
+            this.cover = cover;
+            this.startTimestamp = startTimestamp;
             this.duration = duration;
             this.supportsStreaming = supportsStreaming;
         }
@@ -28472,7 +29399,7 @@ public class TdApi {
         /**
          * Identifier uniquely determining type of the object.
          */
-        public static final int CONSTRUCTOR = -1336673796;
+        public static final int CONSTRUCTOR = 1793741625;
 
         /**
          * @return this.CONSTRUCTOR
@@ -29615,7 +30542,8 @@ public class TdApi {
             InputStoryAreaTypeSuggestedReaction.CONSTRUCTOR,
             InputStoryAreaTypeMessage.CONSTRUCTOR,
             InputStoryAreaTypeLink.CONSTRUCTOR,
-            InputStoryAreaTypeWeather.CONSTRUCTOR
+            InputStoryAreaTypeWeather.CONSTRUCTOR,
+            InputStoryAreaTypeUpgradedGift.CONSTRUCTOR
         })
         public @interface Constructors {}
 
@@ -29947,11 +30875,49 @@ public class TdApi {
     }
 
     /**
+     * An area with an upgraded gift.
+     */
+    public static class InputStoryAreaTypeUpgradedGift extends InputStoryAreaType {
+        /**
+         * Unique name of the upgraded gift.
+         */
+        public String giftName;
+
+        /**
+         * An area with an upgraded gift.
+         */
+        public InputStoryAreaTypeUpgradedGift() {
+        }
+
+        /**
+         * An area with an upgraded gift.
+         *
+         * @param giftName Unique name of the upgraded gift.
+         */
+        public InputStoryAreaTypeUpgradedGift(String giftName) {
+            this.giftName = giftName;
+        }
+
+        /**
+         * Identifier uniquely determining type of the object.
+         */
+        public static final int CONSTRUCTOR = 793059694;
+
+        /**
+         * @return this.CONSTRUCTOR
+         */
+        @Override
+        public int getConstructor() {
+            return CONSTRUCTOR;
+        }
+    }
+
+    /**
      * Contains a list of story areas to be added.
      */
     public static class InputStoryAreas extends Object {
         /**
-         * List of input story areas. Currently, a story can have up to 10 inputStoryAreaTypeLocation, inputStoryAreaTypeFoundVenue, and inputStoryAreaTypePreviousVenue areas, up to getOption(&quot;story_suggested_reaction_area_count_max&quot;) inputStoryAreaTypeSuggestedReaction areas, up to 1 inputStoryAreaTypeMessage area, up to getOption(&quot;story_link_area_count_max&quot;) inputStoryAreaTypeLink areas if the current user is a Telegram Premium user, and up to 3 inputStoryAreaTypeWeather areas.
+         * List of input story areas. Currently, a story can have up to 10 inputStoryAreaTypeLocation, inputStoryAreaTypeFoundVenue, and inputStoryAreaTypePreviousVenue areas, up to getOption(&quot;story_suggested_reaction_area_count_max&quot;) inputStoryAreaTypeSuggestedReaction areas, up to 1 inputStoryAreaTypeMessage area, up to getOption(&quot;story_link_area_count_max&quot;) inputStoryAreaTypeLink areas if the current user is a Telegram Premium user, up to 3 inputStoryAreaTypeWeather areas, and up to 1 inputStoryAreaTypeUpgradedGift area.
          */
         public InputStoryArea[] areas;
 
@@ -29964,7 +30930,7 @@ public class TdApi {
         /**
          * Contains a list of story areas to be added.
          *
-         * @param areas List of input story areas. Currently, a story can have up to 10 inputStoryAreaTypeLocation, inputStoryAreaTypeFoundVenue, and inputStoryAreaTypePreviousVenue areas, up to getOption(&quot;story_suggested_reaction_area_count_max&quot;) inputStoryAreaTypeSuggestedReaction areas, up to 1 inputStoryAreaTypeMessage area, up to getOption(&quot;story_link_area_count_max&quot;) inputStoryAreaTypeLink areas if the current user is a Telegram Premium user, and up to 3 inputStoryAreaTypeWeather areas.
+         * @param areas List of input story areas. Currently, a story can have up to 10 inputStoryAreaTypeLocation, inputStoryAreaTypeFoundVenue, and inputStoryAreaTypePreviousVenue areas, up to getOption(&quot;story_suggested_reaction_area_count_max&quot;) inputStoryAreaTypeSuggestedReaction areas, up to 1 inputStoryAreaTypeMessage area, up to getOption(&quot;story_link_area_count_max&quot;) inputStoryAreaTypeLink areas if the current user is a Telegram Premium user, up to 3 inputStoryAreaTypeWeather areas, and up to 1 inputStoryAreaTypeUpgradedGift area.
          */
         public InputStoryAreas(InputStoryArea[] areas) {
             this.areas = areas;
@@ -30232,6 +31198,7 @@ public class TdApi {
             InternalLinkTypeBusinessChat.CONSTRUCTOR,
             InternalLinkTypeBuyStars.CONSTRUCTOR,
             InternalLinkTypeChangePhoneNumber.CONSTRUCTOR,
+            InternalLinkTypeChatAffiliateProgram.CONSTRUCTOR,
             InternalLinkTypeChatBoost.CONSTRUCTOR,
             InternalLinkTypeChatFolderInvite.CONSTRUCTOR,
             InternalLinkTypeChatFolderSettings.CONSTRUCTOR,
@@ -30263,6 +31230,7 @@ public class TdApi {
             InternalLinkTypeThemeSettings.CONSTRUCTOR,
             InternalLinkTypeUnknownDeepLink.CONSTRUCTOR,
             InternalLinkTypeUnsupportedProxy.CONSTRUCTOR,
+            InternalLinkTypeUpgradedGift.CONSTRUCTOR,
             InternalLinkTypeUserPhoneNumber.CONSTRUCTOR,
             InternalLinkTypeUserToken.CONSTRUCTOR,
             InternalLinkTypeVideoChat.CONSTRUCTOR,
@@ -30686,6 +31654,50 @@ public class TdApi {
     }
 
     /**
+     * The link is an affiliate program link. Call searchChatAffiliateProgram with the given username and referrer to process the link.
+     */
+    public static class InternalLinkTypeChatAffiliateProgram extends InternalLinkType {
+        /**
+         * Username to be passed to searchChatAffiliateProgram.
+         */
+        public String username;
+        /**
+         * Referrer to be passed to searchChatAffiliateProgram.
+         */
+        public String referrer;
+
+        /**
+         * The link is an affiliate program link. Call searchChatAffiliateProgram with the given username and referrer to process the link.
+         */
+        public InternalLinkTypeChatAffiliateProgram() {
+        }
+
+        /**
+         * The link is an affiliate program link. Call searchChatAffiliateProgram with the given username and referrer to process the link.
+         *
+         * @param username Username to be passed to searchChatAffiliateProgram.
+         * @param referrer Referrer to be passed to searchChatAffiliateProgram.
+         */
+        public InternalLinkTypeChatAffiliateProgram(String username, String referrer) {
+            this.username = username;
+            this.referrer = referrer;
+        }
+
+        /**
+         * Identifier uniquely determining type of the object.
+         */
+        public static final int CONSTRUCTOR = 632049700;
+
+        /**
+         * @return this.CONSTRUCTOR
+         */
+        @Override
+        public int getConstructor() {
+            return CONSTRUCTOR;
+        }
+    }
+
+    /**
      * The link is a link to boost a Telegram chat. Call getChatBoostLinkInfo with the given URL to process the link. If the chat is found, then call getChatBoostStatus and getAvailableChatBoostSlots to get the current boost status and check whether the chat can be boosted. If the user wants to boost the chat and the chat can be boosted, then call boostChat.
      */
     public static class InternalLinkTypeChatBoost extends InternalLinkType {
@@ -31064,7 +32076,7 @@ public class TdApi {
     }
 
     /**
-     * The link is a link to the main Web App of a bot. Call searchPublicChat with the given bot username, check that the user is a bot and has the main Web App. If the bot can be added to attachment menu, then use getAttachmentMenuBot to receive information about the bot, then if the bot isn't added to side menu, show a disclaimer about Mini Apps being third-party applications, ask the user to accept their Terms of service and confirm adding the bot to side and attachment menu, then if the user accepts the terms and confirms adding, use toggleBotIsAddedToAttachmentMenu to add the bot. Then, use getMainWebApp with the given start parameter and open the returned URL as a Web App.
+     * The link is a link to the main Web App of a bot. Call searchPublicChat with the given bot username, check that the user is a bot and has the main Web App. If the bot can be added to attachment menu, then use getAttachmentMenuBot to receive information about the bot, then if the bot isn't added to side menu, show a disclaimer about Mini Apps being third-party applications, ask the user to accept their Terms of service and confirm adding the bot to side and attachment menu, then if the user accepts the terms and confirms adding, use toggleBotIsAddedToAttachmentMenu to add the bot. Then, use getMainWebApp with the given start parameter and mode and open the returned URL as a Web App.
      */
     public static class InternalLinkTypeMainWebApp extends InternalLinkType {
         /**
@@ -31076,33 +32088,33 @@ public class TdApi {
          */
         public String startParameter;
         /**
-         * True, if the Web App must be opened in the compact mode instead of the full-size mode.
+         * The mode to be passed to getMainWebApp.
          */
-        public boolean isCompact;
+        public WebAppOpenMode mode;
 
         /**
-         * The link is a link to the main Web App of a bot. Call searchPublicChat with the given bot username, check that the user is a bot and has the main Web App. If the bot can be added to attachment menu, then use getAttachmentMenuBot to receive information about the bot, then if the bot isn't added to side menu, show a disclaimer about Mini Apps being third-party applications, ask the user to accept their Terms of service and confirm adding the bot to side and attachment menu, then if the user accepts the terms and confirms adding, use toggleBotIsAddedToAttachmentMenu to add the bot. Then, use getMainWebApp with the given start parameter and open the returned URL as a Web App.
+         * The link is a link to the main Web App of a bot. Call searchPublicChat with the given bot username, check that the user is a bot and has the main Web App. If the bot can be added to attachment menu, then use getAttachmentMenuBot to receive information about the bot, then if the bot isn't added to side menu, show a disclaimer about Mini Apps being third-party applications, ask the user to accept their Terms of service and confirm adding the bot to side and attachment menu, then if the user accepts the terms and confirms adding, use toggleBotIsAddedToAttachmentMenu to add the bot. Then, use getMainWebApp with the given start parameter and mode and open the returned URL as a Web App.
          */
         public InternalLinkTypeMainWebApp() {
         }
 
         /**
-         * The link is a link to the main Web App of a bot. Call searchPublicChat with the given bot username, check that the user is a bot and has the main Web App. If the bot can be added to attachment menu, then use getAttachmentMenuBot to receive information about the bot, then if the bot isn't added to side menu, show a disclaimer about Mini Apps being third-party applications, ask the user to accept their Terms of service and confirm adding the bot to side and attachment menu, then if the user accepts the terms and confirms adding, use toggleBotIsAddedToAttachmentMenu to add the bot. Then, use getMainWebApp with the given start parameter and open the returned URL as a Web App.
+         * The link is a link to the main Web App of a bot. Call searchPublicChat with the given bot username, check that the user is a bot and has the main Web App. If the bot can be added to attachment menu, then use getAttachmentMenuBot to receive information about the bot, then if the bot isn't added to side menu, show a disclaimer about Mini Apps being third-party applications, ask the user to accept their Terms of service and confirm adding the bot to side and attachment menu, then if the user accepts the terms and confirms adding, use toggleBotIsAddedToAttachmentMenu to add the bot. Then, use getMainWebApp with the given start parameter and mode and open the returned URL as a Web App.
          *
          * @param botUsername Username of the bot.
          * @param startParameter Start parameter to be passed to getMainWebApp.
-         * @param isCompact True, if the Web App must be opened in the compact mode instead of the full-size mode.
+         * @param mode The mode to be passed to getMainWebApp.
          */
-        public InternalLinkTypeMainWebApp(String botUsername, String startParameter, boolean isCompact) {
+        public InternalLinkTypeMainWebApp(String botUsername, String startParameter, WebAppOpenMode mode) {
             this.botUsername = botUsername;
             this.startParameter = startParameter;
-            this.isCompact = isCompact;
+            this.mode = mode;
         }
 
         /**
          * Identifier uniquely determining type of the object.
          */
-        public static final int CONSTRUCTOR = -1668012442;
+        public static final int CONSTRUCTOR = 1574925033;
 
         /**
          * @return this.CONSTRUCTOR
@@ -31340,7 +32352,7 @@ public class TdApi {
     }
 
     /**
-     * The link is a link to the screen for gifting Telegram Premium subscriptions to friends via inputInvoiceTelegram payments or in-store purchases.
+     * The link is a link to the screen for gifting Telegram Premium subscriptions to friends via inputInvoiceTelegram with telegramPaymentPurposePremiumGiftCodes payments or in-store purchases.
      */
     public static class InternalLinkTypePremiumGift extends InternalLinkType {
         /**
@@ -31349,13 +32361,13 @@ public class TdApi {
         public String referrer;
 
         /**
-         * The link is a link to the screen for gifting Telegram Premium subscriptions to friends via inputInvoiceTelegram payments or in-store purchases.
+         * The link is a link to the screen for gifting Telegram Premium subscriptions to friends via inputInvoiceTelegram with telegramPaymentPurposePremiumGiftCodes payments or in-store purchases.
          */
         public InternalLinkTypePremiumGift() {
         }
 
         /**
-         * The link is a link to the screen for gifting Telegram Premium subscriptions to friends via inputInvoiceTelegram payments or in-store purchases.
+         * The link is a link to the screen for gifting Telegram Premium subscriptions to friends via inputInvoiceTelegram with telegramPaymentPurposePremiumGiftCodes payments or in-store purchases.
          *
          * @param referrer Referrer specified in the link.
          */
@@ -31830,6 +32842,44 @@ public class TdApi {
     }
 
     /**
+     * The link is a link to an upgraded gift. Call getUpgradedGift with the given name to process the link.
+     */
+    public static class InternalLinkTypeUpgradedGift extends InternalLinkType {
+        /**
+         * Name of the unique gift.
+         */
+        public String name;
+
+        /**
+         * The link is a link to an upgraded gift. Call getUpgradedGift with the given name to process the link.
+         */
+        public InternalLinkTypeUpgradedGift() {
+        }
+
+        /**
+         * The link is a link to an upgraded gift. Call getUpgradedGift with the given name to process the link.
+         *
+         * @param name Name of the unique gift.
+         */
+        public InternalLinkTypeUpgradedGift(String name) {
+            this.name = name;
+        }
+
+        /**
+         * Identifier uniquely determining type of the object.
+         */
+        public static final int CONSTRUCTOR = -708405605;
+
+        /**
+         * @return this.CONSTRUCTOR
+         */
+        @Override
+        public int getConstructor() {
+            return CONSTRUCTOR;
+        }
+    }
+
+    /**
      * The link is a link to a user by its phone number. Call searchUserByPhoneNumber with the given phone number to process the link. If the user is found, then call createPrivateChat and open user's profile information screen or the chat itself. If draft text isn't empty, then put the draft text in the input field.
      */
     public static class InternalLinkTypeUserPhoneNumber extends InternalLinkType {
@@ -31984,9 +33034,9 @@ public class TdApi {
          */
         public String startParameter;
         /**
-         * True, if the Web App must be opened in the compact mode instead of the full-size mode.
+         * The mode in which the Web App must be opened.
          */
-        public boolean isCompact;
+        public WebAppOpenMode mode;
 
         /**
          * The link is a link to a Web App. Call searchPublicChat with the given bot username, check that the user is a bot, then call searchWebApp with the received bot and the given webAppShortName. Process received foundWebApp by showing a confirmation dialog if needed. If the bot can be added to attachment or side menu, but isn't added yet, then show a disclaimer about Mini Apps being third-party applications instead of the dialog and ask the user to accept their Terms of service. If the user accept the terms and confirms adding, then use toggleBotIsAddedToAttachmentMenu to add the bot. Then, call getWebAppLinkUrl and open the returned URL as a Web App.
@@ -32000,19 +33050,19 @@ public class TdApi {
          * @param botUsername Username of the bot that owns the Web App.
          * @param webAppShortName Short name of the Web App.
          * @param startParameter Start parameter to be passed to getWebAppLinkUrl.
-         * @param isCompact True, if the Web App must be opened in the compact mode instead of the full-size mode.
+         * @param mode The mode in which the Web App must be opened.
          */
-        public InternalLinkTypeWebApp(String botUsername, String webAppShortName, String startParameter, boolean isCompact) {
+        public InternalLinkTypeWebApp(String botUsername, String webAppShortName, String startParameter, WebAppOpenMode mode) {
             this.botUsername = botUsername;
             this.webAppShortName = webAppShortName;
             this.startParameter = startParameter;
-            this.isCompact = isCompact;
+            this.mode = mode;
         }
 
         /**
          * Identifier uniquely determining type of the object.
          */
-        public static final int CONSTRUCTOR = 1281932045;
+        public static final int CONSTRUCTOR = 2062112045;
 
         /**
          * @return this.CONSTRUCTOR
@@ -32140,6 +33190,10 @@ public class TdApi {
          */
         public LabeledPricePart[] priceParts;
         /**
+         * The number of seconds between consecutive Telegram Star debiting for subscription invoices; 0 if the invoice doesn't create subscription.
+         */
+        public int subscriptionPeriod;
+        /**
          * The maximum allowed amount of tip in the smallest units of the currency.
          */
         public long maxTipAmount;
@@ -32199,6 +33253,7 @@ public class TdApi {
          *
          * @param currency ISO 4217 currency code.
          * @param priceParts A list of objects used to calculate the total price of the product.
+         * @param subscriptionPeriod The number of seconds between consecutive Telegram Star debiting for subscription invoices; 0 if the invoice doesn't create subscription.
          * @param maxTipAmount The maximum allowed amount of tip in the smallest units of the currency.
          * @param suggestedTipAmounts Suggested amounts of tip in the smallest units of the currency.
          * @param recurringPaymentTermsOfServiceUrl An HTTP URL with terms of service for recurring payments. If non-empty, the invoice payment will result in recurring payments and the user must accept the terms of service before allowed to pay.
@@ -32212,9 +33267,10 @@ public class TdApi {
          * @param sendEmailAddressToProvider True, if the user's email address will be sent to the provider.
          * @param isFlexible True, if the total price depends on the shipping method.
          */
-        public Invoice(String currency, LabeledPricePart[] priceParts, long maxTipAmount, long[] suggestedTipAmounts, String recurringPaymentTermsOfServiceUrl, String termsOfServiceUrl, boolean isTest, boolean needName, boolean needPhoneNumber, boolean needEmailAddress, boolean needShippingAddress, boolean sendPhoneNumberToProvider, boolean sendEmailAddressToProvider, boolean isFlexible) {
+        public Invoice(String currency, LabeledPricePart[] priceParts, int subscriptionPeriod, long maxTipAmount, long[] suggestedTipAmounts, String recurringPaymentTermsOfServiceUrl, String termsOfServiceUrl, boolean isTest, boolean needName, boolean needPhoneNumber, boolean needEmailAddress, boolean needShippingAddress, boolean sendPhoneNumberToProvider, boolean sendEmailAddressToProvider, boolean isFlexible) {
             this.currency = currency;
             this.priceParts = priceParts;
+            this.subscriptionPeriod = subscriptionPeriod;
             this.maxTipAmount = maxTipAmount;
             this.suggestedTipAmounts = suggestedTipAmounts;
             this.recurringPaymentTermsOfServiceUrl = recurringPaymentTermsOfServiceUrl;
@@ -32232,7 +33288,7 @@ public class TdApi {
         /**
          * Identifier uniquely determining type of the object.
          */
-        public static final int CONSTRUCTOR = 1039926674;
+        public static final int CONSTRUCTOR = 113204876;
 
         /**
          * @return this.CONSTRUCTOR
@@ -33671,6 +34727,7 @@ public class TdApi {
             LinkPreviewTypeSupergroupBoost.CONSTRUCTOR,
             LinkPreviewTypeTheme.CONSTRUCTOR,
             LinkPreviewTypeUnsupported.CONSTRUCTOR,
+            LinkPreviewTypeUpgradedGift.CONSTRUCTOR,
             LinkPreviewTypeUser.CONSTRUCTOR,
             LinkPreviewTypeVideo.CONSTRUCTOR,
             LinkPreviewTypeVideoChat.CONSTRUCTOR,
@@ -34723,6 +35780,44 @@ public class TdApi {
     }
 
     /**
+     * The link is a link to an upgraded gift.
+     */
+    public static class LinkPreviewTypeUpgradedGift extends LinkPreviewType {
+        /**
+         * The gift.
+         */
+        public UpgradedGift gift;
+
+        /**
+         * The link is a link to an upgraded gift.
+         */
+        public LinkPreviewTypeUpgradedGift() {
+        }
+
+        /**
+         * The link is a link to an upgraded gift.
+         *
+         * @param gift The gift.
+         */
+        public LinkPreviewTypeUpgradedGift(UpgradedGift gift) {
+            this.gift = gift;
+        }
+
+        /**
+         * Identifier uniquely determining type of the object.
+         */
+        public static final int CONSTRUCTOR = 293249807;
+
+        /**
+         * @return this.CONSTRUCTOR
+         */
+        @Override
+        public int getConstructor() {
+            return CONSTRUCTOR;
+        }
+    }
+
+    /**
      * The link is a link to a user.
      */
     public static class LinkPreviewTypeUser extends LinkPreviewType {
@@ -35528,9 +36623,9 @@ public class TdApi {
          */
         public String url;
         /**
-         * True, if the Web App must always be opened in the compact mode instead of the full-size mode.
+         * The mode in which the Web App must be opened.
          */
-        public boolean isCompact;
+        public WebAppOpenMode mode;
 
         /**
          * Contains information about the main Web App of a bot.
@@ -35542,17 +36637,17 @@ public class TdApi {
          * Contains information about the main Web App of a bot.
          *
          * @param url URL of the Web App to open.
-         * @param isCompact True, if the Web App must always be opened in the compact mode instead of the full-size mode.
+         * @param mode The mode in which the Web App must be opened.
          */
-        public MainWebApp(String url, boolean isCompact) {
+        public MainWebApp(String url, WebAppOpenMode mode) {
             this.url = url;
-            this.isCompact = isCompact;
+            this.mode = mode;
         }
 
         /**
          * Identifier uniquely determining type of the object.
          */
-        public static final int CONSTRUCTOR = 1336961265;
+        public static final int CONSTRUCTOR = 1940368506;
 
         /**
          * @return this.CONSTRUCTOR
@@ -35806,11 +36901,11 @@ public class TdApi {
          */
         public boolean containsUnreadMention;
         /**
-         * Point in time (Unix timestamp) when the message was sent.
+         * Point in time (Unix timestamp) when the message was sent; 0 for scheduled messages.
          */
         public int date;
         /**
-         * Point in time (Unix timestamp) when the message was last edited.
+         * Point in time (Unix timestamp) when the message was last edited; 0 for scheduled messages.
          */
         public int editDate;
         /**
@@ -35920,8 +37015,8 @@ public class TdApi {
          * @param isChannelPost True, if the message is a channel post. All messages to channels are channel posts, all other messages are not channel posts.
          * @param isTopicMessage True, if the message is a forum topic message.
          * @param containsUnreadMention True, if the message contains an unread mention for the current user.
-         * @param date Point in time (Unix timestamp) when the message was sent.
-         * @param editDate Point in time (Unix timestamp) when the message was last edited.
+         * @param date Point in time (Unix timestamp) when the message was sent; 0 for scheduled messages.
+         * @param editDate Point in time (Unix timestamp) when the message was last edited; 0 for scheduled messages.
          * @param forwardInfo Information about the initial message sender; may be null if none or unknown.
          * @param importInfo Information about the initial message for messages created with importMessages; may be null if the message isn't imported.
          * @param interactionInfo Information about interactions with the message; may be null if none.
@@ -36197,6 +37292,8 @@ public class TdApi {
             MessageGiftedStars.CONSTRUCTOR,
             MessageGiveawayPrizeStars.CONSTRUCTOR,
             MessageGift.CONSTRUCTOR,
+            MessageUpgradedGift.CONSTRUCTOR,
+            MessageRefundedUpgradedGift.CONSTRUCTOR,
             MessageContactRegistered.CONSTRUCTOR,
             MessageUsersShared.CONSTRUCTOR,
             MessageChatShared.CONSTRUCTOR,
@@ -36598,6 +37695,14 @@ public class TdApi {
          */
         public AlternativeVideo[] alternativeVideos;
         /**
+         * Cover of the video; may be null if none.
+         */
+        @Nullable public Photo cover;
+        /**
+         * Timestamp from which the video playing must start, in seconds.
+         */
+        public int startTimestamp;
+        /**
          * Video caption.
          */
         public FormattedText caption;
@@ -36625,14 +37730,18 @@ public class TdApi {
          *
          * @param video The video description.
          * @param alternativeVideos Alternative qualities of the video.
+         * @param cover Cover of the video; may be null if none.
+         * @param startTimestamp Timestamp from which the video playing must start, in seconds.
          * @param caption Video caption.
          * @param showCaptionAboveMedia True, if the caption must be shown above the video; otherwise, the caption must be shown below the video.
          * @param hasSpoiler True, if the video preview must be covered by a spoiler animation.
          * @param isSecret True, if the video thumbnail must be blurred and the video must be shown only while tapped.
          */
-        public MessageVideo(Video video, AlternativeVideo[] alternativeVideos, FormattedText caption, boolean showCaptionAboveMedia, boolean hasSpoiler, boolean isSecret) {
+        public MessageVideo(Video video, AlternativeVideo[] alternativeVideos, Photo cover, int startTimestamp, FormattedText caption, boolean showCaptionAboveMedia, boolean hasSpoiler, boolean isSecret) {
             this.video = video;
             this.alternativeVideos = alternativeVideos;
+            this.cover = cover;
+            this.startTimestamp = startTimestamp;
             this.caption = caption;
             this.showCaptionAboveMedia = showCaptionAboveMedia;
             this.hasSpoiler = hasSpoiler;
@@ -36642,7 +37751,7 @@ public class TdApi {
         /**
          * Identifier uniquely determining type of the object.
          */
-        public static final int CONSTRUCTOR = -1307143860;
+        public static final int CONSTRUCTOR = 374791437;
 
         /**
          * @return this.CONSTRUCTOR
@@ -38444,7 +39553,7 @@ public class TdApi {
     }
 
     /**
-     * A payment has been completed.
+     * A payment has been sent to a bot or a business account.
      */
     public static class MessagePaymentSuccessful extends MessageContent {
         /**
@@ -38464,6 +39573,10 @@ public class TdApi {
          */
         public long totalAmount;
         /**
+         * Point in time (Unix timestamp) when the subscription will expire; 0 if unknown or the payment isn't recurring.
+         */
+        public int subscriptionUntilDate;
+        /**
          * True, if this is a recurring payment.
          */
         public boolean isRecurring;
@@ -38477,27 +39590,29 @@ public class TdApi {
         public String invoiceName;
 
         /**
-         * A payment has been completed.
+         * A payment has been sent to a bot or a business account.
          */
         public MessagePaymentSuccessful() {
         }
 
         /**
-         * A payment has been completed.
+         * A payment has been sent to a bot or a business account.
          *
          * @param invoiceChatId Identifier of the chat, containing the corresponding invoice message.
          * @param invoiceMessageId Identifier of the message with the corresponding invoice; can be 0 or an identifier of a deleted message.
          * @param currency Currency for the price of the product.
          * @param totalAmount Total price for the product, in the smallest units of the currency.
+         * @param subscriptionUntilDate Point in time (Unix timestamp) when the subscription will expire; 0 if unknown or the payment isn't recurring.
          * @param isRecurring True, if this is a recurring payment.
          * @param isFirstRecurring True, if this is the first recurring payment.
          * @param invoiceName Name of the invoice; may be empty if unknown.
          */
-        public MessagePaymentSuccessful(long invoiceChatId, long invoiceMessageId, String currency, long totalAmount, boolean isRecurring, boolean isFirstRecurring, String invoiceName) {
+        public MessagePaymentSuccessful(long invoiceChatId, long invoiceMessageId, String currency, long totalAmount, int subscriptionUntilDate, boolean isRecurring, boolean isFirstRecurring, String invoiceName) {
             this.invoiceChatId = invoiceChatId;
             this.invoiceMessageId = invoiceMessageId;
             this.currency = currency;
             this.totalAmount = totalAmount;
+            this.subscriptionUntilDate = subscriptionUntilDate;
             this.isRecurring = isRecurring;
             this.isFirstRecurring = isFirstRecurring;
             this.invoiceName = invoiceName;
@@ -38506,7 +39621,7 @@ public class TdApi {
         /**
          * Identifier uniquely determining type of the object.
          */
-        public static final int CONSTRUCTOR = 1406745820;
+        public static final int CONSTRUCTOR = 1046878481;
 
         /**
          * @return this.CONSTRUCTOR
@@ -38518,7 +39633,7 @@ public class TdApi {
     }
 
     /**
-     * A payment has been completed; for bots only.
+     * A payment has been received by the bot or the business account.
      */
     public static class MessagePaymentSuccessfulBot extends MessageContent {
         /**
@@ -38529,6 +39644,10 @@ public class TdApi {
          * Total price for the product, in the smallest units of the currency.
          */
         public long totalAmount;
+        /**
+         * Point in time (Unix timestamp) when the subscription will expire; 0 if unknown or the payment isn't recurring.
+         */
+        public int subscriptionUntilDate;
         /**
          * True, if this is a recurring payment.
          */
@@ -38542,11 +39661,11 @@ public class TdApi {
          */
         public byte[] invoicePayload;
         /**
-         * Identifier of the shipping option chosen by the user; may be empty if not applicable.
+         * Identifier of the shipping option chosen by the user; may be empty if not applicable; for bots only.
          */
         public String shippingOptionId;
         /**
-         * Information about the order; may be null.
+         * Information about the order; may be null; for bots only.
          */
         @Nullable public OrderInfo orderInfo;
         /**
@@ -38559,27 +39678,29 @@ public class TdApi {
         public String providerPaymentChargeId;
 
         /**
-         * A payment has been completed; for bots only.
+         * A payment has been received by the bot or the business account.
          */
         public MessagePaymentSuccessfulBot() {
         }
 
         /**
-         * A payment has been completed; for bots only.
+         * A payment has been received by the bot or the business account.
          *
          * @param currency Currency for price of the product.
          * @param totalAmount Total price for the product, in the smallest units of the currency.
+         * @param subscriptionUntilDate Point in time (Unix timestamp) when the subscription will expire; 0 if unknown or the payment isn't recurring.
          * @param isRecurring True, if this is a recurring payment.
          * @param isFirstRecurring True, if this is the first recurring payment.
          * @param invoicePayload Invoice payload.
-         * @param shippingOptionId Identifier of the shipping option chosen by the user; may be empty if not applicable.
-         * @param orderInfo Information about the order; may be null.
+         * @param shippingOptionId Identifier of the shipping option chosen by the user; may be empty if not applicable; for bots only.
+         * @param orderInfo Information about the order; may be null; for bots only.
          * @param telegramPaymentChargeId Telegram payment identifier.
          * @param providerPaymentChargeId Provider payment identifier.
          */
-        public MessagePaymentSuccessfulBot(String currency, long totalAmount, boolean isRecurring, boolean isFirstRecurring, byte[] invoicePayload, String shippingOptionId, OrderInfo orderInfo, String telegramPaymentChargeId, String providerPaymentChargeId) {
+        public MessagePaymentSuccessfulBot(String currency, long totalAmount, int subscriptionUntilDate, boolean isRecurring, boolean isFirstRecurring, byte[] invoicePayload, String shippingOptionId, OrderInfo orderInfo, String telegramPaymentChargeId, String providerPaymentChargeId) {
             this.currency = currency;
             this.totalAmount = totalAmount;
+            this.subscriptionUntilDate = subscriptionUntilDate;
             this.isRecurring = isRecurring;
             this.isFirstRecurring = isFirstRecurring;
             this.invoicePayload = invoicePayload;
@@ -38592,7 +39713,7 @@ public class TdApi {
         /**
          * Identifier uniquely determining type of the object.
          */
-        public static final int CONSTRUCTOR = 1759592121;
+        public static final int CONSTRUCTOR = -949596737;
 
         /**
          * @return this.CONSTRUCTOR
@@ -39258,7 +40379,7 @@ public class TdApi {
     }
 
     /**
-     * A gift was received or sent by the current user.
+     * A regular gift was received or sent by the current user, or the current user was notified about a channel gift.
      */
     public static class MessageGift extends MessageContent {
         /**
@@ -39266,55 +40387,233 @@ public class TdApi {
          */
         public Gift gift;
         /**
+         * Sender of the gift.
+         */
+        public MessageSender senderId;
+        /**
+         * Unique identifier of the received gift for the current user; only for the receiver of the gift.
+         */
+        public String receivedGiftId;
+        /**
          * Message added to the gift.
          */
         public FormattedText text;
         /**
-         * Number of Telegram Stars that can be claimed by the receiver instead of the gift.
+         * Number of Telegram Stars that can be claimed by the receiver instead of the regular gift; 0 if the gift can't be sold by the receiver.
          */
         public long sellStarCount;
+        /**
+         * Number of Telegram Stars that were paid by the sender for the ability to upgrade the gift.
+         */
+        public long prepaidUpgradeStarCount;
         /**
          * True, if the sender and gift text are shown only to the gift receiver; otherwise, everyone will be able to see them.
          */
         public boolean isPrivate;
         /**
-         * True, if the gift is displayed on the user's profile page; only for the receiver of the gift.
+         * True, if the gift is displayed on the user's or the channel's profile page; only for the receiver of the gift.
          */
         public boolean isSaved;
+        /**
+         * True, if the gift can be upgraded to a unique gift; only for the receiver of the gift.
+         */
+        public boolean canBeUpgraded;
         /**
          * True, if the gift was converted to Telegram Stars; only for the receiver of the gift.
          */
         public boolean wasConverted;
+        /**
+         * True, if the gift was upgraded to a unique gift.
+         */
+        public boolean wasUpgraded;
+        /**
+         * True, if the gift was refunded and isn't available anymore.
+         */
+        public boolean wasRefunded;
+        /**
+         * Identifier of the corresponding upgraded gift; may be empty if unknown. Use getReceivedGift to get information about the gift.
+         */
+        public String upgradedReceivedGiftId;
 
         /**
-         * A gift was received or sent by the current user.
+         * A regular gift was received or sent by the current user, or the current user was notified about a channel gift.
          */
         public MessageGift() {
         }
 
         /**
-         * A gift was received or sent by the current user.
+         * A regular gift was received or sent by the current user, or the current user was notified about a channel gift.
          *
          * @param gift The gift.
+         * @param senderId Sender of the gift.
+         * @param receivedGiftId Unique identifier of the received gift for the current user; only for the receiver of the gift.
          * @param text Message added to the gift.
-         * @param sellStarCount Number of Telegram Stars that can be claimed by the receiver instead of the gift.
+         * @param sellStarCount Number of Telegram Stars that can be claimed by the receiver instead of the regular gift; 0 if the gift can't be sold by the receiver.
+         * @param prepaidUpgradeStarCount Number of Telegram Stars that were paid by the sender for the ability to upgrade the gift.
          * @param isPrivate True, if the sender and gift text are shown only to the gift receiver; otherwise, everyone will be able to see them.
-         * @param isSaved True, if the gift is displayed on the user's profile page; only for the receiver of the gift.
+         * @param isSaved True, if the gift is displayed on the user's or the channel's profile page; only for the receiver of the gift.
+         * @param canBeUpgraded True, if the gift can be upgraded to a unique gift; only for the receiver of the gift.
          * @param wasConverted True, if the gift was converted to Telegram Stars; only for the receiver of the gift.
+         * @param wasUpgraded True, if the gift was upgraded to a unique gift.
+         * @param wasRefunded True, if the gift was refunded and isn't available anymore.
+         * @param upgradedReceivedGiftId Identifier of the corresponding upgraded gift; may be empty if unknown. Use getReceivedGift to get information about the gift.
          */
-        public MessageGift(Gift gift, FormattedText text, long sellStarCount, boolean isPrivate, boolean isSaved, boolean wasConverted) {
+        public MessageGift(Gift gift, MessageSender senderId, String receivedGiftId, FormattedText text, long sellStarCount, long prepaidUpgradeStarCount, boolean isPrivate, boolean isSaved, boolean canBeUpgraded, boolean wasConverted, boolean wasUpgraded, boolean wasRefunded, String upgradedReceivedGiftId) {
             this.gift = gift;
+            this.senderId = senderId;
+            this.receivedGiftId = receivedGiftId;
             this.text = text;
             this.sellStarCount = sellStarCount;
+            this.prepaidUpgradeStarCount = prepaidUpgradeStarCount;
             this.isPrivate = isPrivate;
             this.isSaved = isSaved;
+            this.canBeUpgraded = canBeUpgraded;
             this.wasConverted = wasConverted;
+            this.wasUpgraded = wasUpgraded;
+            this.wasRefunded = wasRefunded;
+            this.upgradedReceivedGiftId = upgradedReceivedGiftId;
         }
 
         /**
          * Identifier uniquely determining type of the object.
          */
-        public static final int CONSTRUCTOR = -1741766297;
+        public static final int CONSTRUCTOR = 2090444659;
+
+        /**
+         * @return this.CONSTRUCTOR
+         */
+        @Override
+        public int getConstructor() {
+            return CONSTRUCTOR;
+        }
+    }
+
+    /**
+     * An upgraded gift was received or sent by the current user, or the current user was notified about a channel gift.
+     */
+    public static class MessageUpgradedGift extends MessageContent {
+        /**
+         * The gift.
+         */
+        public UpgradedGift gift;
+        /**
+         * Sender of the gift; may be null for anonymous gifts.
+         */
+        @Nullable public MessageSender senderId;
+        /**
+         * Unique identifier of the received gift for the current user; only for the receiver of the gift.
+         */
+        public String receivedGiftId;
+        /**
+         * True, if the gift was obtained by upgrading of a previously received gift; otherwise, this is a transferred gift.
+         */
+        public boolean isUpgrade;
+        /**
+         * True, if the gift is displayed on the user's or the channel's profile page; only for the receiver of the gift.
+         */
+        public boolean isSaved;
+        /**
+         * True, if the gift can be transferred to another owner; only for the receiver of the gift.
+         */
+        public boolean canBeTransferred;
+        /**
+         * True, if the gift was transferred to another owner; only for the receiver of the gift.
+         */
+        public boolean wasTransferred;
+        /**
+         * Number of Telegram Stars that must be paid to transfer the upgraded gift; only for the receiver of the gift.
+         */
+        public long transferStarCount;
+        /**
+         * Point in time (Unix timestamp) when the gift can be transferred to the TON blockchain as an NFT; 0 if NFT export isn't possible; only for the receiver of the gift.
+         */
+        public int exportDate;
+
+        /**
+         * An upgraded gift was received or sent by the current user, or the current user was notified about a channel gift.
+         */
+        public MessageUpgradedGift() {
+        }
+
+        /**
+         * An upgraded gift was received or sent by the current user, or the current user was notified about a channel gift.
+         *
+         * @param gift The gift.
+         * @param senderId Sender of the gift; may be null for anonymous gifts.
+         * @param receivedGiftId Unique identifier of the received gift for the current user; only for the receiver of the gift.
+         * @param isUpgrade True, if the gift was obtained by upgrading of a previously received gift; otherwise, this is a transferred gift.
+         * @param isSaved True, if the gift is displayed on the user's or the channel's profile page; only for the receiver of the gift.
+         * @param canBeTransferred True, if the gift can be transferred to another owner; only for the receiver of the gift.
+         * @param wasTransferred True, if the gift was transferred to another owner; only for the receiver of the gift.
+         * @param transferStarCount Number of Telegram Stars that must be paid to transfer the upgraded gift; only for the receiver of the gift.
+         * @param exportDate Point in time (Unix timestamp) when the gift can be transferred to the TON blockchain as an NFT; 0 if NFT export isn't possible; only for the receiver of the gift.
+         */
+        public MessageUpgradedGift(UpgradedGift gift, MessageSender senderId, String receivedGiftId, boolean isUpgrade, boolean isSaved, boolean canBeTransferred, boolean wasTransferred, long transferStarCount, int exportDate) {
+            this.gift = gift;
+            this.senderId = senderId;
+            this.receivedGiftId = receivedGiftId;
+            this.isUpgrade = isUpgrade;
+            this.isSaved = isSaved;
+            this.canBeTransferred = canBeTransferred;
+            this.wasTransferred = wasTransferred;
+            this.transferStarCount = transferStarCount;
+            this.exportDate = exportDate;
+        }
+
+        /**
+         * Identifier uniquely determining type of the object.
+         */
+        public static final int CONSTRUCTOR = -1068647053;
+
+        /**
+         * @return this.CONSTRUCTOR
+         */
+        @Override
+        public int getConstructor() {
+            return CONSTRUCTOR;
+        }
+    }
+
+    /**
+     * A gift which purchase, upgrade or transfer were refunded.
+     */
+    public static class MessageRefundedUpgradedGift extends MessageContent {
+        /**
+         * The gift.
+         */
+        public Gift gift;
+        /**
+         * Sender of the gift.
+         */
+        public MessageSender senderId;
+        /**
+         * True, if the gift was obtained by upgrading of a previously received gift.
+         */
+        public boolean isUpgrade;
+
+        /**
+         * A gift which purchase, upgrade or transfer were refunded.
+         */
+        public MessageRefundedUpgradedGift() {
+        }
+
+        /**
+         * A gift which purchase, upgrade or transfer were refunded.
+         *
+         * @param gift The gift.
+         * @param senderId Sender of the gift.
+         * @param isUpgrade True, if the gift was obtained by upgrading of a previously received gift.
+         */
+        public MessageRefundedUpgradedGift(Gift gift, MessageSender senderId, boolean isUpgrade) {
+            this.gift = gift;
+            this.senderId = senderId;
+            this.isUpgrade = isUpgrade;
+        }
+
+        /**
+         * Identifier uniquely determining type of the object.
+         */
+        public static final int CONSTRUCTOR = -1308949479;
 
         /**
          * @return this.CONSTRUCTOR
@@ -40652,7 +41951,7 @@ public class TdApi {
          */
         public boolean canBeDeletedForAllUsers;
         /**
-         * True, if the message can be edited using the methods editMessageText, editMessageMedia, editMessageCaption, or editMessageReplyMarkup. For live location and poll messages this fields shows whether editMessageLiveLocation or stopPoll can be used with this message.
+         * True, if the message can be edited using the methods editMessageText, editMessageCaption, or editMessageReplyMarkup. For live location and poll messages this fields shows whether editMessageLiveLocation or stopPoll can be used with this message.
          */
         public boolean canBeEdited;
         /**
@@ -40683,6 +41982,10 @@ public class TdApi {
          * True, if the message can be shared in a story using inputStoryAreaTypeMessage.
          */
         public boolean canBeSharedInStory;
+        /**
+         * True, if the message can be edited using the method editMessageMedia.
+         */
+        public boolean canEditMedia;
         /**
          * True, if scheduling state of the message can be edited.
          */
@@ -40752,7 +42055,7 @@ public class TdApi {
          * @param canBeCopiedToSecretChat True, if content of the message can be copied to a secret chat using inputMessageForwarded or forwardMessages with copy options.
          * @param canBeDeletedOnlyForSelf True, if the message can be deleted only for the current user while other users will continue to see it using the method deleteMessages with revoke == false.
          * @param canBeDeletedForAllUsers True, if the message can be deleted for all users using the method deleteMessages with revoke == true.
-         * @param canBeEdited True, if the message can be edited using the methods editMessageText, editMessageMedia, editMessageCaption, or editMessageReplyMarkup. For live location and poll messages this fields shows whether editMessageLiveLocation or stopPoll can be used with this message.
+         * @param canBeEdited True, if the message can be edited using the methods editMessageText, editMessageCaption, or editMessageReplyMarkup. For live location and poll messages this fields shows whether editMessageLiveLocation or stopPoll can be used with this message.
          * @param canBeForwarded True, if the message can be forwarded using inputMessageForwarded or forwardMessages.
          * @param canBePaid True, if the message can be paid using inputInvoiceMessage.
          * @param canBePinned True, if the message can be pinned or unpinned in the chat using pinChatMessage or unpinChatMessage.
@@ -40760,6 +42063,7 @@ public class TdApi {
          * @param canBeRepliedInAnotherChat True, if the message can be replied in another chat or forum topic using inputMessageReplyToExternalMessage.
          * @param canBeSaved True, if content of the message can be saved locally or copied using inputMessageForwarded or forwardMessages with copy options.
          * @param canBeSharedInStory True, if the message can be shared in a story using inputStoryAreaTypeMessage.
+         * @param canEditMedia True, if the message can be edited using the method editMessageMedia.
          * @param canEditSchedulingState True, if scheduling state of the message can be edited.
          * @param canGetEmbeddingCode True, if code for message embedding can be received using getMessageEmbeddingCode.
          * @param canGetLink True, if a link can be generated for the message using getMessageLink.
@@ -40775,7 +42079,7 @@ public class TdApi {
          * @param canSetFactCheck True, if fact check for the message can be changed through setMessageFactCheck.
          * @param needShowStatistics True, if message statistics must be available from context menu of the message.
          */
-        public MessageProperties(boolean canBeCopiedToSecretChat, boolean canBeDeletedOnlyForSelf, boolean canBeDeletedForAllUsers, boolean canBeEdited, boolean canBeForwarded, boolean canBePaid, boolean canBePinned, boolean canBeReplied, boolean canBeRepliedInAnotherChat, boolean canBeSaved, boolean canBeSharedInStory, boolean canEditSchedulingState, boolean canGetEmbeddingCode, boolean canGetLink, boolean canGetMediaTimestampLinks, boolean canGetMessageThread, boolean canGetReadDate, boolean canGetStatistics, boolean canGetViewers, boolean canRecognizeSpeech, boolean canReportChat, boolean canReportReactions, boolean canReportSupergroupSpam, boolean canSetFactCheck, boolean needShowStatistics) {
+        public MessageProperties(boolean canBeCopiedToSecretChat, boolean canBeDeletedOnlyForSelf, boolean canBeDeletedForAllUsers, boolean canBeEdited, boolean canBeForwarded, boolean canBePaid, boolean canBePinned, boolean canBeReplied, boolean canBeRepliedInAnotherChat, boolean canBeSaved, boolean canBeSharedInStory, boolean canEditMedia, boolean canEditSchedulingState, boolean canGetEmbeddingCode, boolean canGetLink, boolean canGetMediaTimestampLinks, boolean canGetMessageThread, boolean canGetReadDate, boolean canGetStatistics, boolean canGetViewers, boolean canRecognizeSpeech, boolean canReportChat, boolean canReportReactions, boolean canReportSupergroupSpam, boolean canSetFactCheck, boolean needShowStatistics) {
             this.canBeCopiedToSecretChat = canBeCopiedToSecretChat;
             this.canBeDeletedOnlyForSelf = canBeDeletedOnlyForSelf;
             this.canBeDeletedForAllUsers = canBeDeletedForAllUsers;
@@ -40787,6 +42091,7 @@ public class TdApi {
             this.canBeRepliedInAnotherChat = canBeRepliedInAnotherChat;
             this.canBeSaved = canBeSaved;
             this.canBeSharedInStory = canBeSharedInStory;
+            this.canEditMedia = canEditMedia;
             this.canEditSchedulingState = canEditSchedulingState;
             this.canGetEmbeddingCode = canGetEmbeddingCode;
             this.canGetLink = canGetLink;
@@ -40806,7 +42111,7 @@ public class TdApi {
         /**
          * Identifier uniquely determining type of the object.
          */
-        public static final int CONSTRUCTOR = 827750316;
+        public static final int CONSTRUCTOR = -27014655;
 
         /**
          * @return this.CONSTRUCTOR
@@ -41317,7 +42622,8 @@ public class TdApi {
         @Retention(RetentionPolicy.SOURCE)
         @IntDef({
             MessageSchedulingStateSendAtDate.CONSTRUCTOR,
-            MessageSchedulingStateSendWhenOnline.CONSTRUCTOR
+            MessageSchedulingStateSendWhenOnline.CONSTRUCTOR,
+            MessageSchedulingStateSendWhenVideoProcessed.CONSTRUCTOR
         })
         public @interface Constructors {}
 
@@ -41387,6 +42693,44 @@ public class TdApi {
          * Identifier uniquely determining type of the object.
          */
         public static final int CONSTRUCTOR = 2092947464;
+
+        /**
+         * @return this.CONSTRUCTOR
+         */
+        @Override
+        public int getConstructor() {
+            return CONSTRUCTOR;
+        }
+    }
+
+    /**
+     * The message will be sent when the video in the message is converted and optimized; can be used only by the server.
+     */
+    public static class MessageSchedulingStateSendWhenVideoProcessed extends MessageSchedulingState {
+        /**
+         * Approximate point in time (Unix timestamp) when the message is expected to be sent.
+         */
+        public int sendDate;
+
+        /**
+         * The message will be sent when the video in the message is converted and optimized; can be used only by the server.
+         */
+        public MessageSchedulingStateSendWhenVideoProcessed() {
+        }
+
+        /**
+         * The message will be sent when the video in the message is converted and optimized; can be used only by the server.
+         *
+         * @param sendDate Approximate point in time (Unix timestamp) when the message is expected to be sent.
+         */
+        public MessageSchedulingStateSendWhenVideoProcessed(int sendDate) {
+            this.sendDate = sendDate;
+        }
+
+        /**
+         * Identifier uniquely determining type of the object.
+         */
+        public static final int CONSTRUCTOR = 2101578734;
 
         /**
          * @return this.CONSTRUCTOR
@@ -41505,6 +42849,10 @@ public class TdApi {
          */
         public boolean protectContent;
         /**
+         * Pass true to allow the message to ignore regular broadcast limits for a small fee; for bots only.
+         */
+        public boolean allowPaidBroadcast;
+        /**
          * Pass true if the user explicitly chosen a sticker or a custom emoji from an installed sticker set; applicable only to sendMessage and sendMessageAlbum.
          */
         public boolean updateOrderOfInstalledStickerSets;
@@ -41537,16 +42885,18 @@ public class TdApi {
          * @param disableNotification Pass true to disable notification for the message.
          * @param fromBackground Pass true if the message is sent from the background.
          * @param protectContent Pass true if the content of the message must be protected from forwarding and saving; for bots only.
+         * @param allowPaidBroadcast Pass true to allow the message to ignore regular broadcast limits for a small fee; for bots only.
          * @param updateOrderOfInstalledStickerSets Pass true if the user explicitly chosen a sticker or a custom emoji from an installed sticker set; applicable only to sendMessage and sendMessageAlbum.
          * @param schedulingState Message scheduling state; pass null to send message immediately. Messages sent to a secret chat, live location messages and self-destructing messages can't be scheduled.
          * @param effectId Identifier of the effect to apply to the message; pass 0 if none; applicable only to sendMessage and sendMessageAlbum in private chats.
          * @param sendingId Non-persistent identifier, which will be returned back in messageSendingStatePending object and can be used to match sent messages and corresponding updateNewMessage updates.
          * @param onlyPreview Pass true to get a fake message instead of actually sending them.
          */
-        public MessageSendOptions(boolean disableNotification, boolean fromBackground, boolean protectContent, boolean updateOrderOfInstalledStickerSets, MessageSchedulingState schedulingState, long effectId, int sendingId, boolean onlyPreview) {
+        public MessageSendOptions(boolean disableNotification, boolean fromBackground, boolean protectContent, boolean allowPaidBroadcast, boolean updateOrderOfInstalledStickerSets, MessageSchedulingState schedulingState, long effectId, int sendingId, boolean onlyPreview) {
             this.disableNotification = disableNotification;
             this.fromBackground = fromBackground;
             this.protectContent = protectContent;
+            this.allowPaidBroadcast = allowPaidBroadcast;
             this.updateOrderOfInstalledStickerSets = updateOrderOfInstalledStickerSets;
             this.schedulingState = schedulingState;
             this.effectId = effectId;
@@ -41557,7 +42907,7 @@ public class TdApi {
         /**
          * Identifier uniquely determining type of the object.
          */
-        public static final int CONSTRUCTOR = -2105243218;
+        public static final int CONSTRUCTOR = 776354378;
 
         /**
          * @return this.CONSTRUCTOR
@@ -43760,6 +45110,44 @@ public class TdApi {
     }
 
     /**
+     * Represents outline of an image.
+     */
+    public static class Outline extends Object {
+        /**
+         * The list of closed vector paths.
+         */
+        public ClosedVectorPath[] paths;
+
+        /**
+         * Represents outline of an image.
+         */
+        public Outline() {
+        }
+
+        /**
+         * Represents outline of an image.
+         *
+         * @param paths The list of closed vector paths.
+         */
+        public Outline(ClosedVectorPath[] paths) {
+            this.paths = paths;
+        }
+
+        /**
+         * Identifier uniquely determining type of the object.
+         */
+        public static final int CONSTRUCTOR = -161506702;
+
+        /**
+         * @return this.CONSTRUCTOR
+         */
+        @Override
+        public int getConstructor() {
+            return CONSTRUCTOR;
+        }
+    }
+
+    /**
      * This class is an abstract base class.
      * Describes a block of an instant view for a web page.
      */
@@ -45707,6 +47095,14 @@ public class TdApi {
          * The video.
          */
         public Video video;
+        /**
+         * Cover of the video; may be null if none.
+         */
+        @Nullable public Photo cover;
+        /**
+         * Timestamp from which the video playing must start, in seconds.
+         */
+        public int startTimestamp;
 
         /**
          * The media is a video.
@@ -45718,15 +47114,19 @@ public class TdApi {
          * The media is a video.
          *
          * @param video The video.
+         * @param cover Cover of the video; may be null if none.
+         * @param startTimestamp Timestamp from which the video playing must start, in seconds.
          */
-        public PaidMediaVideo(Video video) {
+        public PaidMediaVideo(Video video, Photo cover, int startTimestamp) {
             this.video = video;
+            this.cover = cover;
+            this.startTimestamp = startTimestamp;
         }
 
         /**
          * Identifier uniquely determining type of the object.
          */
-        public static final int CONSTRUCTOR = 464858633;
+        public static final int CONSTRUCTOR = 870838318;
 
         /**
          * @return this.CONSTRUCTOR
@@ -47437,7 +48837,8 @@ public class TdApi {
         @Retention(RetentionPolicy.SOURCE)
         @IntDef({
             PaymentFormTypeRegular.CONSTRUCTOR,
-            PaymentFormTypeStars.CONSTRUCTOR
+            PaymentFormTypeStars.CONSTRUCTOR,
+            PaymentFormTypeStarSubscription.CONSTRUCTOR
         })
         public @interface Constructors {}
 
@@ -47562,6 +48963,44 @@ public class TdApi {
          * Identifier uniquely determining type of the object.
          */
         public static final int CONSTRUCTOR = 90938685;
+
+        /**
+         * @return this.CONSTRUCTOR
+         */
+        @Override
+        public int getConstructor() {
+            return CONSTRUCTOR;
+        }
+    }
+
+    /**
+     * The payment form is for a payment in Telegram Stars for subscription.
+     */
+    public static class PaymentFormTypeStarSubscription extends PaymentFormType {
+        /**
+         * Information about subscription plan.
+         */
+        public StarSubscriptionPricing pricing;
+
+        /**
+         * The payment form is for a payment in Telegram Stars for subscription.
+         */
+        public PaymentFormTypeStarSubscription() {
+        }
+
+        /**
+         * The payment form is for a payment in Telegram Stars for subscription.
+         *
+         * @param pricing Information about subscription plan.
+         */
+        public PaymentFormTypeStarSubscription(StarSubscriptionPricing pricing) {
+            this.pricing = pricing;
+        }
+
+        /**
+         * Identifier uniquely determining type of the object.
+         */
+        public static final int CONSTRUCTOR = 271444827;
 
         /**
          * @return this.CONSTRUCTOR
@@ -49663,6 +51102,10 @@ public class TdApi {
          */
         public long amount;
         /**
+         * The discount associated with this option, as a percentage.
+         */
+        public int discountPercentage;
+        /**
          * Number of users which will be able to activate the gift codes.
          */
         public int winnerCount;
@@ -49678,6 +51121,10 @@ public class TdApi {
          * Number of times the store product must be paid.
          */
         public int storeProductQuantity;
+        /**
+         * A sticker to be shown along with the gift code; may be null if unknown.
+         */
+        @Nullable public Sticker sticker;
 
         /**
          * Describes an option for creating Telegram Premium gift codes or Telegram Premium giveaway. Use telegramPaymentPurposePremiumGiftCodes or telegramPaymentPurposePremiumGiveaway for out-of-store payments.
@@ -49690,24 +51137,28 @@ public class TdApi {
          *
          * @param currency ISO 4217 currency code for Telegram Premium gift code payment.
          * @param amount The amount to pay, in the smallest units of the currency.
+         * @param discountPercentage The discount associated with this option, as a percentage.
          * @param winnerCount Number of users which will be able to activate the gift codes.
          * @param monthCount Number of months the Telegram Premium subscription will be active.
          * @param storeProductId Identifier of the store product associated with the option; may be empty if none.
          * @param storeProductQuantity Number of times the store product must be paid.
+         * @param sticker A sticker to be shown along with the gift code; may be null if unknown.
          */
-        public PremiumGiftCodePaymentOption(String currency, long amount, int winnerCount, int monthCount, String storeProductId, int storeProductQuantity) {
+        public PremiumGiftCodePaymentOption(String currency, long amount, int discountPercentage, int winnerCount, int monthCount, String storeProductId, int storeProductQuantity, Sticker sticker) {
             this.currency = currency;
             this.amount = amount;
+            this.discountPercentage = discountPercentage;
             this.winnerCount = winnerCount;
             this.monthCount = monthCount;
             this.storeProductId = storeProductId;
             this.storeProductQuantity = storeProductQuantity;
+            this.sticker = sticker;
         }
 
         /**
          * Identifier uniquely determining type of the object.
          */
-        public static final int CONSTRUCTOR = 241165022;
+        public static final int CONSTRUCTOR = -661038611;
 
         /**
          * @return this.CONSTRUCTOR
@@ -51024,6 +52475,100 @@ public class TdApi {
     }
 
     /**
+     * Represents a ready to send inline message. Use sendInlineQueryResultMessage to send the message.
+     */
+    public static class PreparedInlineMessage extends Object {
+        /**
+         * Unique identifier of the inline query to pass to sendInlineQueryResultMessage.
+         */
+        public long inlineQueryId;
+        /**
+         * Resulted inline message of the query.
+         */
+        public InlineQueryResult result;
+        /**
+         * Types of the chats to which the message can be sent.
+         */
+        public TargetChatTypes chatTypes;
+
+        /**
+         * Represents a ready to send inline message. Use sendInlineQueryResultMessage to send the message.
+         */
+        public PreparedInlineMessage() {
+        }
+
+        /**
+         * Represents a ready to send inline message. Use sendInlineQueryResultMessage to send the message.
+         *
+         * @param inlineQueryId Unique identifier of the inline query to pass to sendInlineQueryResultMessage.
+         * @param result Resulted inline message of the query.
+         * @param chatTypes Types of the chats to which the message can be sent.
+         */
+        public PreparedInlineMessage(long inlineQueryId, InlineQueryResult result, TargetChatTypes chatTypes) {
+            this.inlineQueryId = inlineQueryId;
+            this.result = result;
+            this.chatTypes = chatTypes;
+        }
+
+        /**
+         * Identifier uniquely determining type of the object.
+         */
+        public static final int CONSTRUCTOR = -1808892734;
+
+        /**
+         * @return this.CONSTRUCTOR
+         */
+        @Override
+        public int getConstructor() {
+            return CONSTRUCTOR;
+        }
+    }
+
+    /**
+     * Represents an inline message that can be sent via the bot.
+     */
+    public static class PreparedInlineMessageId extends Object {
+        /**
+         * Unique identifier for the message.
+         */
+        public String id;
+        /**
+         * Point in time (Unix timestamp) when the message can't be used anymore.
+         */
+        public int expirationDate;
+
+        /**
+         * Represents an inline message that can be sent via the bot.
+         */
+        public PreparedInlineMessageId() {
+        }
+
+        /**
+         * Represents an inline message that can be sent via the bot.
+         *
+         * @param id Unique identifier for the message.
+         * @param expirationDate Point in time (Unix timestamp) when the message can't be used anymore.
+         */
+        public PreparedInlineMessageId(String id, int expirationDate) {
+            this.id = id;
+            this.expirationDate = expirationDate;
+        }
+
+        /**
+         * Identifier uniquely determining type of the object.
+         */
+        public static final int CONSTRUCTOR = 940415972;
+
+        /**
+         * @return this.CONSTRUCTOR
+         */
+        @Override
+        public int getConstructor() {
+            return CONSTRUCTOR;
+        }
+    }
+
+    /**
      * Contains information about a product that can be paid with invoice.
      */
     public static class ProductInfo extends Object {
@@ -51784,6 +53329,7 @@ public class TdApi {
             PushMessageContentPremiumGiftCode.CONSTRUCTOR,
             PushMessageContentGiveaway.CONSTRUCTOR,
             PushMessageContentGift.CONSTRUCTOR,
+            PushMessageContentUpgradedGift.CONSTRUCTOR,
             PushMessageContentScreenshotTaken.CONSTRUCTOR,
             PushMessageContentSticker.CONSTRUCTOR,
             PushMessageContentStory.CONSTRUCTOR,
@@ -52513,6 +54059,44 @@ public class TdApi {
          * Identifier uniquely determining type of the object.
          */
         public static final int CONSTRUCTOR = -2069312245;
+
+        /**
+         * @return this.CONSTRUCTOR
+         */
+        @Override
+        public int getConstructor() {
+            return CONSTRUCTOR;
+        }
+    }
+
+    /**
+     * A message with an upgraded gift.
+     */
+    public static class PushMessageContentUpgradedGift extends PushMessageContent {
+        /**
+         * True, if the gift was obtained by upgrading of a previously received gift; otherwise, this is a transferred gift.
+         */
+        public boolean isUpgrade;
+
+        /**
+         * A message with an upgraded gift.
+         */
+        public PushMessageContentUpgradedGift() {
+        }
+
+        /**
+         * A message with an upgraded gift.
+         *
+         * @param isUpgrade True, if the gift was obtained by upgrading of a previously received gift; otherwise, this is a transferred gift.
+         */
+        public PushMessageContentUpgradedGift(boolean isUpgrade) {
+            this.isUpgrade = isUpgrade;
+        }
+
+        /**
+         * Identifier uniquely determining type of the object.
+         */
+        public static final int CONSTRUCTOR = -1711666466;
 
         /**
          * @return this.CONSTRUCTOR
@@ -53909,6 +55493,178 @@ public class TdApi {
          * Identifier uniquely determining type of the object.
          */
         public static final int CONSTRUCTOR = 1654842920;
+
+        /**
+         * @return this.CONSTRUCTOR
+         */
+        @Override
+        public int getConstructor() {
+            return CONSTRUCTOR;
+        }
+    }
+
+    /**
+     * Represents a gift received by a user or a chat.
+     */
+    public static class ReceivedGift extends Object {
+        /**
+         * Unique identifier of the received gift for the current user; only for the receiver of the gift.
+         */
+        public String receivedGiftId;
+        /**
+         * Identifier of a user or a chat that sent the gift; may be null if unknown.
+         */
+        @Nullable public MessageSender senderId;
+        /**
+         * Message added to the gift.
+         */
+        public FormattedText text;
+        /**
+         * True, if the sender and gift text are shown only to the gift receiver; otherwise, everyone are able to see them.
+         */
+        public boolean isPrivate;
+        /**
+         * True, if the gift is displayed on the chat's profile page; only for the receiver of the gift.
+         */
+        public boolean isSaved;
+        /**
+         * True, if the gift is a regular gift that can be upgraded to a unique gift; only for the receiver of the gift.
+         */
+        public boolean canBeUpgraded;
+        /**
+         * True, if the gift is an upgraded gift that can be transferred to another owner; only for the receiver of the gift.
+         */
+        public boolean canBeTransferred;
+        /**
+         * True, if the gift was refunded and isn't available anymore.
+         */
+        public boolean wasRefunded;
+        /**
+         * Point in time (Unix timestamp) when the gift was sent.
+         */
+        public int date;
+        /**
+         * The gift.
+         */
+        public SentGift gift;
+        /**
+         * Number of Telegram Stars that can be claimed by the receiver instead of the regular gift; 0 if the gift can't be sold by the current user.
+         */
+        public long sellStarCount;
+        /**
+         * Number of Telegram Stars that were paid by the sender for the ability to upgrade the gift.
+         */
+        public long prepaidUpgradeStarCount;
+        /**
+         * Number of Telegram Stars that must be paid to transfer the upgraded gift; only for the receiver of the gift.
+         */
+        public long transferStarCount;
+        /**
+         * Point in time (Unix timestamp) when the upgraded gift can be transferred to the TON blockchain as an NFT; 0 if NFT export isn't possible; only for the receiver of the gift.
+         */
+        public int exportDate;
+
+        /**
+         * Represents a gift received by a user or a chat.
+         */
+        public ReceivedGift() {
+        }
+
+        /**
+         * Represents a gift received by a user or a chat.
+         *
+         * @param receivedGiftId Unique identifier of the received gift for the current user; only for the receiver of the gift.
+         * @param senderId Identifier of a user or a chat that sent the gift; may be null if unknown.
+         * @param text Message added to the gift.
+         * @param isPrivate True, if the sender and gift text are shown only to the gift receiver; otherwise, everyone are able to see them.
+         * @param isSaved True, if the gift is displayed on the chat's profile page; only for the receiver of the gift.
+         * @param canBeUpgraded True, if the gift is a regular gift that can be upgraded to a unique gift; only for the receiver of the gift.
+         * @param canBeTransferred True, if the gift is an upgraded gift that can be transferred to another owner; only for the receiver of the gift.
+         * @param wasRefunded True, if the gift was refunded and isn't available anymore.
+         * @param date Point in time (Unix timestamp) when the gift was sent.
+         * @param gift The gift.
+         * @param sellStarCount Number of Telegram Stars that can be claimed by the receiver instead of the regular gift; 0 if the gift can't be sold by the current user.
+         * @param prepaidUpgradeStarCount Number of Telegram Stars that were paid by the sender for the ability to upgrade the gift.
+         * @param transferStarCount Number of Telegram Stars that must be paid to transfer the upgraded gift; only for the receiver of the gift.
+         * @param exportDate Point in time (Unix timestamp) when the upgraded gift can be transferred to the TON blockchain as an NFT; 0 if NFT export isn't possible; only for the receiver of the gift.
+         */
+        public ReceivedGift(String receivedGiftId, MessageSender senderId, FormattedText text, boolean isPrivate, boolean isSaved, boolean canBeUpgraded, boolean canBeTransferred, boolean wasRefunded, int date, SentGift gift, long sellStarCount, long prepaidUpgradeStarCount, long transferStarCount, int exportDate) {
+            this.receivedGiftId = receivedGiftId;
+            this.senderId = senderId;
+            this.text = text;
+            this.isPrivate = isPrivate;
+            this.isSaved = isSaved;
+            this.canBeUpgraded = canBeUpgraded;
+            this.canBeTransferred = canBeTransferred;
+            this.wasRefunded = wasRefunded;
+            this.date = date;
+            this.gift = gift;
+            this.sellStarCount = sellStarCount;
+            this.prepaidUpgradeStarCount = prepaidUpgradeStarCount;
+            this.transferStarCount = transferStarCount;
+            this.exportDate = exportDate;
+        }
+
+        /**
+         * Identifier uniquely determining type of the object.
+         */
+        public static final int CONSTRUCTOR = -959296918;
+
+        /**
+         * @return this.CONSTRUCTOR
+         */
+        @Override
+        public int getConstructor() {
+            return CONSTRUCTOR;
+        }
+    }
+
+    /**
+     * Represents a list of gifts received by a user or a chat.
+     */
+    public static class ReceivedGifts extends Object {
+        /**
+         * The total number of received gifts.
+         */
+        public int totalCount;
+        /**
+         * The list of gifts.
+         */
+        public ReceivedGift[] gifts;
+        /**
+         * True, if notifications about new gifts of the owner are enabled.
+         */
+        public boolean areNotificationsEnabled;
+        /**
+         * The offset for the next request. If empty, then there are no more results.
+         */
+        public String nextOffset;
+
+        /**
+         * Represents a list of gifts received by a user or a chat.
+         */
+        public ReceivedGifts() {
+        }
+
+        /**
+         * Represents a list of gifts received by a user or a chat.
+         *
+         * @param totalCount The total number of received gifts.
+         * @param gifts The list of gifts.
+         * @param areNotificationsEnabled True, if notifications about new gifts of the owner are enabled.
+         * @param nextOffset The offset for the next request. If empty, then there are no more results.
+         */
+        public ReceivedGifts(int totalCount, ReceivedGift[] gifts, boolean areNotificationsEnabled, String nextOffset) {
+            this.totalCount = totalCount;
+            this.gifts = gifts;
+            this.areNotificationsEnabled = areNotificationsEnabled;
+            this.nextOffset = nextOffset;
+        }
+
+        /**
+         * Identifier uniquely determining type of the object.
+         */
+        public static final int CONSTRUCTOR = 1237114400;
 
         /**
          * @return this.CONSTRUCTOR
@@ -56726,6 +58482,110 @@ public class TdApi {
 
     /**
      * This class is an abstract base class.
+     * Represents a filter for type of the chats in which to search messages.
+     */
+    public abstract static class SearchMessagesChatTypeFilter extends Object {
+        /**
+         * Describes possible values returned by getConstructor().
+         */
+        @Retention(RetentionPolicy.SOURCE)
+        @IntDef({
+            SearchMessagesChatTypeFilterPrivate.CONSTRUCTOR,
+            SearchMessagesChatTypeFilterGroup.CONSTRUCTOR,
+            SearchMessagesChatTypeFilterChannel.CONSTRUCTOR
+        })
+        public @interface Constructors {}
+
+        /**
+         * @return identifier uniquely determining type of the object.
+         */
+        @Constructors
+        @Override
+        public abstract int getConstructor();
+        /**
+         * Default class constructor.
+         */
+        public SearchMessagesChatTypeFilter() {
+        }
+    }
+
+    /**
+     * Returns only messages in private chats.
+     */
+    public static class SearchMessagesChatTypeFilterPrivate extends SearchMessagesChatTypeFilter {
+
+        /**
+         * Returns only messages in private chats.
+         */
+        public SearchMessagesChatTypeFilterPrivate() {
+        }
+
+        /**
+         * Identifier uniquely determining type of the object.
+         */
+        public static final int CONSTRUCTOR = 1169248975;
+
+        /**
+         * @return this.CONSTRUCTOR
+         */
+        @Override
+        public int getConstructor() {
+            return CONSTRUCTOR;
+        }
+    }
+
+    /**
+     * Returns only messages in basic group and supergroup chats.
+     */
+    public static class SearchMessagesChatTypeFilterGroup extends SearchMessagesChatTypeFilter {
+
+        /**
+         * Returns only messages in basic group and supergroup chats.
+         */
+        public SearchMessagesChatTypeFilterGroup() {
+        }
+
+        /**
+         * Identifier uniquely determining type of the object.
+         */
+        public static final int CONSTRUCTOR = -2059426022;
+
+        /**
+         * @return this.CONSTRUCTOR
+         */
+        @Override
+        public int getConstructor() {
+            return CONSTRUCTOR;
+        }
+    }
+
+    /**
+     * Returns only messages in channel chats.
+     */
+    public static class SearchMessagesChatTypeFilterChannel extends SearchMessagesChatTypeFilter {
+
+        /**
+         * Returns only messages in channel chats.
+         */
+        public SearchMessagesChatTypeFilterChannel() {
+        }
+
+        /**
+         * Identifier uniquely determining type of the object.
+         */
+        public static final int CONSTRUCTOR = -773540139;
+
+        /**
+         * @return this.CONSTRUCTOR
+         */
+        @Override
+        public int getConstructor() {
+            return CONSTRUCTOR;
+        }
+    }
+
+    /**
+     * This class is an abstract base class.
      * Represents a filter for message search results.
      */
     public abstract static class SearchMessagesFilter extends Object {
@@ -57392,6 +59252,110 @@ public class TdApi {
          * Identifier uniquely determining type of the object.
          */
         public static final int CONSTRUCTOR = -1945106707;
+
+        /**
+         * @return this.CONSTRUCTOR
+         */
+        @Override
+        public int getConstructor() {
+            return CONSTRUCTOR;
+        }
+    }
+
+    /**
+     * This class is an abstract base class.
+     * Represents content of a gift received by a user or a channel chat.
+     */
+    public abstract static class SentGift extends Object {
+        /**
+         * Describes possible values returned by getConstructor().
+         */
+        @Retention(RetentionPolicy.SOURCE)
+        @IntDef({
+            SentGiftRegular.CONSTRUCTOR,
+            SentGiftUpgraded.CONSTRUCTOR
+        })
+        public @interface Constructors {}
+
+        /**
+         * @return identifier uniquely determining type of the object.
+         */
+        @Constructors
+        @Override
+        public abstract int getConstructor();
+        /**
+         * Default class constructor.
+         */
+        public SentGift() {
+        }
+    }
+
+    /**
+     * Regular gift.
+     */
+    public static class SentGiftRegular extends SentGift {
+        /**
+         * The gift.
+         */
+        public Gift gift;
+
+        /**
+         * Regular gift.
+         */
+        public SentGiftRegular() {
+        }
+
+        /**
+         * Regular gift.
+         *
+         * @param gift The gift.
+         */
+        public SentGiftRegular(Gift gift) {
+            this.gift = gift;
+        }
+
+        /**
+         * Identifier uniquely determining type of the object.
+         */
+        public static final int CONSTRUCTOR = 594062617;
+
+        /**
+         * @return this.CONSTRUCTOR
+         */
+        @Override
+        public int getConstructor() {
+            return CONSTRUCTOR;
+        }
+    }
+
+    /**
+     * Upgraded gift.
+     */
+    public static class SentGiftUpgraded extends SentGift {
+        /**
+         * The gift.
+         */
+        public UpgradedGift gift;
+
+        /**
+         * Upgraded gift.
+         */
+        public SentGiftUpgraded() {
+        }
+
+        /**
+         * Upgraded gift.
+         *
+         * @param gift The gift.
+         */
+        public SentGiftUpgraded(UpgradedGift gift) {
+            this.gift = gift;
+        }
+
+        /**
+         * Identifier uniquely determining type of the object.
+         */
+        public static final int CONSTRUCTOR = 627524736;
 
         /**
          * @return this.CONSTRUCTOR
@@ -58540,6 +60504,50 @@ public class TdApi {
     }
 
     /**
+     * Describes a possibly non-integer amount of Telegram Stars.
+     */
+    public static class StarAmount extends Object {
+        /**
+         * The integer amount of Telegram Stars rounded to 0.
+         */
+        public long starCount;
+        /**
+         * The number of 1/1000000000 shares of Telegram Stars; from -999999999 to 999999999.
+         */
+        public int nanostarCount;
+
+        /**
+         * Describes a possibly non-integer amount of Telegram Stars.
+         */
+        public StarAmount() {
+        }
+
+        /**
+         * Describes a possibly non-integer amount of Telegram Stars.
+         *
+         * @param starCount The integer amount of Telegram Stars rounded to 0.
+         * @param nanostarCount The number of 1/1000000000 shares of Telegram Stars; from -999999999 to 999999999.
+         */
+        public StarAmount(long starCount, int nanostarCount) {
+            this.starCount = starCount;
+            this.nanostarCount = nanostarCount;
+        }
+
+        /**
+         * Identifier uniquely determining type of the object.
+         */
+        public static final int CONSTRUCTOR = 1863216512;
+
+        /**
+         * @return this.CONSTRUCTOR
+         */
+        @Override
+        public int getConstructor() {
+            return CONSTRUCTOR;
+        }
+    }
+
+    /**
      * Describes an option for creating Telegram Star giveaway. Use telegramPaymentPurposeStarGiveaway for out-of-store payments.
      */
     public static class StarGiveawayPaymentOption extends Object {
@@ -58862,17 +60870,17 @@ public class TdApi {
      */
     public static class StarRevenueStatus extends Object {
         /**
-         * Total number of Telegram Stars earned.
+         * Total amount of Telegram Stars earned.
          */
-        public long totalCount;
+        public StarAmount totalAmount;
         /**
-         * The number of Telegram Stars that aren't withdrawn yet.
+         * The amount of Telegram Stars that aren't withdrawn yet.
          */
-        public long currentCount;
+        public StarAmount currentAmount;
         /**
-         * The number of Telegram Stars that are available for withdrawal.
+         * The amount of Telegram Stars that are available for withdrawal.
          */
-        public long availableCount;
+        public StarAmount availableAmount;
         /**
          * True, if Telegram Stars can be withdrawn now or later.
          */
@@ -58891,16 +60899,16 @@ public class TdApi {
         /**
          * Contains information about Telegram Stars earned by a bot or a chat.
          *
-         * @param totalCount Total number of Telegram Stars earned.
-         * @param currentCount The number of Telegram Stars that aren't withdrawn yet.
-         * @param availableCount The number of Telegram Stars that are available for withdrawal.
+         * @param totalAmount Total amount of Telegram Stars earned.
+         * @param currentAmount The amount of Telegram Stars that aren't withdrawn yet.
+         * @param availableAmount The amount of Telegram Stars that are available for withdrawal.
          * @param withdrawalEnabled True, if Telegram Stars can be withdrawn now or later.
          * @param nextWithdrawalIn Time left before the next withdrawal can be started, in seconds; 0 if withdrawal can be started now.
          */
-        public StarRevenueStatus(long totalCount, long currentCount, long availableCount, boolean withdrawalEnabled, int nextWithdrawalIn) {
-            this.totalCount = totalCount;
-            this.currentCount = currentCount;
-            this.availableCount = availableCount;
+        public StarRevenueStatus(StarAmount totalAmount, StarAmount currentAmount, StarAmount availableAmount, boolean withdrawalEnabled, int nextWithdrawalIn) {
+            this.totalAmount = totalAmount;
+            this.currentAmount = currentAmount;
+            this.availableAmount = availableAmount;
             this.withdrawalEnabled = withdrawalEnabled;
             this.nextWithdrawalIn = nextWithdrawalIn;
         }
@@ -58908,7 +60916,7 @@ public class TdApi {
         /**
          * Identifier uniquely determining type of the object.
          */
-        public static final int CONSTRUCTOR = -396634629;
+        public static final int CONSTRUCTOR = 2006266600;
 
         /**
          * @return this.CONSTRUCTOR
@@ -58920,7 +60928,7 @@ public class TdApi {
     }
 
     /**
-     * Contains information about subscription to a channel chat paid in Telegram Stars.
+     * Contains information about subscription to a channel chat, a bot, or a business account that was paid in Telegram Stars.
      */
     public static class StarSubscription extends Object {
         /**
@@ -58928,17 +60936,13 @@ public class TdApi {
          */
         public String id;
         /**
-         * Identifier of the channel chat that is subscribed.
+         * Identifier of the chat that is subscribed.
          */
         public long chatId;
         /**
          * Point in time (Unix timestamp) when the subscription will expire or expired.
          */
         public int expirationDate;
-        /**
-         * True, if the subscription is active and the user can use the method reuseStarSubscription to join the subscribed chat again.
-         */
-        public boolean canReuse;
         /**
          * True, if the subscription was canceled.
          */
@@ -58948,47 +60952,45 @@ public class TdApi {
          */
         public boolean isExpiring;
         /**
-         * The invite link that can be used to renew the subscription if it has been expired; may be empty, if the link isn't available anymore.
-         */
-        public String inviteLink;
-        /**
          * The subscription plan.
          */
         public StarSubscriptionPricing pricing;
+        /**
+         * Type of the subscription.
+         */
+        public StarSubscriptionType type;
 
         /**
-         * Contains information about subscription to a channel chat paid in Telegram Stars.
+         * Contains information about subscription to a channel chat, a bot, or a business account that was paid in Telegram Stars.
          */
         public StarSubscription() {
         }
 
         /**
-         * Contains information about subscription to a channel chat paid in Telegram Stars.
+         * Contains information about subscription to a channel chat, a bot, or a business account that was paid in Telegram Stars.
          *
          * @param id Unique identifier of the subscription.
-         * @param chatId Identifier of the channel chat that is subscribed.
+         * @param chatId Identifier of the chat that is subscribed.
          * @param expirationDate Point in time (Unix timestamp) when the subscription will expire or expired.
-         * @param canReuse True, if the subscription is active and the user can use the method reuseStarSubscription to join the subscribed chat again.
          * @param isCanceled True, if the subscription was canceled.
          * @param isExpiring True, if the subscription expires soon and there are no enough Telegram Stars on the user's balance to extend it.
-         * @param inviteLink The invite link that can be used to renew the subscription if it has been expired; may be empty, if the link isn't available anymore.
          * @param pricing The subscription plan.
+         * @param type Type of the subscription.
          */
-        public StarSubscription(String id, long chatId, int expirationDate, boolean canReuse, boolean isCanceled, boolean isExpiring, String inviteLink, StarSubscriptionPricing pricing) {
+        public StarSubscription(String id, long chatId, int expirationDate, boolean isCanceled, boolean isExpiring, StarSubscriptionPricing pricing, StarSubscriptionType type) {
             this.id = id;
             this.chatId = chatId;
             this.expirationDate = expirationDate;
-            this.canReuse = canReuse;
             this.isCanceled = isCanceled;
             this.isExpiring = isExpiring;
-            this.inviteLink = inviteLink;
             this.pricing = pricing;
+            this.type = type;
         }
 
         /**
          * Identifier uniquely determining type of the object.
          */
-        public static final int CONSTRUCTOR = 1823410910;
+        public static final int CONSTRUCTOR = 976753141;
 
         /**
          * @return this.CONSTRUCTOR
@@ -59044,13 +61046,141 @@ public class TdApi {
     }
 
     /**
+     * This class is an abstract base class.
+     * Describes type of subscription paid in Telegram Stars.
+     */
+    public abstract static class StarSubscriptionType extends Object {
+        /**
+         * Describes possible values returned by getConstructor().
+         */
+        @Retention(RetentionPolicy.SOURCE)
+        @IntDef({
+            StarSubscriptionTypeChannel.CONSTRUCTOR,
+            StarSubscriptionTypeBot.CONSTRUCTOR
+        })
+        public @interface Constructors {}
+
+        /**
+         * @return identifier uniquely determining type of the object.
+         */
+        @Constructors
+        @Override
+        public abstract int getConstructor();
+        /**
+         * Default class constructor.
+         */
+        public StarSubscriptionType() {
+        }
+    }
+
+    /**
+     * Describes a subscription to a channel chat.
+     */
+    public static class StarSubscriptionTypeChannel extends StarSubscriptionType {
+        /**
+         * True, if the subscription is active and the user can use the method reuseStarSubscription to join the subscribed chat again.
+         */
+        public boolean canReuse;
+        /**
+         * The invite link that can be used to renew the subscription if it has been expired; may be empty, if the link isn't available anymore.
+         */
+        public String inviteLink;
+
+        /**
+         * Describes a subscription to a channel chat.
+         */
+        public StarSubscriptionTypeChannel() {
+        }
+
+        /**
+         * Describes a subscription to a channel chat.
+         *
+         * @param canReuse True, if the subscription is active and the user can use the method reuseStarSubscription to join the subscribed chat again.
+         * @param inviteLink The invite link that can be used to renew the subscription if it has been expired; may be empty, if the link isn't available anymore.
+         */
+        public StarSubscriptionTypeChannel(boolean canReuse, String inviteLink) {
+            this.canReuse = canReuse;
+            this.inviteLink = inviteLink;
+        }
+
+        /**
+         * Identifier uniquely determining type of the object.
+         */
+        public static final int CONSTRUCTOR = -1030048011;
+
+        /**
+         * @return this.CONSTRUCTOR
+         */
+        @Override
+        public int getConstructor() {
+            return CONSTRUCTOR;
+        }
+    }
+
+    /**
+     * Describes a subscription in a bot or a business account.
+     */
+    public static class StarSubscriptionTypeBot extends StarSubscriptionType {
+        /**
+         * True, if the subscription was canceled by the bot and can't be extended.
+         */
+        public boolean isCanceledByBot;
+        /**
+         * Subscription invoice title.
+         */
+        public String title;
+        /**
+         * Subscription invoice photo.
+         */
+        public Photo photo;
+        /**
+         * The link to the subscription invoice.
+         */
+        public String invoiceLink;
+
+        /**
+         * Describes a subscription in a bot or a business account.
+         */
+        public StarSubscriptionTypeBot() {
+        }
+
+        /**
+         * Describes a subscription in a bot or a business account.
+         *
+         * @param isCanceledByBot True, if the subscription was canceled by the bot and can't be extended.
+         * @param title Subscription invoice title.
+         * @param photo Subscription invoice photo.
+         * @param invoiceLink The link to the subscription invoice.
+         */
+        public StarSubscriptionTypeBot(boolean isCanceledByBot, String title, Photo photo, String invoiceLink) {
+            this.isCanceledByBot = isCanceledByBot;
+            this.title = title;
+            this.photo = photo;
+            this.invoiceLink = invoiceLink;
+        }
+
+        /**
+         * Identifier uniquely determining type of the object.
+         */
+        public static final int CONSTRUCTOR = 226024914;
+
+        /**
+         * @return this.CONSTRUCTOR
+         */
+        @Override
+        public int getConstructor() {
+            return CONSTRUCTOR;
+        }
+    }
+
+    /**
      * Represents a list of Telegram Star subscriptions.
      */
     public static class StarSubscriptions extends Object {
         /**
          * The amount of owned Telegram Stars.
          */
-        public long starCount;
+        public StarAmount starAmount;
         /**
          * List of subscriptions for Telegram Stars.
          */
@@ -59073,13 +61203,13 @@ public class TdApi {
         /**
          * Represents a list of Telegram Star subscriptions.
          *
-         * @param starCount The amount of owned Telegram Stars.
+         * @param starAmount The amount of owned Telegram Stars.
          * @param subscriptions List of subscriptions for Telegram Stars.
          * @param requiredStarCount The number of Telegram Stars required to buy to extend subscriptions expiring soon.
          * @param nextOffset The offset for the next request. If empty, then there are no more results.
          */
-        public StarSubscriptions(long starCount, StarSubscription[] subscriptions, long requiredStarCount, String nextOffset) {
-            this.starCount = starCount;
+        public StarSubscriptions(StarAmount starAmount, StarSubscription[] subscriptions, long requiredStarCount, String nextOffset) {
+            this.starAmount = starAmount;
             this.subscriptions = subscriptions;
             this.requiredStarCount = requiredStarCount;
             this.nextOffset = nextOffset;
@@ -59088,7 +61218,7 @@ public class TdApi {
         /**
          * Identifier uniquely determining type of the object.
          */
-        public static final int CONSTRUCTOR = 1509314500;
+        public static final int CONSTRUCTOR = 151169395;
 
         /**
          * @return this.CONSTRUCTOR
@@ -59110,7 +61240,7 @@ public class TdApi {
         /**
          * The amount of added owned Telegram Stars; negative for outgoing transactions.
          */
-        public long starCount;
+        public StarAmount starAmount;
         /**
          * True, if the transaction is a refund of a previous transaction.
          */
@@ -59120,9 +61250,9 @@ public class TdApi {
          */
         public int date;
         /**
-         * Source of the incoming transaction, or its recipient for outgoing transactions.
+         * Type of the transaction.
          */
-        public StarTransactionPartner partner;
+        public StarTransactionType type;
 
         /**
          * Represents a transaction changing the amount of owned Telegram Stars.
@@ -59134,23 +61264,23 @@ public class TdApi {
          * Represents a transaction changing the amount of owned Telegram Stars.
          *
          * @param id Unique identifier of the transaction.
-         * @param starCount The amount of added owned Telegram Stars; negative for outgoing transactions.
+         * @param starAmount The amount of added owned Telegram Stars; negative for outgoing transactions.
          * @param isRefund True, if the transaction is a refund of a previous transaction.
          * @param date Point in time (Unix timestamp) when the transaction was completed.
-         * @param partner Source of the incoming transaction, or its recipient for outgoing transactions.
+         * @param type Type of the transaction.
          */
-        public StarTransaction(String id, long starCount, boolean isRefund, int date, StarTransactionPartner partner) {
+        public StarTransaction(String id, StarAmount starAmount, boolean isRefund, int date, StarTransactionType type) {
             this.id = id;
-            this.starCount = starCount;
+            this.starAmount = starAmount;
             this.isRefund = isRefund;
             this.date = date;
-            this.partner = partner;
+            this.type = type;
         }
 
         /**
          * Identifier uniquely determining type of the object.
          */
-        public static final int CONSTRUCTOR = -837778264;
+        public static final int CONSTRUCTOR = 2139228816;
 
         /**
          * @return this.CONSTRUCTOR
@@ -59241,24 +61371,41 @@ public class TdApi {
 
     /**
      * This class is an abstract base class.
-     * Describes source or recipient of a transaction with Telegram Stars.
+     * Describes type of transaction with Telegram Stars.
      */
-    public abstract static class StarTransactionPartner extends Object {
+    public abstract static class StarTransactionType extends Object {
         /**
          * Describes possible values returned by getConstructor().
          */
         @Retention(RetentionPolicy.SOURCE)
         @IntDef({
-            StarTransactionPartnerTelegram.CONSTRUCTOR,
-            StarTransactionPartnerAppStore.CONSTRUCTOR,
-            StarTransactionPartnerGooglePlay.CONSTRUCTOR,
-            StarTransactionPartnerFragment.CONSTRUCTOR,
-            StarTransactionPartnerTelegramAds.CONSTRUCTOR,
-            StarTransactionPartnerBot.CONSTRUCTOR,
-            StarTransactionPartnerBusiness.CONSTRUCTOR,
-            StarTransactionPartnerChat.CONSTRUCTOR,
-            StarTransactionPartnerUser.CONSTRUCTOR,
-            StarTransactionPartnerUnsupported.CONSTRUCTOR
+            StarTransactionTypePremiumBotDeposit.CONSTRUCTOR,
+            StarTransactionTypeAppStoreDeposit.CONSTRUCTOR,
+            StarTransactionTypeGooglePlayDeposit.CONSTRUCTOR,
+            StarTransactionTypeFragmentDeposit.CONSTRUCTOR,
+            StarTransactionTypeUserDeposit.CONSTRUCTOR,
+            StarTransactionTypeGiveawayDeposit.CONSTRUCTOR,
+            StarTransactionTypeFragmentWithdrawal.CONSTRUCTOR,
+            StarTransactionTypeTelegramAdsWithdrawal.CONSTRUCTOR,
+            StarTransactionTypeTelegramApiUsage.CONSTRUCTOR,
+            StarTransactionTypeBotPaidMediaPurchase.CONSTRUCTOR,
+            StarTransactionTypeBotPaidMediaSale.CONSTRUCTOR,
+            StarTransactionTypeChannelPaidMediaPurchase.CONSTRUCTOR,
+            StarTransactionTypeChannelPaidMediaSale.CONSTRUCTOR,
+            StarTransactionTypeBotInvoicePurchase.CONSTRUCTOR,
+            StarTransactionTypeBotInvoiceSale.CONSTRUCTOR,
+            StarTransactionTypeBotSubscriptionPurchase.CONSTRUCTOR,
+            StarTransactionTypeBotSubscriptionSale.CONSTRUCTOR,
+            StarTransactionTypeChannelSubscriptionPurchase.CONSTRUCTOR,
+            StarTransactionTypeChannelSubscriptionSale.CONSTRUCTOR,
+            StarTransactionTypeGiftPurchase.CONSTRUCTOR,
+            StarTransactionTypeGiftTransfer.CONSTRUCTOR,
+            StarTransactionTypeGiftSale.CONSTRUCTOR,
+            StarTransactionTypeGiftUpgrade.CONSTRUCTOR,
+            StarTransactionTypeChannelPaidReactionSend.CONSTRUCTOR,
+            StarTransactionTypeChannelPaidReactionReceive.CONSTRUCTOR,
+            StarTransactionTypeAffiliateProgramCommission.CONSTRUCTOR,
+            StarTransactionTypeUnsupported.CONSTRUCTOR
         })
         public @interface Constructors {}
 
@@ -59271,25 +61418,25 @@ public class TdApi {
         /**
          * Default class constructor.
          */
-        public StarTransactionPartner() {
+        public StarTransactionType() {
         }
     }
 
     /**
-     * The transaction is a transaction with Telegram through a bot.
+     * The transaction is a deposit of Telegram Stars from the Premium bot; for regular users only.
      */
-    public static class StarTransactionPartnerTelegram extends StarTransactionPartner {
+    public static class StarTransactionTypePremiumBotDeposit extends StarTransactionType {
 
         /**
-         * The transaction is a transaction with Telegram through a bot.
+         * The transaction is a deposit of Telegram Stars from the Premium bot; for regular users only.
          */
-        public StarTransactionPartnerTelegram() {
+        public StarTransactionTypePremiumBotDeposit() {
         }
 
         /**
          * Identifier uniquely determining type of the object.
          */
-        public static final int CONSTRUCTOR = 2055838912;
+        public static final int CONSTRUCTOR = -663156466;
 
         /**
          * @return this.CONSTRUCTOR
@@ -59301,20 +61448,20 @@ public class TdApi {
     }
 
     /**
-     * The transaction is a transaction with App Store.
+     * The transaction is a deposit of Telegram Stars from App Store; for regular users only.
      */
-    public static class StarTransactionPartnerAppStore extends StarTransactionPartner {
+    public static class StarTransactionTypeAppStoreDeposit extends StarTransactionType {
 
         /**
-         * The transaction is a transaction with App Store.
+         * The transaction is a deposit of Telegram Stars from App Store; for regular users only.
          */
-        public StarTransactionPartnerAppStore() {
+        public StarTransactionTypeAppStoreDeposit() {
         }
 
         /**
          * Identifier uniquely determining type of the object.
          */
-        public static final int CONSTRUCTOR = -482335012;
+        public static final int CONSTRUCTOR = 136853825;
 
         /**
          * @return this.CONSTRUCTOR
@@ -59326,20 +61473,20 @@ public class TdApi {
     }
 
     /**
-     * The transaction is a transaction with Google Play.
+     * The transaction is a deposit of Telegram Stars from Google Play; for regular users only.
      */
-    public static class StarTransactionPartnerGooglePlay extends StarTransactionPartner {
+    public static class StarTransactionTypeGooglePlayDeposit extends StarTransactionType {
 
         /**
-         * The transaction is a transaction with Google Play.
+         * The transaction is a deposit of Telegram Stars from Google Play; for regular users only.
          */
-        public StarTransactionPartnerGooglePlay() {
+        public StarTransactionTypeGooglePlayDeposit() {
         }
 
         /**
          * Identifier uniquely determining type of the object.
          */
-        public static final int CONSTRUCTOR = -232131936;
+        public static final int CONSTRUCTOR = -323111338;
 
         /**
          * @return this.CONSTRUCTOR
@@ -59351,33 +61498,146 @@ public class TdApi {
     }
 
     /**
-     * The transaction is a transaction with Fragment.
+     * The transaction is a deposit of Telegram Stars from Fragment; for regular users and bots only.
      */
-    public static class StarTransactionPartnerFragment extends StarTransactionPartner {
+    public static class StarTransactionTypeFragmentDeposit extends StarTransactionType {
+
+        /**
+         * The transaction is a deposit of Telegram Stars from Fragment; for regular users and bots only.
+         */
+        public StarTransactionTypeFragmentDeposit() {
+        }
+
+        /**
+         * Identifier uniquely determining type of the object.
+         */
+        public static final int CONSTRUCTOR = 123887172;
+
+        /**
+         * @return this.CONSTRUCTOR
+         */
+        @Override
+        public int getConstructor() {
+            return CONSTRUCTOR;
+        }
+    }
+
+    /**
+     * The transaction is a deposit of Telegram Stars by another user; for regular users only.
+     */
+    public static class StarTransactionTypeUserDeposit extends StarTransactionType {
+        /**
+         * Identifier of the user that gifted Telegram Stars; 0 if the user was anonymous.
+         */
+        public long userId;
+        /**
+         * The sticker to be shown in the transaction information; may be null if unknown.
+         */
+        @Nullable public Sticker sticker;
+
+        /**
+         * The transaction is a deposit of Telegram Stars by another user; for regular users only.
+         */
+        public StarTransactionTypeUserDeposit() {
+        }
+
+        /**
+         * The transaction is a deposit of Telegram Stars by another user; for regular users only.
+         *
+         * @param userId Identifier of the user that gifted Telegram Stars; 0 if the user was anonymous.
+         * @param sticker The sticker to be shown in the transaction information; may be null if unknown.
+         */
+        public StarTransactionTypeUserDeposit(long userId, Sticker sticker) {
+            this.userId = userId;
+            this.sticker = sticker;
+        }
+
+        /**
+         * Identifier uniquely determining type of the object.
+         */
+        public static final int CONSTRUCTOR = 204085481;
+
+        /**
+         * @return this.CONSTRUCTOR
+         */
+        @Override
+        public int getConstructor() {
+            return CONSTRUCTOR;
+        }
+    }
+
+    /**
+     * The transaction is a deposit of Telegram Stars from a giveaway; for regular users only.
+     */
+    public static class StarTransactionTypeGiveawayDeposit extends StarTransactionType {
+        /**
+         * Identifier of a supergroup or a channel chat that created the giveaway.
+         */
+        public long chatId;
+        /**
+         * Identifier of the message with the giveaway; can be 0 or an identifier of a deleted message.
+         */
+        public long giveawayMessageId;
+
+        /**
+         * The transaction is a deposit of Telegram Stars from a giveaway; for regular users only.
+         */
+        public StarTransactionTypeGiveawayDeposit() {
+        }
+
+        /**
+         * The transaction is a deposit of Telegram Stars from a giveaway; for regular users only.
+         *
+         * @param chatId Identifier of a supergroup or a channel chat that created the giveaway.
+         * @param giveawayMessageId Identifier of the message with the giveaway; can be 0 or an identifier of a deleted message.
+         */
+        public StarTransactionTypeGiveawayDeposit(long chatId, long giveawayMessageId) {
+            this.chatId = chatId;
+            this.giveawayMessageId = giveawayMessageId;
+        }
+
+        /**
+         * Identifier uniquely determining type of the object.
+         */
+        public static final int CONSTRUCTOR = -1318977338;
+
+        /**
+         * @return this.CONSTRUCTOR
+         */
+        @Override
+        public int getConstructor() {
+            return CONSTRUCTOR;
+        }
+    }
+
+    /**
+     * The transaction is a withdrawal of earned Telegram Stars to Fragment; for bots and channel chats only.
+     */
+    public static class StarTransactionTypeFragmentWithdrawal extends StarTransactionType {
         /**
          * State of the withdrawal; may be null for refunds from Fragment.
          */
         @Nullable public RevenueWithdrawalState withdrawalState;
 
         /**
-         * The transaction is a transaction with Fragment.
+         * The transaction is a withdrawal of earned Telegram Stars to Fragment; for bots and channel chats only.
          */
-        public StarTransactionPartnerFragment() {
+        public StarTransactionTypeFragmentWithdrawal() {
         }
 
         /**
-         * The transaction is a transaction with Fragment.
+         * The transaction is a withdrawal of earned Telegram Stars to Fragment; for bots and channel chats only.
          *
          * @param withdrawalState State of the withdrawal; may be null for refunds from Fragment.
          */
-        public StarTransactionPartnerFragment(RevenueWithdrawalState withdrawalState) {
+        public StarTransactionTypeFragmentWithdrawal(RevenueWithdrawalState withdrawalState) {
             this.withdrawalState = withdrawalState;
         }
 
         /**
          * Identifier uniquely determining type of the object.
          */
-        public static final int CONSTRUCTOR = -635942475;
+        public static final int CONSTRUCTOR = -1355142766;
 
         /**
          * @return this.CONSTRUCTOR
@@ -59389,20 +61649,20 @@ public class TdApi {
     }
 
     /**
-     * The transaction is a transaction with Telegram Ad platform.
+     * The transaction is a withdrawal of earned Telegram Stars to Telegram Ad platform; for bots and channel chats only.
      */
-    public static class StarTransactionPartnerTelegramAds extends StarTransactionPartner {
+    public static class StarTransactionTypeTelegramAdsWithdrawal extends StarTransactionType {
 
         /**
-         * The transaction is a transaction with Telegram Ad platform.
+         * The transaction is a withdrawal of earned Telegram Stars to Telegram Ad platform; for bots and channel chats only.
          */
-        public StarTransactionPartnerTelegramAds() {
+        public StarTransactionTypeTelegramAdsWithdrawal() {
         }
 
         /**
          * Identifier uniquely determining type of the object.
          */
-        public static final int CONSTRUCTOR = 153066603;
+        public static final int CONSTRUCTOR = -1517386647;
 
         /**
          * @return this.CONSTRUCTOR
@@ -59414,39 +61674,33 @@ public class TdApi {
     }
 
     /**
-     * The transaction is a transaction with a bot.
+     * The transaction is a payment for Telegram API usage; for bots only.
      */
-    public static class StarTransactionPartnerBot extends StarTransactionPartner {
+    public static class StarTransactionTypeTelegramApiUsage extends StarTransactionType {
         /**
-         * Identifier of the bot.
+         * The number of billed requests.
          */
-        public long userId;
-        /**
-         * Purpose of the transaction.
-         */
-        public BotTransactionPurpose purpose;
+        public int requestCount;
 
         /**
-         * The transaction is a transaction with a bot.
+         * The transaction is a payment for Telegram API usage; for bots only.
          */
-        public StarTransactionPartnerBot() {
+        public StarTransactionTypeTelegramApiUsage() {
         }
 
         /**
-         * The transaction is a transaction with a bot.
+         * The transaction is a payment for Telegram API usage; for bots only.
          *
-         * @param userId Identifier of the bot.
-         * @param purpose Purpose of the transaction.
+         * @param requestCount The number of billed requests.
          */
-        public StarTransactionPartnerBot(long userId, BotTransactionPurpose purpose) {
-            this.userId = userId;
-            this.purpose = purpose;
+        public StarTransactionTypeTelegramApiUsage(int requestCount) {
+            this.requestCount = requestCount;
         }
 
         /**
          * Identifier uniquely determining type of the object.
          */
-        public static final int CONSTRUCTOR = 1322138176;
+        public static final int CONSTRUCTOR = 665332478;
 
         /**
          * @return this.CONSTRUCTOR
@@ -59458,11 +61712,11 @@ public class TdApi {
     }
 
     /**
-     * The transaction is a transaction with a business account.
+     * The transaction is a purchase of paid media from a bot or a business account by the current user; for regular users only.
      */
-    public static class StarTransactionPartnerBusiness extends StarTransactionPartner {
+    public static class StarTransactionTypeBotPaidMediaPurchase extends StarTransactionType {
         /**
-         * Identifier of the business account user.
+         * Identifier of the bot or the business account user that sent the paid media.
          */
         public long userId;
         /**
@@ -59471,18 +61725,18 @@ public class TdApi {
         public PaidMedia[] media;
 
         /**
-         * The transaction is a transaction with a business account.
+         * The transaction is a purchase of paid media from a bot or a business account by the current user; for regular users only.
          */
-        public StarTransactionPartnerBusiness() {
+        public StarTransactionTypeBotPaidMediaPurchase() {
         }
 
         /**
-         * The transaction is a transaction with a business account.
+         * The transaction is a purchase of paid media from a bot or a business account by the current user; for regular users only.
          *
-         * @param userId Identifier of the business account user.
+         * @param userId Identifier of the bot or the business account user that sent the paid media.
          * @param media The bought media if the transaction wasn't refunded.
          */
-        public StarTransactionPartnerBusiness(long userId, PaidMedia[] media) {
+        public StarTransactionTypeBotPaidMediaPurchase(long userId, PaidMedia[] media) {
             this.userId = userId;
             this.media = media;
         }
@@ -59490,7 +61744,7 @@ public class TdApi {
         /**
          * Identifier uniquely determining type of the object.
          */
-        public static final int CONSTRUCTOR = 11110446;
+        public static final int CONSTRUCTOR = 976645509;
 
         /**
          * @return this.CONSTRUCTOR
@@ -59502,83 +61756,51 @@ public class TdApi {
     }
 
     /**
-     * The transaction is a transaction with a supergroup or a channel chat.
+     * The transaction is a sale of paid media by the bot or a business account managed by the bot; for bots only.
      */
-    public static class StarTransactionPartnerChat extends StarTransactionPartner {
+    public static class StarTransactionTypeBotPaidMediaSale extends StarTransactionType {
         /**
-         * Identifier of the chat.
-         */
-        public long chatId;
-        /**
-         * Purpose of the transaction.
-         */
-        public ChatTransactionPurpose purpose;
-
-        /**
-         * The transaction is a transaction with a supergroup or a channel chat.
-         */
-        public StarTransactionPartnerChat() {
-        }
-
-        /**
-         * The transaction is a transaction with a supergroup or a channel chat.
-         *
-         * @param chatId Identifier of the chat.
-         * @param purpose Purpose of the transaction.
-         */
-        public StarTransactionPartnerChat(long chatId, ChatTransactionPurpose purpose) {
-            this.chatId = chatId;
-            this.purpose = purpose;
-        }
-
-        /**
-         * Identifier uniquely determining type of the object.
-         */
-        public static final int CONSTRUCTOR = 1910197568;
-
-        /**
-         * @return this.CONSTRUCTOR
-         */
-        @Override
-        public int getConstructor() {
-            return CONSTRUCTOR;
-        }
-    }
-
-    /**
-     * The transaction is a transaction with another user.
-     */
-    public static class StarTransactionPartnerUser extends StarTransactionPartner {
-        /**
-         * Identifier of the user; 0 if the user was anonymous.
+         * Identifier of the user that bought the media.
          */
         public long userId;
         /**
-         * Purpose of the transaction.
+         * The bought media.
          */
-        public UserTransactionPurpose purpose;
+        public PaidMedia[] media;
+        /**
+         * Bot-provided payload.
+         */
+        public String payload;
+        /**
+         * Information about the affiliate which received commission from the transaction; may be null if none.
+         */
+        @Nullable public AffiliateInfo affiliate;
 
         /**
-         * The transaction is a transaction with another user.
+         * The transaction is a sale of paid media by the bot or a business account managed by the bot; for bots only.
          */
-        public StarTransactionPartnerUser() {
+        public StarTransactionTypeBotPaidMediaSale() {
         }
 
         /**
-         * The transaction is a transaction with another user.
+         * The transaction is a sale of paid media by the bot or a business account managed by the bot; for bots only.
          *
-         * @param userId Identifier of the user; 0 if the user was anonymous.
-         * @param purpose Purpose of the transaction.
+         * @param userId Identifier of the user that bought the media.
+         * @param media The bought media.
+         * @param payload Bot-provided payload.
+         * @param affiliate Information about the affiliate which received commission from the transaction; may be null if none.
          */
-        public StarTransactionPartnerUser(long userId, UserTransactionPurpose purpose) {
+        public StarTransactionTypeBotPaidMediaSale(long userId, PaidMedia[] media, String payload, AffiliateInfo affiliate) {
             this.userId = userId;
-            this.purpose = purpose;
+            this.media = media;
+            this.payload = payload;
+            this.affiliate = affiliate;
         }
 
         /**
          * Identifier uniquely determining type of the object.
          */
-        public static final int CONSTRUCTOR = 1867334609;
+        public static final int CONSTRUCTOR = -1034408372;
 
         /**
          * @return this.CONSTRUCTOR
@@ -59590,20 +61812,722 @@ public class TdApi {
     }
 
     /**
-     * The transaction is a transaction with unknown partner.
+     * The transaction is a purchase of paid media from a channel by the current user; for regular users only.
      */
-    public static class StarTransactionPartnerUnsupported extends StarTransactionPartner {
+    public static class StarTransactionTypeChannelPaidMediaPurchase extends StarTransactionType {
+        /**
+         * Identifier of the channel chat that sent the paid media.
+         */
+        public long chatId;
+        /**
+         * Identifier of the corresponding message with paid media; can be 0 or an identifier of a deleted message.
+         */
+        public long messageId;
+        /**
+         * The bought media if the transaction wasn't refunded.
+         */
+        public PaidMedia[] media;
 
         /**
-         * The transaction is a transaction with unknown partner.
+         * The transaction is a purchase of paid media from a channel by the current user; for regular users only.
          */
-        public StarTransactionPartnerUnsupported() {
+        public StarTransactionTypeChannelPaidMediaPurchase() {
+        }
+
+        /**
+         * The transaction is a purchase of paid media from a channel by the current user; for regular users only.
+         *
+         * @param chatId Identifier of the channel chat that sent the paid media.
+         * @param messageId Identifier of the corresponding message with paid media; can be 0 or an identifier of a deleted message.
+         * @param media The bought media if the transaction wasn't refunded.
+         */
+        public StarTransactionTypeChannelPaidMediaPurchase(long chatId, long messageId, PaidMedia[] media) {
+            this.chatId = chatId;
+            this.messageId = messageId;
+            this.media = media;
         }
 
         /**
          * Identifier uniquely determining type of the object.
          */
-        public static final int CONSTRUCTOR = -994964109;
+        public static final int CONSTRUCTOR = -1321281338;
+
+        /**
+         * @return this.CONSTRUCTOR
+         */
+        @Override
+        public int getConstructor() {
+            return CONSTRUCTOR;
+        }
+    }
+
+    /**
+     * The transaction is a sale of paid media by the channel chat; for channel chats only.
+     */
+    public static class StarTransactionTypeChannelPaidMediaSale extends StarTransactionType {
+        /**
+         * Identifier of the user that bought the media.
+         */
+        public long userId;
+        /**
+         * Identifier of the corresponding message with paid media; can be 0 or an identifier of a deleted message.
+         */
+        public long messageId;
+        /**
+         * The bought media.
+         */
+        public PaidMedia[] media;
+
+        /**
+         * The transaction is a sale of paid media by the channel chat; for channel chats only.
+         */
+        public StarTransactionTypeChannelPaidMediaSale() {
+        }
+
+        /**
+         * The transaction is a sale of paid media by the channel chat; for channel chats only.
+         *
+         * @param userId Identifier of the user that bought the media.
+         * @param messageId Identifier of the corresponding message with paid media; can be 0 or an identifier of a deleted message.
+         * @param media The bought media.
+         */
+        public StarTransactionTypeChannelPaidMediaSale(long userId, long messageId, PaidMedia[] media) {
+            this.userId = userId;
+            this.messageId = messageId;
+            this.media = media;
+        }
+
+        /**
+         * Identifier uniquely determining type of the object.
+         */
+        public static final int CONSTRUCTOR = 52587085;
+
+        /**
+         * @return this.CONSTRUCTOR
+         */
+        @Override
+        public int getConstructor() {
+            return CONSTRUCTOR;
+        }
+    }
+
+    /**
+     * The transaction is a purchase of a product from a bot or a business account by the current user; for regular users only.
+     */
+    public static class StarTransactionTypeBotInvoicePurchase extends StarTransactionType {
+        /**
+         * Identifier of the bot or the business account user that created the invoice.
+         */
+        public long userId;
+        /**
+         * Information about the bought product.
+         */
+        public ProductInfo productInfo;
+
+        /**
+         * The transaction is a purchase of a product from a bot or a business account by the current user; for regular users only.
+         */
+        public StarTransactionTypeBotInvoicePurchase() {
+        }
+
+        /**
+         * The transaction is a purchase of a product from a bot or a business account by the current user; for regular users only.
+         *
+         * @param userId Identifier of the bot or the business account user that created the invoice.
+         * @param productInfo Information about the bought product.
+         */
+        public StarTransactionTypeBotInvoicePurchase(long userId, ProductInfo productInfo) {
+            this.userId = userId;
+            this.productInfo = productInfo;
+        }
+
+        /**
+         * Identifier uniquely determining type of the object.
+         */
+        public static final int CONSTRUCTOR = 501066764;
+
+        /**
+         * @return this.CONSTRUCTOR
+         */
+        @Override
+        public int getConstructor() {
+            return CONSTRUCTOR;
+        }
+    }
+
+    /**
+     * The transaction is a sale of a product by the bot; for bots only.
+     */
+    public static class StarTransactionTypeBotInvoiceSale extends StarTransactionType {
+        /**
+         * Identifier of the user that bought the product.
+         */
+        public long userId;
+        /**
+         * Information about the bought product.
+         */
+        public ProductInfo productInfo;
+        /**
+         * Invoice payload.
+         */
+        public byte[] invoicePayload;
+        /**
+         * Information about the affiliate which received commission from the transaction; may be null if none.
+         */
+        @Nullable public AffiliateInfo affiliate;
+
+        /**
+         * The transaction is a sale of a product by the bot; for bots only.
+         */
+        public StarTransactionTypeBotInvoiceSale() {
+        }
+
+        /**
+         * The transaction is a sale of a product by the bot; for bots only.
+         *
+         * @param userId Identifier of the user that bought the product.
+         * @param productInfo Information about the bought product.
+         * @param invoicePayload Invoice payload.
+         * @param affiliate Information about the affiliate which received commission from the transaction; may be null if none.
+         */
+        public StarTransactionTypeBotInvoiceSale(long userId, ProductInfo productInfo, byte[] invoicePayload, AffiliateInfo affiliate) {
+            this.userId = userId;
+            this.productInfo = productInfo;
+            this.invoicePayload = invoicePayload;
+            this.affiliate = affiliate;
+        }
+
+        /**
+         * Identifier uniquely determining type of the object.
+         */
+        public static final int CONSTRUCTOR = 1534954799;
+
+        /**
+         * @return this.CONSTRUCTOR
+         */
+        @Override
+        public int getConstructor() {
+            return CONSTRUCTOR;
+        }
+    }
+
+    /**
+     * The transaction is a purchase of a subscription from a bot or a business account by the current user; for regular users only.
+     */
+    public static class StarTransactionTypeBotSubscriptionPurchase extends StarTransactionType {
+        /**
+         * Identifier of the bot or the business account user that created the subscription link.
+         */
+        public long userId;
+        /**
+         * The number of seconds between consecutive Telegram Star debitings.
+         */
+        public int subscriptionPeriod;
+        /**
+         * Information about the bought subscription.
+         */
+        public ProductInfo productInfo;
+
+        /**
+         * The transaction is a purchase of a subscription from a bot or a business account by the current user; for regular users only.
+         */
+        public StarTransactionTypeBotSubscriptionPurchase() {
+        }
+
+        /**
+         * The transaction is a purchase of a subscription from a bot or a business account by the current user; for regular users only.
+         *
+         * @param userId Identifier of the bot or the business account user that created the subscription link.
+         * @param subscriptionPeriod The number of seconds between consecutive Telegram Star debitings.
+         * @param productInfo Information about the bought subscription.
+         */
+        public StarTransactionTypeBotSubscriptionPurchase(long userId, int subscriptionPeriod, ProductInfo productInfo) {
+            this.userId = userId;
+            this.subscriptionPeriod = subscriptionPeriod;
+            this.productInfo = productInfo;
+        }
+
+        /**
+         * Identifier uniquely determining type of the object.
+         */
+        public static final int CONSTRUCTOR = 1086264149;
+
+        /**
+         * @return this.CONSTRUCTOR
+         */
+        @Override
+        public int getConstructor() {
+            return CONSTRUCTOR;
+        }
+    }
+
+    /**
+     * The transaction is a sale of a subscription by the bot; for bots only.
+     */
+    public static class StarTransactionTypeBotSubscriptionSale extends StarTransactionType {
+        /**
+         * Identifier of the user that bought the subscription.
+         */
+        public long userId;
+        /**
+         * The number of seconds between consecutive Telegram Star debitings.
+         */
+        public int subscriptionPeriod;
+        /**
+         * Information about the bought subscription.
+         */
+        public ProductInfo productInfo;
+        /**
+         * Invoice payload.
+         */
+        public byte[] invoicePayload;
+        /**
+         * Information about the affiliate which received commission from the transaction; may be null if none.
+         */
+        @Nullable public AffiliateInfo affiliate;
+
+        /**
+         * The transaction is a sale of a subscription by the bot; for bots only.
+         */
+        public StarTransactionTypeBotSubscriptionSale() {
+        }
+
+        /**
+         * The transaction is a sale of a subscription by the bot; for bots only.
+         *
+         * @param userId Identifier of the user that bought the subscription.
+         * @param subscriptionPeriod The number of seconds between consecutive Telegram Star debitings.
+         * @param productInfo Information about the bought subscription.
+         * @param invoicePayload Invoice payload.
+         * @param affiliate Information about the affiliate which received commission from the transaction; may be null if none.
+         */
+        public StarTransactionTypeBotSubscriptionSale(long userId, int subscriptionPeriod, ProductInfo productInfo, byte[] invoicePayload, AffiliateInfo affiliate) {
+            this.userId = userId;
+            this.subscriptionPeriod = subscriptionPeriod;
+            this.productInfo = productInfo;
+            this.invoicePayload = invoicePayload;
+            this.affiliate = affiliate;
+        }
+
+        /**
+         * Identifier uniquely determining type of the object.
+         */
+        public static final int CONSTRUCTOR = 526936201;
+
+        /**
+         * @return this.CONSTRUCTOR
+         */
+        @Override
+        public int getConstructor() {
+            return CONSTRUCTOR;
+        }
+    }
+
+    /**
+     * The transaction is a purchase of a subscription to a channel chat by the current user; for regular users only.
+     */
+    public static class StarTransactionTypeChannelSubscriptionPurchase extends StarTransactionType {
+        /**
+         * Identifier of the channel chat that created the subscription.
+         */
+        public long chatId;
+        /**
+         * The number of seconds between consecutive Telegram Star debitings.
+         */
+        public int subscriptionPeriod;
+
+        /**
+         * The transaction is a purchase of a subscription to a channel chat by the current user; for regular users only.
+         */
+        public StarTransactionTypeChannelSubscriptionPurchase() {
+        }
+
+        /**
+         * The transaction is a purchase of a subscription to a channel chat by the current user; for regular users only.
+         *
+         * @param chatId Identifier of the channel chat that created the subscription.
+         * @param subscriptionPeriod The number of seconds between consecutive Telegram Star debitings.
+         */
+        public StarTransactionTypeChannelSubscriptionPurchase(long chatId, int subscriptionPeriod) {
+            this.chatId = chatId;
+            this.subscriptionPeriod = subscriptionPeriod;
+        }
+
+        /**
+         * Identifier uniquely determining type of the object.
+         */
+        public static final int CONSTRUCTOR = 940487633;
+
+        /**
+         * @return this.CONSTRUCTOR
+         */
+        @Override
+        public int getConstructor() {
+            return CONSTRUCTOR;
+        }
+    }
+
+    /**
+     * The transaction is a sale of a subscription by the channel chat; for channel chats only.
+     */
+    public static class StarTransactionTypeChannelSubscriptionSale extends StarTransactionType {
+        /**
+         * Identifier of the user that bought the subscription.
+         */
+        public long userId;
+        /**
+         * The number of seconds between consecutive Telegram Star debitings.
+         */
+        public int subscriptionPeriod;
+
+        /**
+         * The transaction is a sale of a subscription by the channel chat; for channel chats only.
+         */
+        public StarTransactionTypeChannelSubscriptionSale() {
+        }
+
+        /**
+         * The transaction is a sale of a subscription by the channel chat; for channel chats only.
+         *
+         * @param userId Identifier of the user that bought the subscription.
+         * @param subscriptionPeriod The number of seconds between consecutive Telegram Star debitings.
+         */
+        public StarTransactionTypeChannelSubscriptionSale(long userId, int subscriptionPeriod) {
+            this.userId = userId;
+            this.subscriptionPeriod = subscriptionPeriod;
+        }
+
+        /**
+         * Identifier uniquely determining type of the object.
+         */
+        public static final int CONSTRUCTOR = -32342910;
+
+        /**
+         * @return this.CONSTRUCTOR
+         */
+        @Override
+        public int getConstructor() {
+            return CONSTRUCTOR;
+        }
+    }
+
+    /**
+     * The transaction is a purchase of a regular gift; for regular users and bots only.
+     */
+    public static class StarTransactionTypeGiftPurchase extends StarTransactionType {
+        /**
+         * Identifier of the user or the channel that received the gift.
+         */
+        public MessageSender ownerId;
+        /**
+         * The gift.
+         */
+        public Gift gift;
+
+        /**
+         * The transaction is a purchase of a regular gift; for regular users and bots only.
+         */
+        public StarTransactionTypeGiftPurchase() {
+        }
+
+        /**
+         * The transaction is a purchase of a regular gift; for regular users and bots only.
+         *
+         * @param ownerId Identifier of the user or the channel that received the gift.
+         * @param gift The gift.
+         */
+        public StarTransactionTypeGiftPurchase(MessageSender ownerId, Gift gift) {
+            this.ownerId = ownerId;
+            this.gift = gift;
+        }
+
+        /**
+         * Identifier uniquely determining type of the object.
+         */
+        public static final int CONSTRUCTOR = -1819045664;
+
+        /**
+         * @return this.CONSTRUCTOR
+         */
+        @Override
+        public int getConstructor() {
+            return CONSTRUCTOR;
+        }
+    }
+
+    /**
+     * The transaction is a transfer of an upgraded gift; for regular users only.
+     */
+    public static class StarTransactionTypeGiftTransfer extends StarTransactionType {
+        /**
+         * Identifier of the user or the channel that received the gift.
+         */
+        public MessageSender ownerId;
+        /**
+         * The gift.
+         */
+        public UpgradedGift gift;
+
+        /**
+         * The transaction is a transfer of an upgraded gift; for regular users only.
+         */
+        public StarTransactionTypeGiftTransfer() {
+        }
+
+        /**
+         * The transaction is a transfer of an upgraded gift; for regular users only.
+         *
+         * @param ownerId Identifier of the user or the channel that received the gift.
+         * @param gift The gift.
+         */
+        public StarTransactionTypeGiftTransfer(MessageSender ownerId, UpgradedGift gift) {
+            this.ownerId = ownerId;
+            this.gift = gift;
+        }
+
+        /**
+         * Identifier uniquely determining type of the object.
+         */
+        public static final int CONSTRUCTOR = 9835767;
+
+        /**
+         * @return this.CONSTRUCTOR
+         */
+        @Override
+        public int getConstructor() {
+            return CONSTRUCTOR;
+        }
+    }
+
+    /**
+     * The transaction is a sale of a received gift; for regular users and channel chats only.
+     */
+    public static class StarTransactionTypeGiftSale extends StarTransactionType {
+        /**
+         * Identifier of the user that sent the gift.
+         */
+        public long userId;
+        /**
+         * The gift.
+         */
+        public Gift gift;
+
+        /**
+         * The transaction is a sale of a received gift; for regular users and channel chats only.
+         */
+        public StarTransactionTypeGiftSale() {
+        }
+
+        /**
+         * The transaction is a sale of a received gift; for regular users and channel chats only.
+         *
+         * @param userId Identifier of the user that sent the gift.
+         * @param gift The gift.
+         */
+        public StarTransactionTypeGiftSale(long userId, Gift gift) {
+            this.userId = userId;
+            this.gift = gift;
+        }
+
+        /**
+         * Identifier uniquely determining type of the object.
+         */
+        public static final int CONSTRUCTOR = 1691750743;
+
+        /**
+         * @return this.CONSTRUCTOR
+         */
+        @Override
+        public int getConstructor() {
+            return CONSTRUCTOR;
+        }
+    }
+
+    /**
+     * The transaction is an upgrade of a gift; for regular users only.
+     */
+    public static class StarTransactionTypeGiftUpgrade extends StarTransactionType {
+        /**
+         * The upgraded gift.
+         */
+        public UpgradedGift gift;
+
+        /**
+         * The transaction is an upgrade of a gift; for regular users only.
+         */
+        public StarTransactionTypeGiftUpgrade() {
+        }
+
+        /**
+         * The transaction is an upgrade of a gift; for regular users only.
+         *
+         * @param gift The upgraded gift.
+         */
+        public StarTransactionTypeGiftUpgrade(UpgradedGift gift) {
+            this.gift = gift;
+        }
+
+        /**
+         * Identifier uniquely determining type of the object.
+         */
+        public static final int CONSTRUCTOR = 647464011;
+
+        /**
+         * @return this.CONSTRUCTOR
+         */
+        @Override
+        public int getConstructor() {
+            return CONSTRUCTOR;
+        }
+    }
+
+    /**
+     * The transaction is a sending of a paid reaction to a message in a channel chat by the current user; for regular users only.
+     */
+    public static class StarTransactionTypeChannelPaidReactionSend extends StarTransactionType {
+        /**
+         * Identifier of the channel chat.
+         */
+        public long chatId;
+        /**
+         * Identifier of the reacted message; can be 0 or an identifier of a deleted message.
+         */
+        public long messageId;
+
+        /**
+         * The transaction is a sending of a paid reaction to a message in a channel chat by the current user; for regular users only.
+         */
+        public StarTransactionTypeChannelPaidReactionSend() {
+        }
+
+        /**
+         * The transaction is a sending of a paid reaction to a message in a channel chat by the current user; for regular users only.
+         *
+         * @param chatId Identifier of the channel chat.
+         * @param messageId Identifier of the reacted message; can be 0 or an identifier of a deleted message.
+         */
+        public StarTransactionTypeChannelPaidReactionSend(long chatId, long messageId) {
+            this.chatId = chatId;
+            this.messageId = messageId;
+        }
+
+        /**
+         * Identifier uniquely determining type of the object.
+         */
+        public static final int CONSTRUCTOR = -1071224896;
+
+        /**
+         * @return this.CONSTRUCTOR
+         */
+        @Override
+        public int getConstructor() {
+            return CONSTRUCTOR;
+        }
+    }
+
+    /**
+     * The transaction is a receiving of a paid reaction to a message by the channel chat; for channel chats only.
+     */
+    public static class StarTransactionTypeChannelPaidReactionReceive extends StarTransactionType {
+        /**
+         * Identifier of the user that added the paid reaction.
+         */
+        public long userId;
+        /**
+         * Identifier of the reacted message; can be 0 or an identifier of a deleted message.
+         */
+        public long messageId;
+
+        /**
+         * The transaction is a receiving of a paid reaction to a message by the channel chat; for channel chats only.
+         */
+        public StarTransactionTypeChannelPaidReactionReceive() {
+        }
+
+        /**
+         * The transaction is a receiving of a paid reaction to a message by the channel chat; for channel chats only.
+         *
+         * @param userId Identifier of the user that added the paid reaction.
+         * @param messageId Identifier of the reacted message; can be 0 or an identifier of a deleted message.
+         */
+        public StarTransactionTypeChannelPaidReactionReceive(long userId, long messageId) {
+            this.userId = userId;
+            this.messageId = messageId;
+        }
+
+        /**
+         * Identifier uniquely determining type of the object.
+         */
+        public static final int CONSTRUCTOR = 601291243;
+
+        /**
+         * @return this.CONSTRUCTOR
+         */
+        @Override
+        public int getConstructor() {
+            return CONSTRUCTOR;
+        }
+    }
+
+    /**
+     * The transaction is a receiving of a commission from an affiliate program; for regular users, bots and channel chats only.
+     */
+    public static class StarTransactionTypeAffiliateProgramCommission extends StarTransactionType {
+        /**
+         * Identifier of the chat that created the affiliate program.
+         */
+        public long chatId;
+        /**
+         * The number of Telegram Stars received by the affiliate for each 1000 Telegram Stars received by the program owner.
+         */
+        public int commissionPerMille;
+
+        /**
+         * The transaction is a receiving of a commission from an affiliate program; for regular users, bots and channel chats only.
+         */
+        public StarTransactionTypeAffiliateProgramCommission() {
+        }
+
+        /**
+         * The transaction is a receiving of a commission from an affiliate program; for regular users, bots and channel chats only.
+         *
+         * @param chatId Identifier of the chat that created the affiliate program.
+         * @param commissionPerMille The number of Telegram Stars received by the affiliate for each 1000 Telegram Stars received by the program owner.
+         */
+        public StarTransactionTypeAffiliateProgramCommission(long chatId, int commissionPerMille) {
+            this.chatId = chatId;
+            this.commissionPerMille = commissionPerMille;
+        }
+
+        /**
+         * Identifier uniquely determining type of the object.
+         */
+        public static final int CONSTRUCTOR = -1704757901;
+
+        /**
+         * @return this.CONSTRUCTOR
+         */
+        @Override
+        public int getConstructor() {
+            return CONSTRUCTOR;
+        }
+    }
+
+    /**
+     * The transaction is a transaction of an unsupported type.
+     */
+    public static class StarTransactionTypeUnsupported extends StarTransactionType {
+
+        /**
+         * The transaction is a transaction of an unsupported type.
+         */
+        public StarTransactionTypeUnsupported() {
+        }
+
+        /**
+         * Identifier uniquely determining type of the object.
+         */
+        public static final int CONSTRUCTOR = 1993329330;
 
         /**
          * @return this.CONSTRUCTOR
@@ -59621,7 +62545,7 @@ public class TdApi {
         /**
          * The amount of owned Telegram Stars.
          */
-        public long starCount;
+        public StarAmount starAmount;
         /**
          * List of transactions with Telegram Stars.
          */
@@ -59640,12 +62564,12 @@ public class TdApi {
         /**
          * Represents a list of Telegram Star transactions.
          *
-         * @param starCount The amount of owned Telegram Stars.
+         * @param starAmount The amount of owned Telegram Stars.
          * @param transactions List of transactions with Telegram Stars.
          * @param nextOffset The offset for the next request. If empty, then there are no more results.
          */
-        public StarTransactions(long starCount, StarTransaction[] transactions, String nextOffset) {
-            this.starCount = starCount;
+        public StarTransactions(StarAmount starAmount, StarTransaction[] transactions, String nextOffset) {
+            this.starAmount = starAmount;
             this.transactions = transactions;
             this.nextOffset = nextOffset;
         }
@@ -59653,7 +62577,7 @@ public class TdApi {
         /**
          * Identifier uniquely determining type of the object.
          */
-        public static final int CONSTRUCTOR = -1305722959;
+        public static final int CONSTRUCTOR = 1218437859;
 
         /**
          * @return this.CONSTRUCTOR
@@ -59896,10 +62820,6 @@ public class TdApi {
          */
         public StickerFullType fullType;
         /**
-         * Sticker's outline represented as a list of closed vector paths; may be empty. The coordinate system origin is in the upper-left corner.
-         */
-        public ClosedVectorPath[] outline;
-        /**
          * Sticker thumbnail in WEBP or JPEG format; may be null.
          */
         @Nullable public Thumbnail thumbnail;
@@ -59924,11 +62844,10 @@ public class TdApi {
          * @param emoji Emoji corresponding to the sticker.
          * @param format Sticker format.
          * @param fullType Sticker's full type.
-         * @param outline Sticker's outline represented as a list of closed vector paths; may be empty. The coordinate system origin is in the upper-left corner.
          * @param thumbnail Sticker thumbnail in WEBP or JPEG format; may be null.
          * @param sticker File containing the sticker.
          */
-        public Sticker(long id, long setId, int width, int height, String emoji, StickerFormat format, StickerFullType fullType, ClosedVectorPath[] outline, Thumbnail thumbnail, File sticker) {
+        public Sticker(long id, long setId, int width, int height, String emoji, StickerFormat format, StickerFullType fullType, Thumbnail thumbnail, File sticker) {
             this.id = id;
             this.setId = setId;
             this.width = width;
@@ -59936,7 +62855,6 @@ public class TdApi {
             this.emoji = emoji;
             this.format = format;
             this.fullType = fullType;
-            this.outline = outline;
             this.thumbnail = thumbnail;
             this.sticker = sticker;
         }
@@ -59944,7 +62862,7 @@ public class TdApi {
         /**
          * Identifier uniquely determining type of the object.
          */
-        public static final int CONSTRUCTOR = 1155605331;
+        public static final int CONSTRUCTOR = -647013057;
 
         /**
          * @return this.CONSTRUCTOR
@@ -60229,9 +63147,9 @@ public class TdApi {
          */
         @Nullable public Thumbnail thumbnail;
         /**
-         * Sticker set thumbnail's outline represented as a list of closed vector paths; may be empty. The coordinate system origin is in the upper-left corner.
+         * Sticker set thumbnail's outline; may be null if unknown.
          */
-        public ClosedVectorPath[] thumbnailOutline;
+        @Nullable public Outline thumbnailOutline;
         /**
          * True, if the sticker set is owned by the current user.
          */
@@ -60286,7 +63204,7 @@ public class TdApi {
          * @param title Title of the sticker set.
          * @param name Name of the sticker set.
          * @param thumbnail Sticker set thumbnail in WEBP, TGS, or WEBM format with width and height 100; may be null. The file can be downloaded only before the thumbnail is changed.
-         * @param thumbnailOutline Sticker set thumbnail's outline represented as a list of closed vector paths; may be empty. The coordinate system origin is in the upper-left corner.
+         * @param thumbnailOutline Sticker set thumbnail's outline; may be null if unknown.
          * @param isOwned True, if the sticker set is owned by the current user.
          * @param isInstalled True, if the sticker set has been installed by the current user.
          * @param isArchived True, if the sticker set has been archived. A sticker set can't be installed and archived simultaneously.
@@ -60298,7 +63216,7 @@ public class TdApi {
          * @param stickers List of stickers in this set.
          * @param emojis A list of emojis corresponding to the stickers in the same order. The list is only for informational purposes, because a sticker is always sent with a fixed emoji from the corresponding Sticker object.
          */
-        public StickerSet(long id, String title, String name, Thumbnail thumbnail, ClosedVectorPath[] thumbnailOutline, boolean isOwned, boolean isInstalled, boolean isArchived, boolean isOfficial, StickerType stickerType, boolean needsRepainting, boolean isAllowedAsChatEmojiStatus, boolean isViewed, Sticker[] stickers, Emojis[] emojis) {
+        public StickerSet(long id, String title, String name, Thumbnail thumbnail, Outline thumbnailOutline, boolean isOwned, boolean isInstalled, boolean isArchived, boolean isOfficial, StickerType stickerType, boolean needsRepainting, boolean isAllowedAsChatEmojiStatus, boolean isViewed, Sticker[] stickers, Emojis[] emojis) {
             this.id = id;
             this.title = title;
             this.name = name;
@@ -60319,7 +63237,7 @@ public class TdApi {
         /**
          * Identifier uniquely determining type of the object.
          */
-        public static final int CONSTRUCTOR = 607438405;
+        public static final int CONSTRUCTOR = -1783150210;
 
         /**
          * @return this.CONSTRUCTOR
@@ -60351,9 +63269,9 @@ public class TdApi {
          */
         @Nullable public Thumbnail thumbnail;
         /**
-         * Sticker set thumbnail's outline represented as a list of closed vector paths; may be empty. The coordinate system origin is in the upper-left corner.
+         * Sticker set thumbnail's outline; may be null if unknown.
          */
-        public ClosedVectorPath[] thumbnailOutline;
+        @Nullable public Outline thumbnailOutline;
         /**
          * True, if the sticker set is owned by the current user.
          */
@@ -60408,7 +63326,7 @@ public class TdApi {
          * @param title Title of the sticker set.
          * @param name Name of the sticker set.
          * @param thumbnail Sticker set thumbnail in WEBP, TGS, or WEBM format with width and height 100; may be null. The file can be downloaded only before the thumbnail is changed.
-         * @param thumbnailOutline Sticker set thumbnail's outline represented as a list of closed vector paths; may be empty. The coordinate system origin is in the upper-left corner.
+         * @param thumbnailOutline Sticker set thumbnail's outline; may be null if unknown.
          * @param isOwned True, if the sticker set is owned by the current user.
          * @param isInstalled True, if the sticker set has been installed by the current user.
          * @param isArchived True, if the sticker set has been archived. A sticker set can't be installed and archived simultaneously.
@@ -60420,7 +63338,7 @@ public class TdApi {
          * @param size Total number of stickers in the set.
          * @param covers Up to the first 5 stickers from the set, depending on the context. If the application needs more stickers the full sticker set needs to be requested.
          */
-        public StickerSetInfo(long id, String title, String name, Thumbnail thumbnail, ClosedVectorPath[] thumbnailOutline, boolean isOwned, boolean isInstalled, boolean isArchived, boolean isOfficial, StickerType stickerType, boolean needsRepainting, boolean isAllowedAsChatEmojiStatus, boolean isViewed, int size, Sticker[] covers) {
+        public StickerSetInfo(long id, String title, String name, Thumbnail thumbnail, Outline thumbnailOutline, boolean isOwned, boolean isInstalled, boolean isArchived, boolean isOfficial, StickerType stickerType, boolean needsRepainting, boolean isAllowedAsChatEmojiStatus, boolean isViewed, int size, Sticker[] covers) {
             this.id = id;
             this.title = title;
             this.name = name;
@@ -60441,7 +63359,7 @@ public class TdApi {
         /**
          * Identifier uniquely determining type of the object.
          */
-        public static final int CONSTRUCTOR = 1730888790;
+        public static final int CONSTRUCTOR = -1649074729;
 
         /**
          * @return this.CONSTRUCTOR
@@ -60867,7 +63785,6 @@ public class TdApi {
         @Retention(RetentionPolicy.SOURCE)
         @IntDef({
             StorePaymentPurposePremiumSubscription.CONSTRUCTOR,
-            StorePaymentPurposeGiftedPremium.CONSTRUCTOR,
             StorePaymentPurposePremiumGiftCodes.CONSTRUCTOR,
             StorePaymentPurposePremiumGiveaway.CONSTRUCTOR,
             StorePaymentPurposeStarGiveaway.CONSTRUCTOR,
@@ -60923,56 +63840,6 @@ public class TdApi {
          * Identifier uniquely determining type of the object.
          */
         public static final int CONSTRUCTOR = 1263894804;
-
-        /**
-         * @return this.CONSTRUCTOR
-         */
-        @Override
-        public int getConstructor() {
-            return CONSTRUCTOR;
-        }
-    }
-
-    /**
-     * The user gifting Telegram Premium to another user.
-     */
-    public static class StorePaymentPurposeGiftedPremium extends StorePaymentPurpose {
-        /**
-         * Identifier of the user to which Telegram Premium is gifted.
-         */
-        public long userId;
-        /**
-         * ISO 4217 currency code of the payment currency.
-         */
-        public String currency;
-        /**
-         * Paid amount, in the smallest units of the currency.
-         */
-        public long amount;
-
-        /**
-         * The user gifting Telegram Premium to another user.
-         */
-        public StorePaymentPurposeGiftedPremium() {
-        }
-
-        /**
-         * The user gifting Telegram Premium to another user.
-         *
-         * @param userId Identifier of the user to which Telegram Premium is gifted.
-         * @param currency ISO 4217 currency code of the payment currency.
-         * @param amount Paid amount, in the smallest units of the currency.
-         */
-        public StorePaymentPurposeGiftedPremium(long userId, String currency, long amount) {
-            this.userId = userId;
-            this.currency = currency;
-            this.amount = amount;
-        }
-
-        /**
-         * Identifier uniquely determining type of the object.
-         */
-        public static final int CONSTRUCTOR = 1916846289;
 
         /**
          * @return this.CONSTRUCTOR
@@ -61616,7 +64483,8 @@ public class TdApi {
             StoryAreaTypeSuggestedReaction.CONSTRUCTOR,
             StoryAreaTypeMessage.CONSTRUCTOR,
             StoryAreaTypeLink.CONSTRUCTOR,
-            StoryAreaTypeWeather.CONSTRUCTOR
+            StoryAreaTypeWeather.CONSTRUCTOR,
+            StoryAreaTypeUpgradedGift.CONSTRUCTOR
         })
         public @interface Constructors {}
 
@@ -61893,6 +64761,44 @@ public class TdApi {
          * Identifier uniquely determining type of the object.
          */
         public static final int CONSTRUCTOR = -1504150082;
+
+        /**
+         * @return this.CONSTRUCTOR
+         */
+        @Override
+        public int getConstructor() {
+            return CONSTRUCTOR;
+        }
+    }
+
+    /**
+     * An area with an upgraded gift.
+     */
+    public static class StoryAreaTypeUpgradedGift extends StoryAreaType {
+        /**
+         * Unique name of the upgraded gift.
+         */
+        public String giftName;
+
+        /**
+         * An area with an upgraded gift.
+         */
+        public StoryAreaTypeUpgradedGift() {
+        }
+
+        /**
+         * An area with an upgraded gift.
+         *
+         * @param giftName Unique name of the upgraded gift.
+         */
+        public StoryAreaTypeUpgradedGift(String giftName) {
+            this.giftName = giftName;
+        }
+
+        /**
+         * Identifier uniquely determining type of the object.
+         */
+        public static final int CONSTRUCTOR = 760281479;
 
         /**
          * @return this.CONSTRUCTOR
@@ -63008,6 +65914,7 @@ public class TdApi {
             SuggestedActionSubscribeToAnnualPremium.CONSTRUCTOR,
             SuggestedActionGiftPremiumForChristmas.CONSTRUCTOR,
             SuggestedActionSetBirthdate.CONSTRUCTOR,
+            SuggestedActionSetProfilePhoto.CONSTRUCTOR,
             SuggestedActionExtendPremium.CONSTRUCTOR,
             SuggestedActionExtendStarSubscriptions.CONSTRUCTOR
         })
@@ -63328,6 +66235,31 @@ public class TdApi {
     }
 
     /**
+     * Suggests the user to set profile photo.
+     */
+    public static class SuggestedActionSetProfilePhoto extends SuggestedAction {
+
+        /**
+         * Suggests the user to set profile photo.
+         */
+        public SuggestedActionSetProfilePhoto() {
+        }
+
+        /**
+         * Identifier uniquely determining type of the object.
+         */
+        public static final int CONSTRUCTOR = -1612563093;
+
+        /**
+         * @return this.CONSTRUCTOR
+         */
+        @Override
+        public int getConstructor() {
+            return CONSTRUCTOR;
+        }
+    }
+
+    /**
      * Suggests the user to extend their expiring Telegram Premium subscription.
      */
     public static class SuggestedActionExtendPremium extends SuggestedAction {
@@ -63459,9 +66391,9 @@ public class TdApi {
          */
         public boolean isForum;
         /**
-         * True, if the supergroup or channel is verified.
+         * Information about verification status of the supergroup or channel; may be null if none.
          */
-        public boolean isVerified;
+        @Nullable public VerificationStatus verificationStatus;
         /**
          * True, if content of media messages in the supergroup or channel chat must be hidden with 18+ spoiler.
          */
@@ -63470,14 +66402,6 @@ public class TdApi {
          * If non-empty, contains a human-readable description of the reason why access to this supergroup or channel must be restricted.
          */
         public String restrictionReason;
-        /**
-         * True, if many users reported this supergroup or channel as a scam.
-         */
-        public boolean isScam;
-        /**
-         * True, if many users reported this supergroup or channel as a fake account.
-         */
-        public boolean isFake;
         /**
          * True, if the supergroup or channel has non-expired stories available to the current user.
          */
@@ -63512,15 +66436,13 @@ public class TdApi {
          * @param isChannel True, if the supergroup is a channel.
          * @param isBroadcastGroup True, if the supergroup is a broadcast group, i.e. only administrators can send messages and there is no limit on the number of members.
          * @param isForum True, if the supergroup is a forum with topics.
-         * @param isVerified True, if the supergroup or channel is verified.
+         * @param verificationStatus Information about verification status of the supergroup or channel; may be null if none.
          * @param hasSensitiveContent True, if content of media messages in the supergroup or channel chat must be hidden with 18+ spoiler.
          * @param restrictionReason If non-empty, contains a human-readable description of the reason why access to this supergroup or channel must be restricted.
-         * @param isScam True, if many users reported this supergroup or channel as a scam.
-         * @param isFake True, if many users reported this supergroup or channel as a fake account.
          * @param hasActiveStories True, if the supergroup or channel has non-expired stories available to the current user.
          * @param hasUnreadActiveStories True, if the supergroup or channel has unread non-expired stories available to the current user.
          */
-        public Supergroup(long id, Usernames usernames, int date, ChatMemberStatus status, int memberCount, int boostLevel, boolean hasLinkedChat, boolean hasLocation, boolean signMessages, boolean showMessageSender, boolean joinToSendMessages, boolean joinByRequest, boolean isSlowModeEnabled, boolean isChannel, boolean isBroadcastGroup, boolean isForum, boolean isVerified, boolean hasSensitiveContent, String restrictionReason, boolean isScam, boolean isFake, boolean hasActiveStories, boolean hasUnreadActiveStories) {
+        public Supergroup(long id, Usernames usernames, int date, ChatMemberStatus status, int memberCount, int boostLevel, boolean hasLinkedChat, boolean hasLocation, boolean signMessages, boolean showMessageSender, boolean joinToSendMessages, boolean joinByRequest, boolean isSlowModeEnabled, boolean isChannel, boolean isBroadcastGroup, boolean isForum, VerificationStatus verificationStatus, boolean hasSensitiveContent, String restrictionReason, boolean hasActiveStories, boolean hasUnreadActiveStories) {
             this.id = id;
             this.usernames = usernames;
             this.date = date;
@@ -63537,11 +66459,9 @@ public class TdApi {
             this.isChannel = isChannel;
             this.isBroadcastGroup = isBroadcastGroup;
             this.isForum = isForum;
-            this.isVerified = isVerified;
+            this.verificationStatus = verificationStatus;
             this.hasSensitiveContent = hasSensitiveContent;
             this.restrictionReason = restrictionReason;
-            this.isScam = isScam;
-            this.isFake = isFake;
             this.hasActiveStories = hasActiveStories;
             this.hasUnreadActiveStories = hasUnreadActiveStories;
         }
@@ -63549,7 +66469,7 @@ public class TdApi {
         /**
          * Identifier uniquely determining type of the object.
          */
-        public static final int CONSTRUCTOR = 212320974;
+        public static final int CONSTRUCTOR = -1631843262;
 
         /**
          * @return this.CONSTRUCTOR
@@ -63637,6 +66557,10 @@ public class TdApi {
          */
         public boolean canGetStarRevenueStatistics;
         /**
+         * True, if the user can send a gift to the supergroup or channel using sendGift or transferGift.
+         */
+        public boolean canSendGift;
+        /**
          * True, if aggressive anti-spam checks can be enabled or disabled in the supergroup.
          */
         public boolean canToggleAggressiveAntiSpam;
@@ -63660,6 +66584,10 @@ public class TdApi {
          * True, if the supergroup or channel has pinned stories.
          */
         public boolean hasPinnedStories;
+        /**
+         * Number of saved to profile gifts for channels without canPostMessages administrator right, otherwise, the total number of received gifts.
+         */
+        public int giftCount;
         /**
          * Number of times the current user boosted the supergroup or channel.
          */
@@ -63688,6 +66616,10 @@ public class TdApi {
          * List of commands of bots in the group.
          */
         public BotCommands[] botCommands;
+        /**
+         * Information about verification status of the supergroup or the channel provided by a bot; may be null if none or unknown.
+         */
+        @Nullable public BotVerification botVerification;
         /**
          * Identifier of the basic group from which supergroup was upgraded; 0 if none.
          */
@@ -63724,12 +66656,14 @@ public class TdApi {
          * @param canGetStatistics True, if the supergroup or channel statistics are available.
          * @param canGetRevenueStatistics True, if the supergroup or channel revenue statistics are available.
          * @param canGetStarRevenueStatistics True, if the supergroup or channel Telegram Star revenue statistics are available.
+         * @param canSendGift True, if the user can send a gift to the supergroup or channel using sendGift or transferGift.
          * @param canToggleAggressiveAntiSpam True, if aggressive anti-spam checks can be enabled or disabled in the supergroup.
          * @param isAllHistoryAvailable True, if new chat members will have access to old messages. In public, discussion, of forum groups and all channels, old messages are always available, so this option affects only private non-forum supergroups without a linked chat. The value of this field is only available to chat administrators.
          * @param canHaveSponsoredMessages True, if the chat can have sponsored messages. The value of this field is only available to the owner of the chat.
          * @param hasAggressiveAntiSpamEnabled True, if aggressive anti-spam checks are enabled in the supergroup. The value of this field is only available to chat administrators.
          * @param hasPaidMediaAllowed True, if paid media can be sent and forwarded to the channel chat; for channels only.
          * @param hasPinnedStories True, if the supergroup or channel has pinned stories.
+         * @param giftCount Number of saved to profile gifts for channels without canPostMessages administrator right, otherwise, the total number of received gifts.
          * @param myBoostCount Number of times the current user boosted the supergroup or channel.
          * @param unrestrictBoostCount Number of times the supergroup must be boosted by a user to ignore slow mode and chat permission restrictions; 0 if unspecified.
          * @param stickerSetId Identifier of the supergroup sticker set that must be shown before user sticker sets; 0 if none.
@@ -63737,10 +66671,11 @@ public class TdApi {
          * @param location Location to which the supergroup is connected; may be null if none.
          * @param inviteLink Primary invite link for the chat; may be null. For chat administrators with canInviteUsers right only.
          * @param botCommands List of commands of bots in the group.
+         * @param botVerification Information about verification status of the supergroup or the channel provided by a bot; may be null if none or unknown.
          * @param upgradedFromBasicGroupId Identifier of the basic group from which supergroup was upgraded; 0 if none.
          * @param upgradedFromMaxMessageId Identifier of the last message in the basic group from which supergroup was upgraded; 0 if none.
          */
-        public SupergroupFullInfo(ChatPhoto photo, String description, int memberCount, int administratorCount, int restrictedCount, int bannedCount, long linkedChatId, int slowModeDelay, double slowModeDelayExpiresIn, boolean canEnablePaidReaction, boolean canGetMembers, boolean hasHiddenMembers, boolean canHideMembers, boolean canSetStickerSet, boolean canSetLocation, boolean canGetStatistics, boolean canGetRevenueStatistics, boolean canGetStarRevenueStatistics, boolean canToggleAggressiveAntiSpam, boolean isAllHistoryAvailable, boolean canHaveSponsoredMessages, boolean hasAggressiveAntiSpamEnabled, boolean hasPaidMediaAllowed, boolean hasPinnedStories, int myBoostCount, int unrestrictBoostCount, long stickerSetId, long customEmojiStickerSetId, ChatLocation location, ChatInviteLink inviteLink, BotCommands[] botCommands, long upgradedFromBasicGroupId, long upgradedFromMaxMessageId) {
+        public SupergroupFullInfo(ChatPhoto photo, String description, int memberCount, int administratorCount, int restrictedCount, int bannedCount, long linkedChatId, int slowModeDelay, double slowModeDelayExpiresIn, boolean canEnablePaidReaction, boolean canGetMembers, boolean hasHiddenMembers, boolean canHideMembers, boolean canSetStickerSet, boolean canSetLocation, boolean canGetStatistics, boolean canGetRevenueStatistics, boolean canGetStarRevenueStatistics, boolean canSendGift, boolean canToggleAggressiveAntiSpam, boolean isAllHistoryAvailable, boolean canHaveSponsoredMessages, boolean hasAggressiveAntiSpamEnabled, boolean hasPaidMediaAllowed, boolean hasPinnedStories, int giftCount, int myBoostCount, int unrestrictBoostCount, long stickerSetId, long customEmojiStickerSetId, ChatLocation location, ChatInviteLink inviteLink, BotCommands[] botCommands, BotVerification botVerification, long upgradedFromBasicGroupId, long upgradedFromMaxMessageId) {
             this.photo = photo;
             this.description = description;
             this.memberCount = memberCount;
@@ -63759,12 +66694,14 @@ public class TdApi {
             this.canGetStatistics = canGetStatistics;
             this.canGetRevenueStatistics = canGetRevenueStatistics;
             this.canGetStarRevenueStatistics = canGetStarRevenueStatistics;
+            this.canSendGift = canSendGift;
             this.canToggleAggressiveAntiSpam = canToggleAggressiveAntiSpam;
             this.isAllHistoryAvailable = isAllHistoryAvailable;
             this.canHaveSponsoredMessages = canHaveSponsoredMessages;
             this.hasAggressiveAntiSpamEnabled = hasAggressiveAntiSpamEnabled;
             this.hasPaidMediaAllowed = hasPaidMediaAllowed;
             this.hasPinnedStories = hasPinnedStories;
+            this.giftCount = giftCount;
             this.myBoostCount = myBoostCount;
             this.unrestrictBoostCount = unrestrictBoostCount;
             this.stickerSetId = stickerSetId;
@@ -63772,6 +66709,7 @@ public class TdApi {
             this.location = location;
             this.inviteLink = inviteLink;
             this.botCommands = botCommands;
+            this.botVerification = botVerification;
             this.upgradedFromBasicGroupId = upgradedFromBasicGroupId;
             this.upgradedFromMaxMessageId = upgradedFromMaxMessageId;
         }
@@ -63779,7 +66717,7 @@ public class TdApi {
         /**
          * Identifier uniquely determining type of the object.
          */
-        public static final int CONSTRUCTOR = 1718501070;
+        public static final int CONSTRUCTOR = -1070689482;
 
         /**
          * @return this.CONSTRUCTOR
@@ -64389,12 +67327,12 @@ public class TdApi {
     }
 
     /**
-     * The currently opened chat needs to be kept.
+     * The currently opened chat and forum topic must be kept.
      */
     public static class TargetChatCurrent extends TargetChat {
 
         /**
-         * The currently opened chat needs to be kept.
+         * The currently opened chat and forum topic must be kept.
          */
         public TargetChatCurrent() {
         }
@@ -64418,21 +67356,9 @@ public class TdApi {
      */
     public static class TargetChatChosen extends TargetChat {
         /**
-         * True, if private chats with ordinary users are allowed.
+         * Allowed types for the chat.
          */
-        public boolean allowUserChats;
-        /**
-         * True, if private chats with other bots are allowed.
-         */
-        public boolean allowBotChats;
-        /**
-         * True, if basic group and supergroup chats are allowed.
-         */
-        public boolean allowGroupChats;
-        /**
-         * True, if channel chats are allowed.
-         */
-        public boolean allowChannelChats;
+        public TargetChatTypes types;
 
         /**
          * The chat needs to be chosen by the user among chats of the specified types.
@@ -64443,22 +67369,16 @@ public class TdApi {
         /**
          * The chat needs to be chosen by the user among chats of the specified types.
          *
-         * @param allowUserChats True, if private chats with ordinary users are allowed.
-         * @param allowBotChats True, if private chats with other bots are allowed.
-         * @param allowGroupChats True, if basic group and supergroup chats are allowed.
-         * @param allowChannelChats True, if channel chats are allowed.
+         * @param types Allowed types for the chat.
          */
-        public TargetChatChosen(boolean allowUserChats, boolean allowBotChats, boolean allowGroupChats, boolean allowChannelChats) {
-            this.allowUserChats = allowUserChats;
-            this.allowBotChats = allowBotChats;
-            this.allowGroupChats = allowGroupChats;
-            this.allowChannelChats = allowChannelChats;
+        public TargetChatChosen(TargetChatTypes types) {
+            this.types = types;
         }
 
         /**
          * Identifier uniquely determining type of the object.
          */
-        public static final int CONSTRUCTOR = -307442990;
+        public static final int CONSTRUCTOR = -1392978522;
 
         /**
          * @return this.CONSTRUCTOR
@@ -64497,6 +67417,62 @@ public class TdApi {
          * Identifier uniquely determining type of the object.
          */
         public static final int CONSTRUCTOR = -579301408;
+
+        /**
+         * @return this.CONSTRUCTOR
+         */
+        @Override
+        public int getConstructor() {
+            return CONSTRUCTOR;
+        }
+    }
+
+    /**
+     * Describes allowed types for the target chat.
+     */
+    public static class TargetChatTypes extends Object {
+        /**
+         * True, if private chats with ordinary users are allowed.
+         */
+        public boolean allowUserChats;
+        /**
+         * True, if private chats with other bots are allowed.
+         */
+        public boolean allowBotChats;
+        /**
+         * True, if basic group and supergroup chats are allowed.
+         */
+        public boolean allowGroupChats;
+        /**
+         * True, if channel chats are allowed.
+         */
+        public boolean allowChannelChats;
+
+        /**
+         * Describes allowed types for the target chat.
+         */
+        public TargetChatTypes() {
+        }
+
+        /**
+         * Describes allowed types for the target chat.
+         *
+         * @param allowUserChats True, if private chats with ordinary users are allowed.
+         * @param allowBotChats True, if private chats with other bots are allowed.
+         * @param allowGroupChats True, if basic group and supergroup chats are allowed.
+         * @param allowChannelChats True, if channel chats are allowed.
+         */
+        public TargetChatTypes(boolean allowUserChats, boolean allowBotChats, boolean allowGroupChats, boolean allowChannelChats) {
+            this.allowUserChats = allowUserChats;
+            this.allowBotChats = allowBotChats;
+            this.allowGroupChats = allowGroupChats;
+            this.allowChannelChats = allowChannelChats;
+        }
+
+        /**
+         * Identifier uniquely determining type of the object.
+         */
+        public static final int CONSTRUCTOR = 1513098833;
 
         /**
          * @return this.CONSTRUCTOR
@@ -67115,6 +70091,7 @@ public class TdApi {
             UpdateMessageUnreadReactions.CONSTRUCTOR,
             UpdateMessageFactCheck.CONSTRUCTOR,
             UpdateMessageLiveLocationViewed.CONSTRUCTOR,
+            UpdateVideoPublished.CONSTRUCTOR,
             UpdateNewChat.CONSTRUCTOR,
             UpdateChatTitle.CONSTRUCTOR,
             UpdateChatPhoto.CONSTRUCTOR,
@@ -67392,7 +70369,7 @@ public class TdApi {
      */
     public static class UpdateMessageSendSucceeded extends Update {
         /**
-         * The sent message. Usually only the message identifier, date, and content are changed, but almost all other fields can also change.
+         * The sent message. Almost any field of the new message can be different from the corresponding field of the original message. For example, the field schedulingState may change, making the message scheduled, or non-scheduled.
          */
         public Message message;
         /**
@@ -67409,7 +70386,7 @@ public class TdApi {
         /**
          * A message has been successfully sent.
          *
-         * @param message The sent message. Usually only the message identifier, date, and content are changed, but almost all other fields can also change.
+         * @param message The sent message. Almost any field of the new message can be different from the corresponding field of the original message. For example, the field schedulingState may change, making the message scheduled, or non-scheduled.
          * @param oldMessageId The previous temporary message identifier.
          */
         public UpdateMessageSendSucceeded(Message message, long oldMessageId) {
@@ -67921,6 +70898,50 @@ public class TdApi {
          * Identifier uniquely determining type of the object.
          */
         public static final int CONSTRUCTOR = -1308260971;
+
+        /**
+         * @return this.CONSTRUCTOR
+         */
+        @Override
+        public int getConstructor() {
+            return CONSTRUCTOR;
+        }
+    }
+
+    /**
+     * An automatically scheduled message with video has been successfully sent after conversion.
+     */
+    public static class UpdateVideoPublished extends Update {
+        /**
+         * Identifier of the chat with the message.
+         */
+        public long chatId;
+        /**
+         * Identifier of the sent message.
+         */
+        public long messageId;
+
+        /**
+         * An automatically scheduled message with video has been successfully sent after conversion.
+         */
+        public UpdateVideoPublished() {
+        }
+
+        /**
+         * An automatically scheduled message with video has been successfully sent after conversion.
+         *
+         * @param chatId Identifier of the chat with the message.
+         * @param messageId Identifier of the sent message.
+         */
+        public UpdateVideoPublished(long chatId, long messageId) {
+            this.chatId = chatId;
+            this.messageId = messageId;
+        }
+
+        /**
+         * Identifier uniquely determining type of the object.
+         */
+        public static final int CONSTRUCTOR = -352575406;
 
         /**
          * @return this.CONSTRUCTOR
@@ -71980,7 +75001,7 @@ public class TdApi {
          */
         public AccentColor[] colors;
         /**
-         * The list of accent color identifiers, which can be set through setAccentColor and setChatAccentColor. The colors must be shown in the specififed order.
+         * The list of accent color identifiers, which can be set through setAccentColor and setChatAccentColor. The colors must be shown in the specified order.
          */
         public int[] availableAccentColorIds;
 
@@ -71994,7 +75015,7 @@ public class TdApi {
          * The list of supported accent colors has changed.
          *
          * @param colors Information about supported colors; colors with identifiers 0 (red), 1 (orange), 2 (purple/violet), 3 (green), 4 (cyan), 5 (blue), 6 (pink) must always be supported and aren't included in the list. The exact colors for the accent colors with identifiers 0-6 must be taken from the app theme.
-         * @param availableAccentColorIds The list of accent color identifiers, which can be set through setAccentColor and setChatAccentColor. The colors must be shown in the specififed order.
+         * @param availableAccentColorIds The list of accent color identifiers, which can be set through setAccentColor and setChatAccentColor. The colors must be shown in the specified order.
          */
         public UpdateAccentColors(AccentColor[] colors, int[] availableAccentColorIds) {
             this.colors = colors;
@@ -72024,7 +75045,7 @@ public class TdApi {
          */
         public ProfileAccentColor[] colors;
         /**
-         * The list of accent color identifiers, which can be set through setProfileAccentColor and setChatProfileAccentColor. The colors must be shown in the specififed order.
+         * The list of accent color identifiers, which can be set through setProfileAccentColor and setChatProfileAccentColor. The colors must be shown in the specified order.
          */
         public int[] availableAccentColorIds;
 
@@ -72038,7 +75059,7 @@ public class TdApi {
          * The list of supported accent colors for user profiles has changed.
          *
          * @param colors Information about supported colors.
-         * @param availableAccentColorIds The list of accent color identifiers, which can be set through setProfileAccentColor and setChatProfileAccentColor. The colors must be shown in the specififed order.
+         * @param availableAccentColorIds The list of accent color identifiers, which can be set through setProfileAccentColor and setChatProfileAccentColor. The colors must be shown in the specified order.
          */
         public UpdateProfileAccentColors(ProfileAccentColor[] colors, int[] availableAccentColorIds) {
             this.colors = colors;
@@ -72512,9 +75533,9 @@ public class TdApi {
      */
     public static class UpdateOwnedStarCount extends Update {
         /**
-         * The new number of Telegram Stars owned.
+         * The new amount of owned Telegram Stars.
          */
-        public long starCount;
+        public StarAmount starAmount;
 
         /**
          * The number of Telegram Stars owned by the current user has changed.
@@ -72525,16 +75546,16 @@ public class TdApi {
         /**
          * The number of Telegram Stars owned by the current user has changed.
          *
-         * @param starCount The new number of Telegram Stars owned.
+         * @param starAmount The new amount of owned Telegram Stars.
          */
-        public UpdateOwnedStarCount(long starCount) {
-            this.starCount = starCount;
+        public UpdateOwnedStarCount(StarAmount starAmount) {
+            this.starAmount = starAmount;
         }
 
         /**
          * Identifier uniquely determining type of the object.
          */
-        public static final int CONSTRUCTOR = -560374919;
+        public static final int CONSTRUCTOR = -1350647928;
 
         /**
          * @return this.CONSTRUCTOR
@@ -74182,6 +77203,446 @@ public class TdApi {
     }
 
     /**
+     * Contains result of gift upgrading.
+     */
+    public static class UpgradeGiftResult extends Object {
+        /**
+         * The upgraded gift.
+         */
+        public UpgradedGift gift;
+        /**
+         * Unique identifier of the received gift for the current user.
+         */
+        public String receivedGiftId;
+        /**
+         * True, if the gift is displayed on the user's or the channel's profile page.
+         */
+        public boolean isSaved;
+        /**
+         * True, if the gift can be transferred to another owner.
+         */
+        public boolean canBeTransferred;
+        /**
+         * Number of Telegram Stars that must be paid to transfer the upgraded gift.
+         */
+        public long transferStarCount;
+        /**
+         * Point in time (Unix timestamp) when the gift can be transferred to the TON blockchain as an NFT.
+         */
+        public int exportDate;
+
+        /**
+         * Contains result of gift upgrading.
+         */
+        public UpgradeGiftResult() {
+        }
+
+        /**
+         * Contains result of gift upgrading.
+         *
+         * @param gift The upgraded gift.
+         * @param receivedGiftId Unique identifier of the received gift for the current user.
+         * @param isSaved True, if the gift is displayed on the user's or the channel's profile page.
+         * @param canBeTransferred True, if the gift can be transferred to another owner.
+         * @param transferStarCount Number of Telegram Stars that must be paid to transfer the upgraded gift.
+         * @param exportDate Point in time (Unix timestamp) when the gift can be transferred to the TON blockchain as an NFT.
+         */
+        public UpgradeGiftResult(UpgradedGift gift, String receivedGiftId, boolean isSaved, boolean canBeTransferred, long transferStarCount, int exportDate) {
+            this.gift = gift;
+            this.receivedGiftId = receivedGiftId;
+            this.isSaved = isSaved;
+            this.canBeTransferred = canBeTransferred;
+            this.transferStarCount = transferStarCount;
+            this.exportDate = exportDate;
+        }
+
+        /**
+         * Identifier uniquely determining type of the object.
+         */
+        public static final int CONSTRUCTOR = 664437354;
+
+        /**
+         * @return this.CONSTRUCTOR
+         */
+        @Override
+        public int getConstructor() {
+            return CONSTRUCTOR;
+        }
+    }
+
+    /**
+     * Describes an upgraded gift that can be transferred to another owner or transferred to the TON blockchain as an NFT.
+     */
+    public static class UpgradedGift extends Object {
+        /**
+         * Unique identifier of the gift.
+         */
+        public long id;
+        /**
+         * The title of the upgraded gift.
+         */
+        public String title;
+        /**
+         * Unique name of the upgraded gift that can be used with internalLinkTypeUpgradedGift.
+         */
+        public String name;
+        /**
+         * Unique number of the upgraded gift among gifts upgraded from the same gift.
+         */
+        public int number;
+        /**
+         * Total number of gifts that were upgraded from the same gift.
+         */
+        public int totalUpgradedCount;
+        /**
+         * The maximum number of gifts that can be upgraded from the same gift.
+         */
+        public int maxUpgradedCount;
+        /**
+         * Identifier of the user or the chat that owns the upgraded gift; may be null if none or unknown.
+         */
+        @Nullable public MessageSender ownerId;
+        /**
+         * Address of the gift NFT owner in TON blockchain; may be empty if none.
+         */
+        public String ownerAddress;
+        /**
+         * Name of the owner for the case when owner identifier and address aren't known.
+         */
+        public String ownerName;
+        /**
+         * Model of the upgraded gift.
+         */
+        public UpgradedGiftModel model;
+        /**
+         * Symbol of the upgraded gift.
+         */
+        public UpgradedGiftSymbol symbol;
+        /**
+         * Backdrop of the upgraded gift.
+         */
+        public UpgradedGiftBackdrop backdrop;
+        /**
+         * Information about the originally sent gift; may be null if unknown.
+         */
+        @Nullable public UpgradedGiftOriginalDetails originalDetails;
+
+        /**
+         * Describes an upgraded gift that can be transferred to another owner or transferred to the TON blockchain as an NFT.
+         */
+        public UpgradedGift() {
+        }
+
+        /**
+         * Describes an upgraded gift that can be transferred to another owner or transferred to the TON blockchain as an NFT.
+         *
+         * @param id Unique identifier of the gift.
+         * @param title The title of the upgraded gift.
+         * @param name Unique name of the upgraded gift that can be used with internalLinkTypeUpgradedGift.
+         * @param number Unique number of the upgraded gift among gifts upgraded from the same gift.
+         * @param totalUpgradedCount Total number of gifts that were upgraded from the same gift.
+         * @param maxUpgradedCount The maximum number of gifts that can be upgraded from the same gift.
+         * @param ownerId Identifier of the user or the chat that owns the upgraded gift; may be null if none or unknown.
+         * @param ownerAddress Address of the gift NFT owner in TON blockchain; may be empty if none.
+         * @param ownerName Name of the owner for the case when owner identifier and address aren't known.
+         * @param model Model of the upgraded gift.
+         * @param symbol Symbol of the upgraded gift.
+         * @param backdrop Backdrop of the upgraded gift.
+         * @param originalDetails Information about the originally sent gift; may be null if unknown.
+         */
+        public UpgradedGift(long id, String title, String name, int number, int totalUpgradedCount, int maxUpgradedCount, MessageSender ownerId, String ownerAddress, String ownerName, UpgradedGiftModel model, UpgradedGiftSymbol symbol, UpgradedGiftBackdrop backdrop, UpgradedGiftOriginalDetails originalDetails) {
+            this.id = id;
+            this.title = title;
+            this.name = name;
+            this.number = number;
+            this.totalUpgradedCount = totalUpgradedCount;
+            this.maxUpgradedCount = maxUpgradedCount;
+            this.ownerId = ownerId;
+            this.ownerAddress = ownerAddress;
+            this.ownerName = ownerName;
+            this.model = model;
+            this.symbol = symbol;
+            this.backdrop = backdrop;
+            this.originalDetails = originalDetails;
+        }
+
+        /**
+         * Identifier uniquely determining type of the object.
+         */
+        public static final int CONSTRUCTOR = 1203274603;
+
+        /**
+         * @return this.CONSTRUCTOR
+         */
+        @Override
+        public int getConstructor() {
+            return CONSTRUCTOR;
+        }
+    }
+
+    /**
+     * Describes a backdrop of an upgraded gift.
+     */
+    public static class UpgradedGiftBackdrop extends Object {
+        /**
+         * Name of the backdrop.
+         */
+        public String name;
+        /**
+         * Colors of the backdrop.
+         */
+        public UpgradedGiftBackdropColors colors;
+        /**
+         * The number of upgraded gift that receive this backdrop for each 1000 gifts upgraded.
+         */
+        public int rarityPerMille;
+
+        /**
+         * Describes a backdrop of an upgraded gift.
+         */
+        public UpgradedGiftBackdrop() {
+        }
+
+        /**
+         * Describes a backdrop of an upgraded gift.
+         *
+         * @param name Name of the backdrop.
+         * @param colors Colors of the backdrop.
+         * @param rarityPerMille The number of upgraded gift that receive this backdrop for each 1000 gifts upgraded.
+         */
+        public UpgradedGiftBackdrop(String name, UpgradedGiftBackdropColors colors, int rarityPerMille) {
+            this.name = name;
+            this.colors = colors;
+            this.rarityPerMille = rarityPerMille;
+        }
+
+        /**
+         * Identifier uniquely determining type of the object.
+         */
+        public static final int CONSTRUCTOR = -334899886;
+
+        /**
+         * @return this.CONSTRUCTOR
+         */
+        @Override
+        public int getConstructor() {
+            return CONSTRUCTOR;
+        }
+    }
+
+    /**
+     * Describes colors of a backdrop of an upgraded gift.
+     */
+    public static class UpgradedGiftBackdropColors extends Object {
+        /**
+         * A color in the center of the backdrop in the RGB format.
+         */
+        public int centerColor;
+        /**
+         * A color on the edges of the backdrop in the RGB format.
+         */
+        public int edgeColor;
+        /**
+         * A color to be applied for the symbol in the RGB format.
+         */
+        public int symbolColor;
+        /**
+         * A color for the text on the backdrop in the RGB format.
+         */
+        public int textColor;
+
+        /**
+         * Describes colors of a backdrop of an upgraded gift.
+         */
+        public UpgradedGiftBackdropColors() {
+        }
+
+        /**
+         * Describes colors of a backdrop of an upgraded gift.
+         *
+         * @param centerColor A color in the center of the backdrop in the RGB format.
+         * @param edgeColor A color on the edges of the backdrop in the RGB format.
+         * @param symbolColor A color to be applied for the symbol in the RGB format.
+         * @param textColor A color for the text on the backdrop in the RGB format.
+         */
+        public UpgradedGiftBackdropColors(int centerColor, int edgeColor, int symbolColor, int textColor) {
+            this.centerColor = centerColor;
+            this.edgeColor = edgeColor;
+            this.symbolColor = symbolColor;
+            this.textColor = textColor;
+        }
+
+        /**
+         * Identifier uniquely determining type of the object.
+         */
+        public static final int CONSTRUCTOR = 4227529;
+
+        /**
+         * @return this.CONSTRUCTOR
+         */
+        @Override
+        public int getConstructor() {
+            return CONSTRUCTOR;
+        }
+    }
+
+    /**
+     * Describes a model of an upgraded gift.
+     */
+    public static class UpgradedGiftModel extends Object {
+        /**
+         * Name of the model.
+         */
+        public String name;
+        /**
+         * The sticker representing the upgraded gift.
+         */
+        public Sticker sticker;
+        /**
+         * The number of upgraded gift that receive this model for each 1000 gifts upgraded.
+         */
+        public int rarityPerMille;
+
+        /**
+         * Describes a model of an upgraded gift.
+         */
+        public UpgradedGiftModel() {
+        }
+
+        /**
+         * Describes a model of an upgraded gift.
+         *
+         * @param name Name of the model.
+         * @param sticker The sticker representing the upgraded gift.
+         * @param rarityPerMille The number of upgraded gift that receive this model for each 1000 gifts upgraded.
+         */
+        public UpgradedGiftModel(String name, Sticker sticker, int rarityPerMille) {
+            this.name = name;
+            this.sticker = sticker;
+            this.rarityPerMille = rarityPerMille;
+        }
+
+        /**
+         * Identifier uniquely determining type of the object.
+         */
+        public static final int CONSTRUCTOR = 1360156751;
+
+        /**
+         * @return this.CONSTRUCTOR
+         */
+        @Override
+        public int getConstructor() {
+            return CONSTRUCTOR;
+        }
+    }
+
+    /**
+     * Describes the original details about the gift.
+     */
+    public static class UpgradedGiftOriginalDetails extends Object {
+        /**
+         * Identifier of the user or the chat that sent the gift; may be null if the gift was private.
+         */
+        @Nullable public MessageSender senderId;
+        /**
+         * Identifier of the user or the chat that received the gift.
+         */
+        public MessageSender receiverId;
+        /**
+         * Message added to the gift.
+         */
+        public FormattedText text;
+        /**
+         * Point in time (Unix timestamp) when the gift was sent.
+         */
+        public int date;
+
+        /**
+         * Describes the original details about the gift.
+         */
+        public UpgradedGiftOriginalDetails() {
+        }
+
+        /**
+         * Describes the original details about the gift.
+         *
+         * @param senderId Identifier of the user or the chat that sent the gift; may be null if the gift was private.
+         * @param receiverId Identifier of the user or the chat that received the gift.
+         * @param text Message added to the gift.
+         * @param date Point in time (Unix timestamp) when the gift was sent.
+         */
+        public UpgradedGiftOriginalDetails(MessageSender senderId, MessageSender receiverId, FormattedText text, int date) {
+            this.senderId = senderId;
+            this.receiverId = receiverId;
+            this.text = text;
+            this.date = date;
+        }
+
+        /**
+         * Identifier uniquely determining type of the object.
+         */
+        public static final int CONSTRUCTOR = 55247728;
+
+        /**
+         * @return this.CONSTRUCTOR
+         */
+        @Override
+        public int getConstructor() {
+            return CONSTRUCTOR;
+        }
+    }
+
+    /**
+     * Describes a symbol shown on the pattern of an upgraded gift.
+     */
+    public static class UpgradedGiftSymbol extends Object {
+        /**
+         * Name of the symbol.
+         */
+        public String name;
+        /**
+         * The sticker representing the upgraded gift.
+         */
+        public Sticker sticker;
+        /**
+         * The number of upgraded gift that receive this symbol for each 1000 gifts upgraded.
+         */
+        public int rarityPerMille;
+
+        /**
+         * Describes a symbol shown on the pattern of an upgraded gift.
+         */
+        public UpgradedGiftSymbol() {
+        }
+
+        /**
+         * Describes a symbol shown on the pattern of an upgraded gift.
+         *
+         * @param name Name of the symbol.
+         * @param sticker The sticker representing the upgraded gift.
+         * @param rarityPerMille The number of upgraded gift that receive this symbol for each 1000 gifts upgraded.
+         */
+        public UpgradedGiftSymbol(String name, Sticker sticker, int rarityPerMille) {
+            this.name = name;
+            this.sticker = sticker;
+            this.rarityPerMille = rarityPerMille;
+        }
+
+        /**
+         * Identifier uniquely determining type of the object.
+         */
+        public static final int CONSTRUCTOR = 1128318383;
+
+        /**
+         * @return this.CONSTRUCTOR
+         */
+        @Override
+        public int getConstructor() {
+            return CONSTRUCTOR;
+        }
+    }
+
+    /**
      * Represents a user.
      */
     public static class User extends Object {
@@ -74214,23 +77675,23 @@ public class TdApi {
          */
         @Nullable public ProfilePhoto profilePhoto;
         /**
-         * Identifier of the accent color for name, and backgrounds of profile photo, reply header, and link preview. For Telegram Premium users only.
+         * Identifier of the accent color for name, and backgrounds of profile photo, reply header, and link preview.
          */
         public int accentColorId;
         /**
-         * Identifier of a custom emoji to be shown on the reply header and link preview background; 0 if none. For Telegram Premium users only.
+         * Identifier of a custom emoji to be shown on the reply header and link preview background; 0 if none.
          */
         public long backgroundCustomEmojiId;
         /**
-         * Identifier of the accent color for the user's profile; -1 if none. For Telegram Premium users only.
+         * Identifier of the accent color for the user's profile; -1 if none.
          */
         public int profileAccentColorId;
         /**
-         * Identifier of a custom emoji to be shown on the background of the user's profile; 0 if none. For Telegram Premium users only.
+         * Identifier of a custom emoji to be shown on the background of the user's profile; 0 if none.
          */
         public long profileBackgroundCustomEmojiId;
         /**
-         * Emoji status to be shown instead of the default Telegram Premium badge; may be null. For Telegram Premium users only.
+         * Emoji status to be shown instead of the default Telegram Premium badge; may be null.
          */
         @Nullable public EmojiStatus emojiStatus;
         /**
@@ -74246,9 +77707,9 @@ public class TdApi {
          */
         public boolean isCloseFriend;
         /**
-         * True, if the user is verified.
+         * Information about verification status of the user; may be null if none.
          */
-        public boolean isVerified;
+        @Nullable public VerificationStatus verificationStatus;
         /**
          * True, if the user is a Telegram Premium user.
          */
@@ -74261,14 +77722,6 @@ public class TdApi {
          * If non-empty, it contains a human-readable description of the reason why access to this user must be restricted.
          */
         public String restrictionReason;
-        /**
-         * True, if many users reported this user as a scam.
-         */
-        public boolean isScam;
-        /**
-         * True, if many users reported this user as a fake account.
-         */
-        public boolean isFake;
         /**
          * True, if the user has non-expired stories available to the current user.
          */
@@ -74314,20 +77767,18 @@ public class TdApi {
          * @param phoneNumber Phone number of the user.
          * @param status Current online status of the user.
          * @param profilePhoto Profile photo of the user; may be null.
-         * @param accentColorId Identifier of the accent color for name, and backgrounds of profile photo, reply header, and link preview. For Telegram Premium users only.
-         * @param backgroundCustomEmojiId Identifier of a custom emoji to be shown on the reply header and link preview background; 0 if none. For Telegram Premium users only.
-         * @param profileAccentColorId Identifier of the accent color for the user's profile; -1 if none. For Telegram Premium users only.
-         * @param profileBackgroundCustomEmojiId Identifier of a custom emoji to be shown on the background of the user's profile; 0 if none. For Telegram Premium users only.
-         * @param emojiStatus Emoji status to be shown instead of the default Telegram Premium badge; may be null. For Telegram Premium users only.
+         * @param accentColorId Identifier of the accent color for name, and backgrounds of profile photo, reply header, and link preview.
+         * @param backgroundCustomEmojiId Identifier of a custom emoji to be shown on the reply header and link preview background; 0 if none.
+         * @param profileAccentColorId Identifier of the accent color for the user's profile; -1 if none.
+         * @param profileBackgroundCustomEmojiId Identifier of a custom emoji to be shown on the background of the user's profile; 0 if none.
+         * @param emojiStatus Emoji status to be shown instead of the default Telegram Premium badge; may be null.
          * @param isContact The user is a contact of the current user.
          * @param isMutualContact The user is a contact of the current user and the current user is a contact of the user.
          * @param isCloseFriend The user is a close friend of the current user; implies that the user is a contact.
-         * @param isVerified True, if the user is verified.
+         * @param verificationStatus Information about verification status of the user; may be null if none.
          * @param isPremium True, if the user is a Telegram Premium user.
          * @param isSupport True, if the user is Telegram support account.
          * @param restrictionReason If non-empty, it contains a human-readable description of the reason why access to this user must be restricted.
-         * @param isScam True, if many users reported this user as a scam.
-         * @param isFake True, if many users reported this user as a fake account.
          * @param hasActiveStories True, if the user has non-expired stories available to the current user.
          * @param hasUnreadActiveStories True, if the user has unread non-expired stories available to the current user.
          * @param restrictsNewChats True, if the user may restrict new chats with non-contacts. Use canSendMessageToUser to check whether the current user can message the user or try to create a chat with them.
@@ -74336,7 +77787,7 @@ public class TdApi {
          * @param languageCode IETF language tag of the user's language; only available to bots.
          * @param addedToAttachmentMenu True, if the user added the current bot to attachment menu; only available to bots.
          */
-        public User(long id, String firstName, String lastName, Usernames usernames, String phoneNumber, UserStatus status, ProfilePhoto profilePhoto, int accentColorId, long backgroundCustomEmojiId, int profileAccentColorId, long profileBackgroundCustomEmojiId, EmojiStatus emojiStatus, boolean isContact, boolean isMutualContact, boolean isCloseFriend, boolean isVerified, boolean isPremium, boolean isSupport, String restrictionReason, boolean isScam, boolean isFake, boolean hasActiveStories, boolean hasUnreadActiveStories, boolean restrictsNewChats, boolean haveAccess, UserType type, String languageCode, boolean addedToAttachmentMenu) {
+        public User(long id, String firstName, String lastName, Usernames usernames, String phoneNumber, UserStatus status, ProfilePhoto profilePhoto, int accentColorId, long backgroundCustomEmojiId, int profileAccentColorId, long profileBackgroundCustomEmojiId, EmojiStatus emojiStatus, boolean isContact, boolean isMutualContact, boolean isCloseFriend, VerificationStatus verificationStatus, boolean isPremium, boolean isSupport, String restrictionReason, boolean hasActiveStories, boolean hasUnreadActiveStories, boolean restrictsNewChats, boolean haveAccess, UserType type, String languageCode, boolean addedToAttachmentMenu) {
             this.id = id;
             this.firstName = firstName;
             this.lastName = lastName;
@@ -74352,12 +77803,10 @@ public class TdApi {
             this.isContact = isContact;
             this.isMutualContact = isMutualContact;
             this.isCloseFriend = isCloseFriend;
-            this.isVerified = isVerified;
+            this.verificationStatus = verificationStatus;
             this.isPremium = isPremium;
             this.isSupport = isSupport;
             this.restrictionReason = restrictionReason;
-            this.isScam = isScam;
-            this.isFake = isFake;
             this.hasActiveStories = hasActiveStories;
             this.hasUnreadActiveStories = hasUnreadActiveStories;
             this.restrictsNewChats = restrictsNewChats;
@@ -74370,7 +77819,7 @@ public class TdApi {
         /**
          * Identifier uniquely determining type of the object.
          */
-        public static final int CONSTRUCTOR = 408235106;
+        public static final int CONSTRUCTOR = 1502361907;
 
         /**
          * @return this.CONSTRUCTOR
@@ -74450,17 +77899,17 @@ public class TdApi {
          */
         public long personalChatId;
         /**
-         * The list of available options for gifting Telegram Premium to the user.
-         */
-        public PremiumPaymentOption[] premiumGiftOptions;
-        /**
-         * Number of gifts saved to profile by the user.
+         * Number of saved to profile gifts for other users or the total number of received gifts for the current user.
          */
         public int giftCount;
         /**
          * Number of group chats where both the other user and the current user are a member; 0 for the current user.
          */
         public int groupInCommonCount;
+        /**
+         * Information about verification status of the user provided by a bot; may be null if none or unknown.
+         */
+        @Nullable public BotVerification botVerification;
         /**
          * Information about business settings for Telegram Business accounts; may be null if none.
          */
@@ -74495,13 +77944,13 @@ public class TdApi {
          * @param bio A short user bio; may be null for bots.
          * @param birthdate Birthdate of the user; may be null if unknown.
          * @param personalChatId Identifier of the personal chat of the user; 0 if none.
-         * @param premiumGiftOptions The list of available options for gifting Telegram Premium to the user.
-         * @param giftCount Number of gifts saved to profile by the user.
+         * @param giftCount Number of saved to profile gifts for other users or the total number of received gifts for the current user.
          * @param groupInCommonCount Number of group chats where both the other user and the current user are a member; 0 for the current user.
+         * @param botVerification Information about verification status of the user provided by a bot; may be null if none or unknown.
          * @param businessInfo Information about business settings for Telegram Business accounts; may be null if none.
          * @param botInfo For bots, information about the bot; may be null if the user isn't a bot.
          */
-        public UserFullInfo(ChatPhoto personalPhoto, ChatPhoto photo, ChatPhoto publicPhoto, BlockList blockList, boolean canBeCalled, boolean supportsVideoCalls, boolean hasPrivateCalls, boolean hasPrivateForwards, boolean hasRestrictedVoiceAndVideoNoteMessages, boolean hasPostedToProfileStories, boolean hasSponsoredMessagesEnabled, boolean needPhoneNumberPrivacyException, boolean setChatBackground, FormattedText bio, Birthdate birthdate, long personalChatId, PremiumPaymentOption[] premiumGiftOptions, int giftCount, int groupInCommonCount, BusinessInfo businessInfo, BotInfo botInfo) {
+        public UserFullInfo(ChatPhoto personalPhoto, ChatPhoto photo, ChatPhoto publicPhoto, BlockList blockList, boolean canBeCalled, boolean supportsVideoCalls, boolean hasPrivateCalls, boolean hasPrivateForwards, boolean hasRestrictedVoiceAndVideoNoteMessages, boolean hasPostedToProfileStories, boolean hasSponsoredMessagesEnabled, boolean needPhoneNumberPrivacyException, boolean setChatBackground, FormattedText bio, Birthdate birthdate, long personalChatId, int giftCount, int groupInCommonCount, BotVerification botVerification, BusinessInfo businessInfo, BotInfo botInfo) {
             this.personalPhoto = personalPhoto;
             this.photo = photo;
             this.publicPhoto = publicPhoto;
@@ -74518,9 +77967,9 @@ public class TdApi {
             this.bio = bio;
             this.birthdate = birthdate;
             this.personalChatId = personalChatId;
-            this.premiumGiftOptions = premiumGiftOptions;
             this.giftCount = giftCount;
             this.groupInCommonCount = groupInCommonCount;
+            this.botVerification = botVerification;
             this.businessInfo = businessInfo;
             this.botInfo = botInfo;
         }
@@ -74528,137 +77977,7 @@ public class TdApi {
         /**
          * Identifier uniquely determining type of the object.
          */
-        public static final int CONSTRUCTOR = 1330196254;
-
-        /**
-         * @return this.CONSTRUCTOR
-         */
-        @Override
-        public int getConstructor() {
-            return CONSTRUCTOR;
-        }
-    }
-
-    /**
-     * Represents a gift received by a user.
-     */
-    public static class UserGift extends Object {
-        /**
-         * Identifier of the user that sent the gift; 0 if unknown.
-         */
-        public long senderUserId;
-        /**
-         * Message added to the gift.
-         */
-        public FormattedText text;
-        /**
-         * True, if the sender and gift text are shown only to the gift receiver; otherwise, everyone are able to see them.
-         */
-        public boolean isPrivate;
-        /**
-         * True, if the gift is displayed on the user's profile page; may be false only for the receiver of the gift.
-         */
-        public boolean isSaved;
-        /**
-         * Point in time (Unix timestamp) when the gift was sent.
-         */
-        public int date;
-        /**
-         * The gift.
-         */
-        public Gift gift;
-        /**
-         * Identifier of the message with the gift in the chat with the sender of the gift; can be 0 or an identifier of a deleted message; only for the gift receiver.
-         */
-        public long messageId;
-        /**
-         * Number of Telegram Stars that can be claimed by the receiver instead of the gift; only for the gift receiver.
-         */
-        public long sellStarCount;
-
-        /**
-         * Represents a gift received by a user.
-         */
-        public UserGift() {
-        }
-
-        /**
-         * Represents a gift received by a user.
-         *
-         * @param senderUserId Identifier of the user that sent the gift; 0 if unknown.
-         * @param text Message added to the gift.
-         * @param isPrivate True, if the sender and gift text are shown only to the gift receiver; otherwise, everyone are able to see them.
-         * @param isSaved True, if the gift is displayed on the user's profile page; may be false only for the receiver of the gift.
-         * @param date Point in time (Unix timestamp) when the gift was sent.
-         * @param gift The gift.
-         * @param messageId Identifier of the message with the gift in the chat with the sender of the gift; can be 0 or an identifier of a deleted message; only for the gift receiver.
-         * @param sellStarCount Number of Telegram Stars that can be claimed by the receiver instead of the gift; only for the gift receiver.
-         */
-        public UserGift(long senderUserId, FormattedText text, boolean isPrivate, boolean isSaved, int date, Gift gift, long messageId, long sellStarCount) {
-            this.senderUserId = senderUserId;
-            this.text = text;
-            this.isPrivate = isPrivate;
-            this.isSaved = isSaved;
-            this.date = date;
-            this.gift = gift;
-            this.messageId = messageId;
-            this.sellStarCount = sellStarCount;
-        }
-
-        /**
-         * Identifier uniquely determining type of the object.
-         */
-        public static final int CONSTRUCTOR = 1229895457;
-
-        /**
-         * @return this.CONSTRUCTOR
-         */
-        @Override
-        public int getConstructor() {
-            return CONSTRUCTOR;
-        }
-    }
-
-    /**
-     * Represents a list of gifts received by a user.
-     */
-    public static class UserGifts extends Object {
-        /**
-         * The total number of received gifts.
-         */
-        public int totalCount;
-        /**
-         * The list of gifts.
-         */
-        public UserGift[] gifts;
-        /**
-         * The offset for the next request. If empty, then there are no more results.
-         */
-        public String nextOffset;
-
-        /**
-         * Represents a list of gifts received by a user.
-         */
-        public UserGifts() {
-        }
-
-        /**
-         * Represents a list of gifts received by a user.
-         *
-         * @param totalCount The total number of received gifts.
-         * @param gifts The list of gifts.
-         * @param nextOffset The offset for the next request. If empty, then there are no more results.
-         */
-        public UserGifts(int totalCount, UserGift[] gifts, String nextOffset) {
-            this.totalCount = totalCount;
-            this.gifts = gifts;
-            this.nextOffset = nextOffset;
-        }
-
-        /**
-         * Identifier uniquely determining type of the object.
-         */
-        public static final int CONSTRUCTOR = 1125548230;
+        public static final int CONSTRUCTOR = -1366163006;
 
         /**
          * @return this.CONSTRUCTOR
@@ -74733,7 +78052,8 @@ public class TdApi {
             UserPrivacySettingAllowCalls.CONSTRUCTOR,
             UserPrivacySettingAllowPeerToPeerCalls.CONSTRUCTOR,
             UserPrivacySettingAllowFindingByPhoneNumber.CONSTRUCTOR,
-            UserPrivacySettingAllowPrivateVoiceAndVideoNoteMessages.CONSTRUCTOR
+            UserPrivacySettingAllowPrivateVoiceAndVideoNoteMessages.CONSTRUCTOR,
+            UserPrivacySettingAutosaveGifts.CONSTRUCTOR
         })
         public @interface Constructors {}
 
@@ -75026,6 +78346,31 @@ public class TdApi {
     }
 
     /**
+     * A privacy setting for managing whether received gifts are automatically shown on the user's profile page.
+     */
+    public static class UserPrivacySettingAutosaveGifts extends UserPrivacySetting {
+
+        /**
+         * A privacy setting for managing whether received gifts are automatically shown on the user's profile page.
+         */
+        public UserPrivacySettingAutosaveGifts() {
+        }
+
+        /**
+         * Identifier uniquely determining type of the object.
+         */
+        public static final int CONSTRUCTOR = 1889167821;
+
+        /**
+         * @return this.CONSTRUCTOR
+         */
+        @Override
+        public int getConstructor() {
+            return CONSTRUCTOR;
+        }
+    }
+
+    /**
      * This class is an abstract base class.
      * Represents a single rule for managing user privacy settings.
      */
@@ -75037,11 +78382,13 @@ public class TdApi {
         @IntDef({
             UserPrivacySettingRuleAllowAll.CONSTRUCTOR,
             UserPrivacySettingRuleAllowContacts.CONSTRUCTOR,
+            UserPrivacySettingRuleAllowBots.CONSTRUCTOR,
             UserPrivacySettingRuleAllowPremiumUsers.CONSTRUCTOR,
             UserPrivacySettingRuleAllowUsers.CONSTRUCTOR,
             UserPrivacySettingRuleAllowChatMembers.CONSTRUCTOR,
             UserPrivacySettingRuleRestrictAll.CONSTRUCTOR,
             UserPrivacySettingRuleRestrictContacts.CONSTRUCTOR,
+            UserPrivacySettingRuleRestrictBots.CONSTRUCTOR,
             UserPrivacySettingRuleRestrictUsers.CONSTRUCTOR,
             UserPrivacySettingRuleRestrictChatMembers.CONSTRUCTOR
         })
@@ -75100,6 +78447,31 @@ public class TdApi {
          * Identifier uniquely determining type of the object.
          */
         public static final int CONSTRUCTOR = -1892733680;
+
+        /**
+         * @return this.CONSTRUCTOR
+         */
+        @Override
+        public int getConstructor() {
+            return CONSTRUCTOR;
+        }
+    }
+
+    /**
+     * A rule to allow all bots to do something.
+     */
+    public static class UserPrivacySettingRuleAllowBots extends UserPrivacySettingRule {
+
+        /**
+         * A rule to allow all bots to do something.
+         */
+        public UserPrivacySettingRuleAllowBots() {
+        }
+
+        /**
+         * Identifier uniquely determining type of the object.
+         */
+        public static final int CONSTRUCTOR = 1404208925;
 
         /**
          * @return this.CONSTRUCTOR
@@ -75251,6 +78623,31 @@ public class TdApi {
          * Identifier uniquely determining type of the object.
          */
         public static final int CONSTRUCTOR = 1008389378;
+
+        /**
+         * @return this.CONSTRUCTOR
+         */
+        @Override
+        public int getConstructor() {
+            return CONSTRUCTOR;
+        }
+    }
+
+    /**
+     * A rule to restrict all bots from doing something.
+     */
+    public static class UserPrivacySettingRuleRestrictBots extends UserPrivacySettingRule {
+
+        /**
+         * A rule to restrict all bots from doing something.
+         */
+        public UserPrivacySettingRuleRestrictBots() {
+        }
+
+        /**
+         * Identifier uniquely determining type of the object.
+         */
+        public static final int CONSTRUCTOR = -1902547363;
 
         /**
          * @return this.CONSTRUCTOR
@@ -75662,149 +79059,6 @@ public class TdApi {
          * Identifier uniquely determining type of the object.
          */
         public static final int CONSTRUCTOR = -1257366487;
-
-        /**
-         * @return this.CONSTRUCTOR
-         */
-        @Override
-        public int getConstructor() {
-            return CONSTRUCTOR;
-        }
-    }
-
-    /**
-     * This class is an abstract base class.
-     * Describes purpose of a transaction with a user.
-     */
-    public abstract static class UserTransactionPurpose extends Object {
-        /**
-         * Describes possible values returned by getConstructor().
-         */
-        @Retention(RetentionPolicy.SOURCE)
-        @IntDef({
-            UserTransactionPurposeGiftedStars.CONSTRUCTOR,
-            UserTransactionPurposeGiftSell.CONSTRUCTOR,
-            UserTransactionPurposeGiftSend.CONSTRUCTOR
-        })
-        public @interface Constructors {}
-
-        /**
-         * @return identifier uniquely determining type of the object.
-         */
-        @Constructors
-        @Override
-        public abstract int getConstructor();
-        /**
-         * Default class constructor.
-         */
-        public UserTransactionPurpose() {
-        }
-    }
-
-    /**
-     * A user gifted Telegram Stars.
-     */
-    public static class UserTransactionPurposeGiftedStars extends UserTransactionPurpose {
-        /**
-         * A sticker to be shown in the transaction information; may be null if unknown.
-         */
-        @Nullable public Sticker sticker;
-
-        /**
-         * A user gifted Telegram Stars.
-         */
-        public UserTransactionPurposeGiftedStars() {
-        }
-
-        /**
-         * A user gifted Telegram Stars.
-         *
-         * @param sticker A sticker to be shown in the transaction information; may be null if unknown.
-         */
-        public UserTransactionPurposeGiftedStars(Sticker sticker) {
-            this.sticker = sticker;
-        }
-
-        /**
-         * Identifier uniquely determining type of the object.
-         */
-        public static final int CONSTRUCTOR = 33240065;
-
-        /**
-         * @return this.CONSTRUCTOR
-         */
-        @Override
-        public int getConstructor() {
-            return CONSTRUCTOR;
-        }
-    }
-
-    /**
-     * The current user sold a gift received from another user.
-     */
-    public static class UserTransactionPurposeGiftSell extends UserTransactionPurpose {
-        /**
-         * The gift.
-         */
-        public Gift gift;
-
-        /**
-         * The current user sold a gift received from another user.
-         */
-        public UserTransactionPurposeGiftSell() {
-        }
-
-        /**
-         * The current user sold a gift received from another user.
-         *
-         * @param gift The gift.
-         */
-        public UserTransactionPurposeGiftSell(Gift gift) {
-            this.gift = gift;
-        }
-
-        /**
-         * Identifier uniquely determining type of the object.
-         */
-        public static final int CONSTRUCTOR = 425708942;
-
-        /**
-         * @return this.CONSTRUCTOR
-         */
-        @Override
-        public int getConstructor() {
-            return CONSTRUCTOR;
-        }
-    }
-
-    /**
-     * The current user sent a gift to another user.
-     */
-    public static class UserTransactionPurposeGiftSend extends UserTransactionPurpose {
-        /**
-         * The gift.
-         */
-        public Gift gift;
-
-        /**
-         * The current user sent a gift to another user.
-         */
-        public UserTransactionPurposeGiftSend() {
-        }
-
-        /**
-         * The current user sent a gift to another user.
-         *
-         * @param gift The gift.
-         */
-        public UserTransactionPurposeGiftSend(Gift gift) {
-            this.gift = gift;
-        }
-
-        /**
-         * Identifier uniquely determining type of the object.
-         */
-        public static final int CONSTRUCTOR = -1284614945;
 
         /**
          * @return this.CONSTRUCTOR
@@ -76335,6 +79589,62 @@ public class TdApi {
     }
 
     /**
+     * Contains information about verification status of a chat or a user.
+     */
+    public static class VerificationStatus extends Object {
+        /**
+         * True, if the chat or the user is verified by Telegram.
+         */
+        public boolean isVerified;
+        /**
+         * True, if the chat or the user is marked as scam by Telegram.
+         */
+        public boolean isScam;
+        /**
+         * True, if the chat or the user is marked as fake by Telegram.
+         */
+        public boolean isFake;
+        /**
+         * Identifier of the custom emoji to be shown as verification sign provided by a bot for the user; 0 if none.
+         */
+        public long botVerificationIconCustomEmojiId;
+
+        /**
+         * Contains information about verification status of a chat or a user.
+         */
+        public VerificationStatus() {
+        }
+
+        /**
+         * Contains information about verification status of a chat or a user.
+         *
+         * @param isVerified True, if the chat or the user is verified by Telegram.
+         * @param isScam True, if the chat or the user is marked as scam by Telegram.
+         * @param isFake True, if the chat or the user is marked as fake by Telegram.
+         * @param botVerificationIconCustomEmojiId Identifier of the custom emoji to be shown as verification sign provided by a bot for the user; 0 if none.
+         */
+        public VerificationStatus(boolean isVerified, boolean isScam, boolean isFake, long botVerificationIconCustomEmojiId) {
+            this.isVerified = isVerified;
+            this.isScam = isScam;
+            this.isFake = isFake;
+            this.botVerificationIconCustomEmojiId = botVerificationIconCustomEmojiId;
+        }
+
+        /**
+         * Identifier uniquely determining type of the object.
+         */
+        public static final int CONSTRUCTOR = 988193164;
+
+        /**
+         * @return this.CONSTRUCTOR
+         */
+        @Override
+        public int getConstructor() {
+            return CONSTRUCTOR;
+        }
+    }
+
+    /**
      * Describes a video file.
      */
     public static class Video extends Object {
@@ -76708,6 +80018,160 @@ public class TdApi {
          * Identifier uniquely determining type of the object.
          */
         public static final int CONSTRUCTOR = 788378344;
+
+        /**
+         * @return this.CONSTRUCTOR
+         */
+        @Override
+        public int getConstructor() {
+            return CONSTRUCTOR;
+        }
+    }
+
+    /**
+     * This class is an abstract base class.
+     * Describes mode in which a Web App is opened.
+     */
+    public abstract static class WebAppOpenMode extends Object {
+        /**
+         * Describes possible values returned by getConstructor().
+         */
+        @Retention(RetentionPolicy.SOURCE)
+        @IntDef({
+            WebAppOpenModeCompact.CONSTRUCTOR,
+            WebAppOpenModeFullSize.CONSTRUCTOR,
+            WebAppOpenModeFullScreen.CONSTRUCTOR
+        })
+        public @interface Constructors {}
+
+        /**
+         * @return identifier uniquely determining type of the object.
+         */
+        @Constructors
+        @Override
+        public abstract int getConstructor();
+        /**
+         * Default class constructor.
+         */
+        public WebAppOpenMode() {
+        }
+    }
+
+    /**
+     * The Web App is opened in the compact mode.
+     */
+    public static class WebAppOpenModeCompact extends WebAppOpenMode {
+
+        /**
+         * The Web App is opened in the compact mode.
+         */
+        public WebAppOpenModeCompact() {
+        }
+
+        /**
+         * Identifier uniquely determining type of the object.
+         */
+        public static final int CONSTRUCTOR = 1711603675;
+
+        /**
+         * @return this.CONSTRUCTOR
+         */
+        @Override
+        public int getConstructor() {
+            return CONSTRUCTOR;
+        }
+    }
+
+    /**
+     * The Web App is opened in the full-size mode.
+     */
+    public static class WebAppOpenModeFullSize extends WebAppOpenMode {
+
+        /**
+         * The Web App is opened in the full-size mode.
+         */
+        public WebAppOpenModeFullSize() {
+        }
+
+        /**
+         * Identifier uniquely determining type of the object.
+         */
+        public static final int CONSTRUCTOR = 189320513;
+
+        /**
+         * @return this.CONSTRUCTOR
+         */
+        @Override
+        public int getConstructor() {
+            return CONSTRUCTOR;
+        }
+    }
+
+    /**
+     * The Web App is opened in the full-screen mode.
+     */
+    public static class WebAppOpenModeFullScreen extends WebAppOpenMode {
+
+        /**
+         * The Web App is opened in the full-screen mode.
+         */
+        public WebAppOpenModeFullScreen() {
+        }
+
+        /**
+         * Identifier uniquely determining type of the object.
+         */
+        public static final int CONSTRUCTOR = 1871315357;
+
+        /**
+         * @return this.CONSTRUCTOR
+         */
+        @Override
+        public int getConstructor() {
+            return CONSTRUCTOR;
+        }
+    }
+
+    /**
+     * Options to be used when a Web App is opened.
+     */
+    public static class WebAppOpenParameters extends Object {
+        /**
+         * Preferred Web App theme; pass null to use the default theme.
+         */
+        public ThemeParameters theme;
+        /**
+         * Short name of the current application; 0-64 English letters, digits, and underscores.
+         */
+        public String applicationName;
+        /**
+         * The mode in which the Web App is opened; pass null to open in webAppOpenModeFullSize.
+         */
+        public WebAppOpenMode mode;
+
+        /**
+         * Options to be used when a Web App is opened.
+         */
+        public WebAppOpenParameters() {
+        }
+
+        /**
+         * Options to be used when a Web App is opened.
+         *
+         * @param theme Preferred Web App theme; pass null to use the default theme.
+         * @param applicationName Short name of the current application; 0-64 English letters, digits, and underscores.
+         * @param mode The mode in which the Web App is opened; pass null to open in webAppOpenModeFullSize.
+         */
+        public WebAppOpenParameters(ThemeParameters theme, String applicationName, WebAppOpenMode mode) {
+            this.theme = theme;
+            this.applicationName = applicationName;
+            this.mode = mode;
+        }
+
+        /**
+         * Identifier uniquely determining type of the object.
+         */
+        public static final int CONSTRUCTOR = 1375356527;
 
         /**
          * @return this.CONSTRUCTOR
@@ -80089,6 +83553,62 @@ public class TdApi {
     }
 
     /**
+     * Checks whether a file can be downloaded and saved locally by Web App request.
+     *
+     * <p> Returns {@link Ok Ok} </p>
+     */
+    public static class CheckWebAppFileDownload extends Function<Ok> {
+        /**
+         * Identifier of the bot, providing the Web App.
+         */
+        public long botUserId;
+        /**
+         * Name of the file.
+         */
+        public String fileName;
+        /**
+         * URL of the file.
+         */
+        public String url;
+
+        /**
+         * Default constructor for a function, which checks whether a file can be downloaded and saved locally by Web App request.
+         *
+         * <p> Returns {@link Ok Ok} </p>
+         */
+        public CheckWebAppFileDownload() {
+        }
+
+        /**
+         * Creates a function, which checks whether a file can be downloaded and saved locally by Web App request.
+         *
+         * <p> Returns {@link Ok Ok} </p>
+         *
+         * @param botUserId Identifier of the bot, providing the Web App.
+         * @param fileName Name of the file.
+         * @param url URL of the file.
+         */
+        public CheckWebAppFileDownload(long botUserId, String fileName, String url) {
+            this.botUserId = botUserId;
+            this.fileName = fileName;
+            this.url = url;
+        }
+
+        /**
+         * Identifier uniquely determining type of the object.
+         */
+        public static final int CONSTRUCTOR = -389397278;
+
+        /**
+         * @return this.CONSTRUCTOR
+         */
+        @Override
+        public int getConstructor() {
+            return CONSTRUCTOR;
+        }
+    }
+
+    /**
      * Removes potentially dangerous characters from the name of a file. Returns an empty string on failure. Can be called synchronously.
      *
      * <p> Returns {@link Text Text} </p>
@@ -80900,6 +84420,56 @@ public class TdApi {
     }
 
     /**
+     * Connects an affiliate program to the given affiliate. Returns information about the connected affiliate program.
+     *
+     * <p> Returns {@link ConnectedAffiliateProgram ConnectedAffiliateProgram} </p>
+     */
+    public static class ConnectAffiliateProgram extends Function<ConnectedAffiliateProgram> {
+        /**
+         * The affiliate to which the affiliate program will be connected.
+         */
+        public AffiliateType affiliate;
+        /**
+         * Identifier of the bot, which affiliate program is connected.
+         */
+        public long botUserId;
+
+        /**
+         * Default constructor for a function, which connects an affiliate program to the given affiliate. Returns information about the connected affiliate program.
+         *
+         * <p> Returns {@link ConnectedAffiliateProgram ConnectedAffiliateProgram} </p>
+         */
+        public ConnectAffiliateProgram() {
+        }
+
+        /**
+         * Creates a function, which connects an affiliate program to the given affiliate. Returns information about the connected affiliate program.
+         *
+         * <p> Returns {@link ConnectedAffiliateProgram ConnectedAffiliateProgram} </p>
+         *
+         * @param affiliate The affiliate to which the affiliate program will be connected.
+         * @param botUserId Identifier of the bot, which affiliate program is connected.
+         */
+        public ConnectAffiliateProgram(AffiliateType affiliate, long botUserId) {
+            this.affiliate = affiliate;
+            this.botUserId = botUserId;
+        }
+
+        /**
+         * Identifier uniquely determining type of the object.
+         */
+        public static final int CONSTRUCTOR = 1661392684;
+
+        /**
+         * @return this.CONSTRUCTOR
+         */
+        @Override
+        public int getConstructor() {
+            return CONSTRUCTOR;
+        }
+    }
+
+    /**
      * Returns an existing chat corresponding to a known basic group.
      *
      * <p> Returns {@link Chat Chat} </p>
@@ -81011,6 +84581,10 @@ public class TdApi {
          * Pass true to create a video call.
          */
         public boolean isVideo;
+        /**
+         * Identifier of the group call to which the user will be added after exchanging private key via the call; pass 0 if none; currently, ignored.
+         */
+        public int groupCallId;
 
         /**
          * Default constructor for a function, which creates a new call.
@@ -81028,17 +84602,19 @@ public class TdApi {
          * @param userId Identifier of the user to be called.
          * @param protocol The call protocols supported by the application.
          * @param isVideo Pass true to create a video call.
+         * @param groupCallId Identifier of the group call to which the user will be added after exchanging private key via the call; pass 0 if none; currently, ignored.
          */
-        public CreateCall(long userId, CallProtocol protocol, boolean isVideo) {
+        public CreateCall(long userId, CallProtocol protocol, boolean isVideo, int groupCallId) {
             this.userId = userId;
             this.protocol = protocol;
             this.isVideo = isVideo;
+            this.groupCallId = groupCallId;
         }
 
         /**
          * Identifier uniquely determining type of the object.
          */
-        public static final int CONSTRUCTOR = -1104663024;
+        public static final int CONSTRUCTOR = -1270805351;
 
         /**
          * @return this.CONSTRUCTOR
@@ -81330,11 +84906,59 @@ public class TdApi {
     }
 
     /**
+     * Creates a group call from a one-to-one call.
+     *
+     * <p> Returns {@link Ok Ok} </p>
+     */
+    public static class CreateGroupCall extends Function<Ok> {
+        /**
+         * Call identifier.
+         */
+        public int callId;
+
+        /**
+         * Default constructor for a function, which creates a group call from a one-to-one call.
+         *
+         * <p> Returns {@link Ok Ok} </p>
+         */
+        public CreateGroupCall() {
+        }
+
+        /**
+         * Creates a function, which creates a group call from a one-to-one call.
+         *
+         * <p> Returns {@link Ok Ok} </p>
+         *
+         * @param callId Call identifier.
+         */
+        public CreateGroupCall(int callId) {
+            this.callId = callId;
+        }
+
+        /**
+         * Identifier uniquely determining type of the object.
+         */
+        public static final int CONSTRUCTOR = -2017962501;
+
+        /**
+         * @return this.CONSTRUCTOR
+         */
+        @Override
+        public int getConstructor() {
+            return CONSTRUCTOR;
+        }
+    }
+
+    /**
      * Creates a link for the given invoice; for bots only.
      *
      * <p> Returns {@link HttpUrl HttpUrl} </p>
      */
     public static class CreateInvoiceLink extends Function<HttpUrl> {
+        /**
+         * Unique identifier of business connection on behalf of which to send the request.
+         */
+        public String businessConnectionId;
         /**
          * Information about the invoice of the type inputMessageInvoice.
          */
@@ -81353,16 +84977,18 @@ public class TdApi {
          *
          * <p> Returns {@link HttpUrl HttpUrl} </p>
          *
+         * @param businessConnectionId Unique identifier of business connection on behalf of which to send the request.
          * @param invoice Information about the invoice of the type inputMessageInvoice.
          */
-        public CreateInvoiceLink(InputMessageContent invoice) {
+        public CreateInvoiceLink(String businessConnectionId, InputMessageContent invoice) {
+            this.businessConnectionId = businessConnectionId;
             this.invoice = invoice;
         }
 
         /**
          * Identifier uniquely determining type of the object.
          */
-        public static final int CONSTRUCTOR = 216787233;
+        public static final int CONSTRUCTOR = -814692249;
 
         /**
          * @return this.CONSTRUCTOR
@@ -81846,7 +85472,7 @@ public class TdApi {
          */
         public int startDate;
         /**
-         * Pass true to create an RTMP stream instead of an ordinary video chat; requires owner privileges.
+         * Pass true to create an RTMP stream instead of an ordinary video chat.
          */
         public boolean isRtmpStream;
 
@@ -81866,7 +85492,7 @@ public class TdApi {
          * @param chatId Identifier of a chat in which the video chat will be created.
          * @param title Group call title; if empty, chat title will be used.
          * @param startDate Point in time (Unix timestamp) when the group call is expected to be started by an administrator; 0 to start the video chat immediately. The date must be at least 10 seconds and at most 8 days in the future.
-         * @param isRtmpStream Pass true to create an RTMP stream instead of an ordinary video chat; requires owner privileges.
+         * @param isRtmpStream Pass true to create an RTMP stream instead of an ordinary video chat.
          */
         public CreateVideoChat(long chatId, String title, int startDate, boolean isRtmpStream) {
             this.chatId = chatId;
@@ -82490,7 +86116,7 @@ public class TdApi {
     }
 
     /**
-     * Deletes all messages sent by the specified message sender in a chat. Supported only for supergroups; requires canDeleteMessages administrator privileges.
+     * Deletes all messages sent by the specified message sender in a chat. Supported only for supergroups; requires canDeleteMessages administrator right.
      *
      * <p> Returns {@link Ok Ok} </p>
      */
@@ -82505,7 +86131,7 @@ public class TdApi {
         public MessageSender senderId;
 
         /**
-         * Default constructor for a function, which deletes all messages sent by the specified message sender in a chat. Supported only for supergroups; requires canDeleteMessages administrator privileges.
+         * Default constructor for a function, which deletes all messages sent by the specified message sender in a chat. Supported only for supergroups; requires canDeleteMessages administrator right.
          *
          * <p> Returns {@link Ok Ok} </p>
          */
@@ -82513,7 +86139,7 @@ public class TdApi {
         }
 
         /**
-         * Creates a function, which deletes all messages sent by the specified message sender in a chat. Supported only for supergroups; requires canDeleteMessages administrator privileges.
+         * Creates a function, which deletes all messages sent by the specified message sender in a chat. Supported only for supergroups; requires canDeleteMessages administrator right.
          *
          * <p> Returns {@link Ok Ok} </p>
          *
@@ -83532,6 +87158,56 @@ public class TdApi {
     }
 
     /**
+     * Disconnects an affiliate program from the given affiliate and immediately deactivates its referral link. Returns updated information about the disconnected affiliate program.
+     *
+     * <p> Returns {@link ConnectedAffiliateProgram ConnectedAffiliateProgram} </p>
+     */
+    public static class DisconnectAffiliateProgram extends Function<ConnectedAffiliateProgram> {
+        /**
+         * The affiliate to which the affiliate program is connected.
+         */
+        public AffiliateType affiliate;
+        /**
+         * The referral link of the affiliate program.
+         */
+        public String url;
+
+        /**
+         * Default constructor for a function, which disconnects an affiliate program from the given affiliate and immediately deactivates its referral link. Returns updated information about the disconnected affiliate program.
+         *
+         * <p> Returns {@link ConnectedAffiliateProgram ConnectedAffiliateProgram} </p>
+         */
+        public DisconnectAffiliateProgram() {
+        }
+
+        /**
+         * Creates a function, which disconnects an affiliate program from the given affiliate and immediately deactivates its referral link. Returns updated information about the disconnected affiliate program.
+         *
+         * <p> Returns {@link ConnectedAffiliateProgram ConnectedAffiliateProgram} </p>
+         *
+         * @param affiliate The affiliate to which the affiliate program is connected.
+         * @param url The referral link of the affiliate program.
+         */
+        public DisconnectAffiliateProgram(AffiliateType affiliate, String url) {
+            this.affiliate = affiliate;
+            this.url = url;
+        }
+
+        /**
+         * Identifier uniquely determining type of the object.
+         */
+        public static final int CONSTRUCTOR = -105831172;
+
+        /**
+         * @return this.CONSTRUCTOR
+         */
+        @Override
+        public int getConstructor() {
+            return CONSTRUCTOR;
+        }
+    }
+
+    /**
      * Disconnects all websites from the current user's Telegram account.
      *
      * <p> Returns {@link Ok Ok} </p>
@@ -83945,7 +87621,7 @@ public class TdApi {
     }
 
     /**
-     * Edits the content of a message with an animation, an audio, a document, a photo or a video in a message sent on behalf of a business account; for bots only.
+     * Edits the media content of a message with a text, an animation, an audio, a document, a photo or a video in a message sent on behalf of a business account; for bots only.
      *
      * <p> Returns {@link BusinessMessage BusinessMessage} </p>
      */
@@ -83972,7 +87648,7 @@ public class TdApi {
         public InputMessageContent inputMessageContent;
 
         /**
-         * Default constructor for a function, which edits the content of a message with an animation, an audio, a document, a photo or a video in a message sent on behalf of a business account; for bots only.
+         * Default constructor for a function, which edits the media content of a message with a text, an animation, an audio, a document, a photo or a video in a message sent on behalf of a business account; for bots only.
          *
          * <p> Returns {@link BusinessMessage BusinessMessage} </p>
          */
@@ -83980,7 +87656,7 @@ public class TdApi {
         }
 
         /**
-         * Creates a function, which edits the content of a message with an animation, an audio, a document, a photo or a video in a message sent on behalf of a business account; for bots only.
+         * Creates a function, which edits the media content of a message with a text, an animation, an audio, a document, a photo or a video in a message sent on behalf of a business account; for bots only.
          *
          * <p> Returns {@link BusinessMessage BusinessMessage} </p>
          *
@@ -84633,7 +88309,7 @@ public class TdApi {
     }
 
     /**
-     * Edits the content of a message with an animation, an audio, a document, a photo or a video in an inline message sent via a bot; for bots only.
+     * Edits the media content of a message with a text, an animation, an audio, a document, a photo or a video in an inline message sent via a bot; for bots only.
      *
      * <p> Returns {@link Ok Ok} </p>
      */
@@ -84652,7 +88328,7 @@ public class TdApi {
         public InputMessageContent inputMessageContent;
 
         /**
-         * Default constructor for a function, which edits the content of a message with an animation, an audio, a document, a photo or a video in an inline message sent via a bot; for bots only.
+         * Default constructor for a function, which edits the media content of a message with a text, an animation, an audio, a document, a photo or a video in an inline message sent via a bot; for bots only.
          *
          * <p> Returns {@link Ok Ok} </p>
          */
@@ -84660,7 +88336,7 @@ public class TdApi {
         }
 
         /**
-         * Creates a function, which edits the content of a message with an animation, an audio, a document, a photo or a video in an inline message sent via a bot; for bots only.
+         * Creates a function, which edits the media content of a message with a text, an animation, an audio, a document, a photo or a video in an inline message sent via a bot; for bots only.
          *
          * <p> Returns {@link Ok Ok} </p>
          *
@@ -84943,7 +88619,7 @@ public class TdApi {
     }
 
     /**
-     * Edits the content of a message with an animation, an audio, a document, a photo or a video, including message caption. If only the caption needs to be edited, use editMessageCaption instead. The media can't be edited if the message was set to self-destruct or to a self-destructing media. The type of message content in an album can't be changed with exception of replacing a photo with a video or vice versa. Returns the edited message after the edit is completed on the server side.
+     * Edits the media content of a message, including message caption. If only the caption needs to be edited, use editMessageCaption instead. The type of message content in an album can't be changed with exception of replacing a photo with a video or vice versa. Returns the edited message after the edit is completed on the server side.
      *
      * <p> Returns {@link Message Message} </p>
      */
@@ -84953,7 +88629,7 @@ public class TdApi {
          */
         public long chatId;
         /**
-         * Identifier of the message. Use messageProperties.canBeEdited to check whether the message can be edited.
+         * Identifier of the message. Use messageProperties.canEditMedia to check whether the message can be edited.
          */
         public long messageId;
         /**
@@ -84966,7 +88642,7 @@ public class TdApi {
         public InputMessageContent inputMessageContent;
 
         /**
-         * Default constructor for a function, which edits the content of a message with an animation, an audio, a document, a photo or a video, including message caption. If only the caption needs to be edited, use editMessageCaption instead. The media can't be edited if the message was set to self-destruct or to a self-destructing media. The type of message content in an album can't be changed with exception of replacing a photo with a video or vice versa. Returns the edited message after the edit is completed on the server side.
+         * Default constructor for a function, which edits the media content of a message, including message caption. If only the caption needs to be edited, use editMessageCaption instead. The type of message content in an album can't be changed with exception of replacing a photo with a video or vice versa. Returns the edited message after the edit is completed on the server side.
          *
          * <p> Returns {@link Message Message} </p>
          */
@@ -84974,12 +88650,12 @@ public class TdApi {
         }
 
         /**
-         * Creates a function, which edits the content of a message with an animation, an audio, a document, a photo or a video, including message caption. If only the caption needs to be edited, use editMessageCaption instead. The media can't be edited if the message was set to self-destruct or to a self-destructing media. The type of message content in an album can't be changed with exception of replacing a photo with a video or vice versa. Returns the edited message after the edit is completed on the server side.
+         * Creates a function, which edits the media content of a message, including message caption. If only the caption needs to be edited, use editMessageCaption instead. The type of message content in an album can't be changed with exception of replacing a photo with a video or vice versa. Returns the edited message after the edit is completed on the server side.
          *
          * <p> Returns {@link Message Message} </p>
          *
          * @param chatId The chat the message belongs to.
-         * @param messageId Identifier of the message. Use messageProperties.canBeEdited to check whether the message can be edited.
+         * @param messageId Identifier of the message. Use messageProperties.canEditMedia to check whether the message can be edited.
          * @param replyMarkup The new message reply markup; pass null if none; for bots only.
          * @param inputMessageContent New content of the message. Must be one of the following types: inputMessageAnimation, inputMessageAudio, inputMessageDocument, inputMessagePhoto or inputMessageVideo.
          */
@@ -85075,7 +88751,7 @@ public class TdApi {
          */
         public long messageId;
         /**
-         * The new message scheduling state; pass null to send the message immediately.
+         * The new message scheduling state; pass null to send the message immediately. Must be null for messages in the state messageSchedulingStateSendWhenVideoProcessed.
          */
         public MessageSchedulingState schedulingState;
 
@@ -85094,7 +88770,7 @@ public class TdApi {
          *
          * @param chatId The chat the message belongs to.
          * @param messageId Identifier of the message. Use messageProperties.canEditSchedulingState to check whether the message is suitable.
-         * @param schedulingState The new message scheduling state; pass null to send the message immediately.
+         * @param schedulingState The new message scheduling state; pass null to send the message immediately. Must be null for messages in the state messageSchedulingStateSendWhenVideoProcessed.
          */
         public EditMessageSchedulingState(long chatId, long messageId, MessageSchedulingState schedulingState) {
             this.chatId = chatId;
@@ -85247,7 +88923,7 @@ public class TdApi {
     }
 
     /**
-     * Asynchronously edits the text, media or caption of a quick reply message. Use quickReplyMessage.canBeEdited to check whether a message can be edited. Text message can be edited only to a text message. The type of message content in an album can't be changed with exception of replacing a photo with a video or vice versa.
+     * Asynchronously edits the text, media or caption of a quick reply message. Use quickReplyMessage.canBeEdited to check whether a message can be edited. Media message can be edited only to a media message. The type of message content in an album can't be changed with exception of replacing a photo with a video or vice versa.
      *
      * <p> Returns {@link Ok Ok} </p>
      */
@@ -85266,7 +88942,7 @@ public class TdApi {
         public InputMessageContent inputMessageContent;
 
         /**
-         * Default constructor for a function, which asynchronously edits the text, media or caption of a quick reply message. Use quickReplyMessage.canBeEdited to check whether a message can be edited. Text message can be edited only to a text message. The type of message content in an album can't be changed with exception of replacing a photo with a video or vice versa.
+         * Default constructor for a function, which asynchronously edits the text, media or caption of a quick reply message. Use quickReplyMessage.canBeEdited to check whether a message can be edited. Media message can be edited only to a media message. The type of message content in an album can't be changed with exception of replacing a photo with a video or vice versa.
          *
          * <p> Returns {@link Ok Ok} </p>
          */
@@ -85274,7 +88950,7 @@ public class TdApi {
         }
 
         /**
-         * Creates a function, which asynchronously edits the text, media or caption of a quick reply message. Use quickReplyMessage.canBeEdited to check whether a message can be edited. Text message can be edited only to a text message. The type of message content in an album can't be changed with exception of replacing a photo with a video or vice versa.
+         * Creates a function, which asynchronously edits the text, media or caption of a quick reply message. Use quickReplyMessage.canBeEdited to check whether a message can be edited. Media message can be edited only to a media message. The type of message content in an album can't be changed with exception of replacing a photo with a video or vice versa.
          *
          * <p> Returns {@link Ok Ok} </p>
          *
@@ -85303,7 +88979,7 @@ public class TdApi {
     }
 
     /**
-     * Cancels or reenables Telegram Star subscription to a channel.
+     * Cancels or re-enables Telegram Star subscription.
      *
      * <p> Returns {@link Ok Ok} </p>
      */
@@ -85318,7 +88994,7 @@ public class TdApi {
         public boolean isCanceled;
 
         /**
-         * Default constructor for a function, which cancels or reenables Telegram Star subscription to a channel.
+         * Default constructor for a function, which cancels or re-enables Telegram Star subscription.
          *
          * <p> Returns {@link Ok Ok} </p>
          */
@@ -85326,7 +89002,7 @@ public class TdApi {
         }
 
         /**
-         * Creates a function, which cancels or reenables Telegram Star subscription to a channel.
+         * Creates a function, which cancels or re-enables Telegram Star subscription.
          *
          * <p> Returns {@link Ok Ok} </p>
          *
@@ -85466,6 +89142,62 @@ public class TdApi {
          * Identifier uniquely determining type of the object.
          */
         public static final int CONSTRUCTOR = -1423307701;
+
+        /**
+         * @return this.CONSTRUCTOR
+         */
+        @Override
+        public int getConstructor() {
+            return CONSTRUCTOR;
+        }
+    }
+
+    /**
+     * Cancels or re-enables Telegram Star subscription for a user; for bots only.
+     *
+     * <p> Returns {@link Ok Ok} </p>
+     */
+    public static class EditUserStarSubscription extends Function<Ok> {
+        /**
+         * User identifier.
+         */
+        public long userId;
+        /**
+         * Telegram payment identifier of the subscription.
+         */
+        public String telegramPaymentChargeId;
+        /**
+         * Pass true to cancel the subscription; pass false to allow the user to enable it.
+         */
+        public boolean isCanceled;
+
+        /**
+         * Default constructor for a function, which cancels or re-enables Telegram Star subscription for a user; for bots only.
+         *
+         * <p> Returns {@link Ok Ok} </p>
+         */
+        public EditUserStarSubscription() {
+        }
+
+        /**
+         * Creates a function, which cancels or re-enables Telegram Star subscription for a user; for bots only.
+         *
+         * <p> Returns {@link Ok Ok} </p>
+         *
+         * @param userId User identifier.
+         * @param telegramPaymentChargeId Telegram payment identifier of the subscription.
+         * @param isCanceled Pass true to cancel the subscription; pass false to allow the user to enable it.
+         */
+        public EditUserStarSubscription(long userId, String telegramPaymentChargeId, boolean isCanceled) {
+            this.userId = userId;
+            this.telegramPaymentChargeId = telegramPaymentChargeId;
+            this.isCanceled = isCanceled;
+        }
+
+        /**
+         * Identifier uniquely determining type of the object.
+         */
+        public static final int CONSTRUCTOR = 1370582665;
 
         /**
          * @return this.CONSTRUCTOR
@@ -86338,14 +90070,14 @@ public class TdApi {
     }
 
     /**
-     * Returns gifts that can be sent to other users.
+     * Returns gifts that can be sent to other users and channel chats.
      *
      * <p> Returns {@link Gifts Gifts} </p>
      */
     public static class GetAvailableGifts extends Function<Gifts> {
 
         /**
-         * Default constructor for a function, which returns gifts that can be sent to other users.
+         * Default constructor for a function, which returns gifts that can be sent to other users and channel chats.
          *
          * <p> Returns {@link Gifts Gifts} </p>
          */
@@ -86838,6 +90570,100 @@ public class TdApi {
          * Identifier uniquely determining type of the object.
          */
         public static final int CONSTRUCTOR = -1707118036;
+
+        /**
+         * @return this.CONSTRUCTOR
+         */
+        @Override
+        public int getConstructor() {
+            return CONSTRUCTOR;
+        }
+    }
+
+    /**
+     * Returns approximate number of bots similar to the given bot.
+     *
+     * <p> Returns {@link Count Count} </p>
+     */
+    public static class GetBotSimilarBotCount extends Function<Count> {
+        /**
+         * User identifier of the target bot.
+         */
+        public long botUserId;
+        /**
+         * Pass true to get the number of bots without sending network requests, or -1 if the number of bots is unknown locally.
+         */
+        public boolean returnLocal;
+
+        /**
+         * Default constructor for a function, which returns approximate number of bots similar to the given bot.
+         *
+         * <p> Returns {@link Count Count} </p>
+         */
+        public GetBotSimilarBotCount() {
+        }
+
+        /**
+         * Creates a function, which returns approximate number of bots similar to the given bot.
+         *
+         * <p> Returns {@link Count Count} </p>
+         *
+         * @param botUserId User identifier of the target bot.
+         * @param returnLocal Pass true to get the number of bots without sending network requests, or -1 if the number of bots is unknown locally.
+         */
+        public GetBotSimilarBotCount(long botUserId, boolean returnLocal) {
+            this.botUserId = botUserId;
+            this.returnLocal = returnLocal;
+        }
+
+        /**
+         * Identifier uniquely determining type of the object.
+         */
+        public static final int CONSTRUCTOR = -1271545369;
+
+        /**
+         * @return this.CONSTRUCTOR
+         */
+        @Override
+        public int getConstructor() {
+            return CONSTRUCTOR;
+        }
+    }
+
+    /**
+     * Returns a list of bots similar to the given bot.
+     *
+     * <p> Returns {@link Users Users} </p>
+     */
+    public static class GetBotSimilarBots extends Function<Users> {
+        /**
+         * User identifier of the target bot.
+         */
+        public long botUserId;
+
+        /**
+         * Default constructor for a function, which returns a list of bots similar to the given bot.
+         *
+         * <p> Returns {@link Users Users} </p>
+         */
+        public GetBotSimilarBots() {
+        }
+
+        /**
+         * Creates a function, which returns a list of bots similar to the given bot.
+         *
+         * <p> Returns {@link Users Users} </p>
+         *
+         * @param botUserId User identifier of the target bot.
+         */
+        public GetBotSimilarBots(long botUserId) {
+            this.botUserId = botUserId;
+        }
+
+        /**
+         * Identifier uniquely determining type of the object.
+         */
+        public static final int CONSTRUCTOR = -825139275;
 
         /**
          * @return this.CONSTRUCTOR
@@ -88867,7 +92693,7 @@ public class TdApi {
     }
 
     /**
-     * Returns detailed revenue statistics about a chat. Currently, this method can be used only for channels if supergroupFullInfo.canGetRevenueStatistics == true.
+     * Returns detailed revenue statistics about a chat. Currently, this method can be used only for channels if supergroupFullInfo.canGetRevenueStatistics == true or bots if userFullInfo.botInfo.canGetRevenueStatistics == true.
      *
      * <p> Returns {@link ChatRevenueStatistics ChatRevenueStatistics} </p>
      */
@@ -88882,7 +92708,7 @@ public class TdApi {
         public boolean isDark;
 
         /**
-         * Default constructor for a function, which returns detailed revenue statistics about a chat. Currently, this method can be used only for channels if supergroupFullInfo.canGetRevenueStatistics == true.
+         * Default constructor for a function, which returns detailed revenue statistics about a chat. Currently, this method can be used only for channels if supergroupFullInfo.canGetRevenueStatistics == true or bots if userFullInfo.botInfo.canGetRevenueStatistics == true.
          *
          * <p> Returns {@link ChatRevenueStatistics ChatRevenueStatistics} </p>
          */
@@ -88890,7 +92716,7 @@ public class TdApi {
         }
 
         /**
-         * Creates a function, which returns detailed revenue statistics about a chat. Currently, this method can be used only for channels if supergroupFullInfo.canGetRevenueStatistics == true.
+         * Creates a function, which returns detailed revenue statistics about a chat. Currently, this method can be used only for channels if supergroupFullInfo.canGetRevenueStatistics == true or bots if userFullInfo.botInfo.canGetRevenueStatistics == true.
          *
          * <p> Returns {@link ChatRevenueStatistics ChatRevenueStatistics} </p>
          *
@@ -88917,7 +92743,7 @@ public class TdApi {
     }
 
     /**
-     * Returns the list of revenue transactions for a chat. Currently, this method can be used only for channels if supergroupFullInfo.canGetRevenueStatistics == true.
+     * Returns the list of revenue transactions for a chat. Currently, this method can be used only for channels if supergroupFullInfo.canGetRevenueStatistics == true or bots if userFullInfo.botInfo.canGetRevenueStatistics == true.
      *
      * <p> Returns {@link ChatRevenueTransactions ChatRevenueTransactions} </p>
      */
@@ -88936,7 +92762,7 @@ public class TdApi {
         public int limit;
 
         /**
-         * Default constructor for a function, which returns the list of revenue transactions for a chat. Currently, this method can be used only for channels if supergroupFullInfo.canGetRevenueStatistics == true.
+         * Default constructor for a function, which returns the list of revenue transactions for a chat. Currently, this method can be used only for channels if supergroupFullInfo.canGetRevenueStatistics == true or bots if userFullInfo.botInfo.canGetRevenueStatistics == true.
          *
          * <p> Returns {@link ChatRevenueTransactions ChatRevenueTransactions} </p>
          */
@@ -88944,7 +92770,7 @@ public class TdApi {
         }
 
         /**
-         * Creates a function, which returns the list of revenue transactions for a chat. Currently, this method can be used only for channels if supergroupFullInfo.canGetRevenueStatistics == true.
+         * Creates a function, which returns the list of revenue transactions for a chat. Currently, this method can be used only for channels if supergroupFullInfo.canGetRevenueStatistics == true or bots if userFullInfo.botInfo.canGetRevenueStatistics == true.
          *
          * <p> Returns {@link ChatRevenueTransactions ChatRevenueTransactions} </p>
          *
@@ -88973,7 +92799,7 @@ public class TdApi {
     }
 
     /**
-     * Returns a URL for chat revenue withdrawal; requires owner privileges in the chat. Currently, this method can be used only for channels if supergroupFullInfo.canGetRevenueStatistics == true and getOption(&quot;can_withdraw_chat_revenue&quot;).
+     * Returns a URL for chat revenue withdrawal; requires owner privileges in the channel chat or the bot. Currently, this method can be used only if getOption(&quot;can_withdraw_chat_revenue&quot;) for channels with supergroupFullInfo.canGetRevenueStatistics == true or bots with userFullInfo.botInfo.canGetRevenueStatistics == true.
      *
      * <p> Returns {@link HttpUrl HttpUrl} </p>
      */
@@ -88988,7 +92814,7 @@ public class TdApi {
         public String password;
 
         /**
-         * Default constructor for a function, which returns a URL for chat revenue withdrawal; requires owner privileges in the chat. Currently, this method can be used only for channels if supergroupFullInfo.canGetRevenueStatistics == true and getOption(&quot;can_withdraw_chat_revenue&quot;).
+         * Default constructor for a function, which returns a URL for chat revenue withdrawal; requires owner privileges in the channel chat or the bot. Currently, this method can be used only if getOption(&quot;can_withdraw_chat_revenue&quot;) for channels with supergroupFullInfo.canGetRevenueStatistics == true or bots with userFullInfo.botInfo.canGetRevenueStatistics == true.
          *
          * <p> Returns {@link HttpUrl HttpUrl} </p>
          */
@@ -88996,7 +92822,7 @@ public class TdApi {
         }
 
         /**
-         * Creates a function, which returns a URL for chat revenue withdrawal; requires owner privileges in the chat. Currently, this method can be used only for channels if supergroupFullInfo.canGetRevenueStatistics == true and getOption(&quot;can_withdraw_chat_revenue&quot;).
+         * Creates a function, which returns a URL for chat revenue withdrawal; requires owner privileges in the channel chat or the bot. Currently, this method can be used only if getOption(&quot;can_withdraw_chat_revenue&quot;) for channels with supergroupFullInfo.canGetRevenueStatistics == true or bots with userFullInfo.botInfo.canGetRevenueStatistics == true.
          *
          * <p> Returns {@link HttpUrl HttpUrl} </p>
          *
@@ -89229,7 +93055,7 @@ public class TdApi {
     }
 
     /**
-     * Returns sponsored messages to be shown in a chat; for channel chats only.
+     * Returns sponsored messages to be shown in a chat; for channel chats and chats with bots only.
      *
      * <p> Returns {@link SponsoredMessages SponsoredMessages} </p>
      */
@@ -89240,7 +93066,7 @@ public class TdApi {
         public long chatId;
 
         /**
-         * Default constructor for a function, which returns sponsored messages to be shown in a chat; for channel chats only.
+         * Default constructor for a function, which returns sponsored messages to be shown in a chat; for channel chats and chats with bots only.
          *
          * <p> Returns {@link SponsoredMessages SponsoredMessages} </p>
          */
@@ -89248,7 +93074,7 @@ public class TdApi {
         }
 
         /**
-         * Creates a function, which returns sponsored messages to be shown in a chat; for channel chats only.
+         * Creates a function, which returns sponsored messages to be shown in a chat; for channel chats and chats with bots only.
          *
          * <p> Returns {@link SponsoredMessages SponsoredMessages} </p>
          *
@@ -89632,6 +93458,112 @@ public class TdApi {
          * Identifier uniquely determining type of the object.
          */
         public static final int CONSTRUCTOR = 1488621559;
+
+        /**
+         * @return this.CONSTRUCTOR
+         */
+        @Override
+        public int getConstructor() {
+            return CONSTRUCTOR;
+        }
+    }
+
+    /**
+     * Returns an affiliate program that were connected to the given affiliate by identifier of the bot that created the program.
+     *
+     * <p> Returns {@link ConnectedAffiliateProgram ConnectedAffiliateProgram} </p>
+     */
+    public static class GetConnectedAffiliateProgram extends Function<ConnectedAffiliateProgram> {
+        /**
+         * The affiliate to which the affiliate program will be connected.
+         */
+        public AffiliateType affiliate;
+        /**
+         * Identifier of the bot that created the program.
+         */
+        public long botUserId;
+
+        /**
+         * Default constructor for a function, which returns an affiliate program that were connected to the given affiliate by identifier of the bot that created the program.
+         *
+         * <p> Returns {@link ConnectedAffiliateProgram ConnectedAffiliateProgram} </p>
+         */
+        public GetConnectedAffiliateProgram() {
+        }
+
+        /**
+         * Creates a function, which returns an affiliate program that were connected to the given affiliate by identifier of the bot that created the program.
+         *
+         * <p> Returns {@link ConnectedAffiliateProgram ConnectedAffiliateProgram} </p>
+         *
+         * @param affiliate The affiliate to which the affiliate program will be connected.
+         * @param botUserId Identifier of the bot that created the program.
+         */
+        public GetConnectedAffiliateProgram(AffiliateType affiliate, long botUserId) {
+            this.affiliate = affiliate;
+            this.botUserId = botUserId;
+        }
+
+        /**
+         * Identifier uniquely determining type of the object.
+         */
+        public static final int CONSTRUCTOR = -1755191440;
+
+        /**
+         * @return this.CONSTRUCTOR
+         */
+        @Override
+        public int getConstructor() {
+            return CONSTRUCTOR;
+        }
+    }
+
+    /**
+     * Returns affiliate programs that were connected to the given affiliate.
+     *
+     * <p> Returns {@link ConnectedAffiliatePrograms ConnectedAffiliatePrograms} </p>
+     */
+    public static class GetConnectedAffiliatePrograms extends Function<ConnectedAffiliatePrograms> {
+        /**
+         * The affiliate to which the affiliate program were connected.
+         */
+        public AffiliateType affiliate;
+        /**
+         * Offset of the first affiliate program to return as received from the previous request; use empty string to get the first chunk of results.
+         */
+        public String offset;
+        /**
+         * The maximum number of affiliate programs to return.
+         */
+        public int limit;
+
+        /**
+         * Default constructor for a function, which returns affiliate programs that were connected to the given affiliate.
+         *
+         * <p> Returns {@link ConnectedAffiliatePrograms ConnectedAffiliatePrograms} </p>
+         */
+        public GetConnectedAffiliatePrograms() {
+        }
+
+        /**
+         * Creates a function, which returns affiliate programs that were connected to the given affiliate.
+         *
+         * <p> Returns {@link ConnectedAffiliatePrograms ConnectedAffiliatePrograms} </p>
+         *
+         * @param affiliate The affiliate to which the affiliate program were connected.
+         * @param offset Offset of the first affiliate program to return as received from the previous request; use empty string to get the first chunk of results.
+         * @param limit The maximum number of affiliate programs to return.
+         */
+        public GetConnectedAffiliatePrograms(AffiliateType affiliate, String offset, int limit) {
+            this.affiliate = affiliate;
+            this.offset = offset;
+            this.limit = limit;
+        }
+
+        /**
+         * Identifier uniquely determining type of the object.
+         */
+        public static final int CONSTRUCTOR = -1960029582;
 
         /**
          * @return this.CONSTRUCTOR
@@ -90097,14 +94029,14 @@ public class TdApi {
     /**
      * Returns default emoji statuses for chats.
      *
-     * <p> Returns {@link EmojiStatuses EmojiStatuses} </p>
+     * <p> Returns {@link EmojiStatusCustomEmojis EmojiStatusCustomEmojis} </p>
      */
-    public static class GetDefaultChatEmojiStatuses extends Function<EmojiStatuses> {
+    public static class GetDefaultChatEmojiStatuses extends Function<EmojiStatusCustomEmojis> {
 
         /**
          * Default constructor for a function, which returns default emoji statuses for chats.
          *
-         * <p> Returns {@link EmojiStatuses EmojiStatuses} </p>
+         * <p> Returns {@link EmojiStatusCustomEmojis EmojiStatusCustomEmojis} </p>
          */
         public GetDefaultChatEmojiStatuses() {
         }
@@ -90112,7 +94044,7 @@ public class TdApi {
         /**
          * Identifier uniquely determining type of the object.
          */
-        public static final int CONSTRUCTOR = -1481996570;
+        public static final int CONSTRUCTOR = 1553698018;
 
         /**
          * @return this.CONSTRUCTOR
@@ -90155,14 +94087,14 @@ public class TdApi {
     /**
      * Returns default emoji statuses for self status.
      *
-     * <p> Returns {@link EmojiStatuses EmojiStatuses} </p>
+     * <p> Returns {@link EmojiStatusCustomEmojis EmojiStatusCustomEmojis} </p>
      */
-    public static class GetDefaultEmojiStatuses extends Function<EmojiStatuses> {
+    public static class GetDefaultEmojiStatuses extends Function<EmojiStatusCustomEmojis> {
 
         /**
          * Default constructor for a function, which returns default emoji statuses for self status.
          *
-         * <p> Returns {@link EmojiStatuses EmojiStatuses} </p>
+         * <p> Returns {@link EmojiStatusCustomEmojis EmojiStatusCustomEmojis} </p>
          */
         public GetDefaultEmojiStatuses() {
         }
@@ -90170,7 +94102,7 @@ public class TdApi {
         /**
          * Identifier uniquely determining type of the object.
          */
-        public static final int CONSTRUCTOR = 618946243;
+        public static final int CONSTRUCTOR = -539392025;
 
         /**
          * @return this.CONSTRUCTOR
@@ -90242,14 +94174,14 @@ public class TdApi {
     /**
      * Returns the list of emoji statuses, which can't be used as chat emoji status, even they are from a sticker set with isAllowedAsChatEmojiStatus == true.
      *
-     * <p> Returns {@link EmojiStatuses EmojiStatuses} </p>
+     * <p> Returns {@link EmojiStatusCustomEmojis EmojiStatusCustomEmojis} </p>
      */
-    public static class GetDisallowedChatEmojiStatuses extends Function<EmojiStatuses> {
+    public static class GetDisallowedChatEmojiStatuses extends Function<EmojiStatusCustomEmojis> {
 
         /**
          * Default constructor for a function, which returns the list of emoji statuses, which can't be used as chat emoji status, even they are from a sticker set with isAllowedAsChatEmojiStatus == true.
          *
-         * <p> Returns {@link EmojiStatuses EmojiStatuses} </p>
+         * <p> Returns {@link EmojiStatusCustomEmojis EmojiStatusCustomEmojis} </p>
          */
         public GetDisallowedChatEmojiStatuses() {
         }
@@ -90257,7 +94189,7 @@ public class TdApi {
         /**
          * Identifier uniquely determining type of the object.
          */
-        public static final int CONSTRUCTOR = -770421344;
+        public static final int CONSTRUCTOR = -2004787831;
 
         /**
          * @return this.CONSTRUCTOR
@@ -90954,6 +94886,50 @@ public class TdApi {
          * Identifier uniquely determining type of the object.
          */
         public static final int CONSTRUCTOR = 15746459;
+
+        /**
+         * @return this.CONSTRUCTOR
+         */
+        @Override
+        public int getConstructor() {
+            return CONSTRUCTOR;
+        }
+    }
+
+    /**
+     * Returns examples of possible upgraded gifts for a regular gift.
+     *
+     * <p> Returns {@link GiftUpgradePreview GiftUpgradePreview} </p>
+     */
+    public static class GetGiftUpgradePreview extends Function<GiftUpgradePreview> {
+        /**
+         * Identifier of the gift.
+         */
+        public long giftId;
+
+        /**
+         * Default constructor for a function, which returns examples of possible upgraded gifts for a regular gift.
+         *
+         * <p> Returns {@link GiftUpgradePreview GiftUpgradePreview} </p>
+         */
+        public GetGiftUpgradePreview() {
+        }
+
+        /**
+         * Creates a function, which returns examples of possible upgraded gifts for a regular gift.
+         *
+         * <p> Returns {@link GiftUpgradePreview GiftUpgradePreview} </p>
+         *
+         * @param giftId Identifier of the gift.
+         */
+        public GetGiftUpgradePreview(long giftId) {
+            this.giftId = giftId;
+        }
+
+        /**
+         * Identifier uniquely determining type of the object.
+         */
+        public static final int CONSTRUCTOR = -1110719907;
 
         /**
          * @return this.CONSTRUCTOR
@@ -92369,13 +96345,9 @@ public class TdApi {
          */
         public String startParameter;
         /**
-         * Preferred Web App theme; pass null to use the default theme.
+         * Parameters to use to open the Web App.
          */
-        public ThemeParameters theme;
-        /**
-         * Short name of the current application; 0-64 English letters, digits, and underscores.
-         */
-        public String applicationName;
+        public WebAppOpenParameters parameters;
 
         /**
          * Default constructor for a function, which returns information needed to open the main Web App of a bot.
@@ -92393,21 +96365,19 @@ public class TdApi {
          * @param chatId Identifier of the chat in which the Web App is opened; pass 0 if none.
          * @param botUserId Identifier of the target bot.
          * @param startParameter Start parameter from internalLinkTypeMainWebApp.
-         * @param theme Preferred Web App theme; pass null to use the default theme.
-         * @param applicationName Short name of the current application; 0-64 English letters, digits, and underscores.
+         * @param parameters Parameters to use to open the Web App.
          */
-        public GetMainWebApp(long chatId, long botUserId, String startParameter, ThemeParameters theme, String applicationName) {
+        public GetMainWebApp(long chatId, long botUserId, String startParameter, WebAppOpenParameters parameters) {
             this.chatId = chatId;
             this.botUserId = botUserId;
             this.startParameter = startParameter;
-            this.theme = theme;
-            this.applicationName = applicationName;
+            this.parameters = parameters;
         }
 
         /**
          * Identifier uniquely determining type of the object.
          */
-        public static final int CONSTRUCTOR = -1098632550;
+        public static final int CONSTRUCTOR = 594050214;
 
         /**
          * @return this.CONSTRUCTOR
@@ -93687,6 +97657,35 @@ public class TdApi {
     }
 
     /**
+     * Returns the list of bots owned by the current user.
+     *
+     * <p> Returns {@link Users Users} </p>
+     */
+    public static class GetOwnedBots extends Function<Users> {
+
+        /**
+         * Default constructor for a function, which returns the list of bots owned by the current user.
+         *
+         * <p> Returns {@link Users Users} </p>
+         */
+        public GetOwnedBots() {
+        }
+
+        /**
+         * Identifier uniquely determining type of the object.
+         */
+        public static final int CONSTRUCTOR = -1954035715;
+
+        /**
+         * @return this.CONSTRUCTOR
+         */
+        @Override
+        public int getConstructor() {
+            return CONSTRUCTOR;
+        }
+    }
+
+    /**
      * Returns sticker sets owned by the current user.
      *
      * <p> Returns {@link StickerSets StickerSets} </p>
@@ -94512,6 +98511,56 @@ public class TdApi {
     }
 
     /**
+     * Saves an inline message to be sent by the given user.
+     *
+     * <p> Returns {@link PreparedInlineMessage PreparedInlineMessage} </p>
+     */
+    public static class GetPreparedInlineMessage extends Function<PreparedInlineMessage> {
+        /**
+         * Identifier of the bot that created the message.
+         */
+        public long botUserId;
+        /**
+         * Identifier of the prepared message.
+         */
+        public String preparedMessageId;
+
+        /**
+         * Default constructor for a function, which saves an inline message to be sent by the given user.
+         *
+         * <p> Returns {@link PreparedInlineMessage PreparedInlineMessage} </p>
+         */
+        public GetPreparedInlineMessage() {
+        }
+
+        /**
+         * Creates a function, which saves an inline message to be sent by the given user.
+         *
+         * <p> Returns {@link PreparedInlineMessage PreparedInlineMessage} </p>
+         *
+         * @param botUserId Identifier of the bot that created the message.
+         * @param preparedMessageId Identifier of the prepared message.
+         */
+        public GetPreparedInlineMessage(long botUserId, String preparedMessageId) {
+            this.botUserId = botUserId;
+            this.preparedMessageId = preparedMessageId;
+        }
+
+        /**
+         * Identifier uniquely determining type of the object.
+         */
+        public static final int CONSTRUCTOR = -83179701;
+
+        /**
+         * @return this.CONSTRUCTOR
+         */
+        @Override
+        public int getConstructor() {
+            return CONSTRUCTOR;
+        }
+    }
+
+    /**
      * Returns the list of proxies that are currently set up. Can be called before authorization.
      *
      * <p> Returns {@link Proxies Proxies} </p>
@@ -94647,6 +98696,142 @@ public class TdApi {
          * Identifier uniquely determining type of the object.
          */
         public static final int CONSTRUCTOR = 451435451;
+
+        /**
+         * @return this.CONSTRUCTOR
+         */
+        @Override
+        public int getConstructor() {
+            return CONSTRUCTOR;
+        }
+    }
+
+    /**
+     * Returns information about a received gift.
+     *
+     * <p> Returns {@link ReceivedGift ReceivedGift} </p>
+     */
+    public static class GetReceivedGift extends Function<ReceivedGift> {
+        /**
+         * Identifier of the gift.
+         */
+        public String receivedGiftId;
+
+        /**
+         * Default constructor for a function, which returns information about a received gift.
+         *
+         * <p> Returns {@link ReceivedGift ReceivedGift} </p>
+         */
+        public GetReceivedGift() {
+        }
+
+        /**
+         * Creates a function, which returns information about a received gift.
+         *
+         * <p> Returns {@link ReceivedGift ReceivedGift} </p>
+         *
+         * @param receivedGiftId Identifier of the gift.
+         */
+        public GetReceivedGift(String receivedGiftId) {
+            this.receivedGiftId = receivedGiftId;
+        }
+
+        /**
+         * Identifier uniquely determining type of the object.
+         */
+        public static final int CONSTRUCTOR = -446535239;
+
+        /**
+         * @return this.CONSTRUCTOR
+         */
+        @Override
+        public int getConstructor() {
+            return CONSTRUCTOR;
+        }
+    }
+
+    /**
+     * Returns gifts received by the given user or chat.
+     *
+     * <p> Returns {@link ReceivedGifts ReceivedGifts} </p>
+     */
+    public static class GetReceivedGifts extends Function<ReceivedGifts> {
+        /**
+         * Identifier of the gift receiver.
+         */
+        public MessageSender ownerId;
+        /**
+         * Pass true to exclude gifts that aren't saved to the chat's profile page. Always true for gifts received by other users and channel chats without canPostMessages administrator right.
+         */
+        public boolean excludeUnsaved;
+        /**
+         * Pass true to exclude gifts that are saved to the chat's profile page; for channel chats with canPostMessages administrator right only.
+         */
+        public boolean excludeSaved;
+        /**
+         * Pass true to exclude gifts that can be purchased unlimited number of times; for channel chats with canPostMessages administrator right only.
+         */
+        public boolean excludeUnlimited;
+        /**
+         * Pass true to exclude gifts that can be purchased limited number of times; for channel chats with canPostMessages administrator right only.
+         */
+        public boolean excludeLimited;
+        /**
+         * Pass true to exclude upgraded gifts; for channel chats with canPostMessages administrator right only.
+         */
+        public boolean excludeUpgraded;
+        /**
+         * Pass true to sort results by gift price instead of send date; for channel chats with canPostMessages administrator right only.
+         */
+        public boolean sortByPrice;
+        /**
+         * Offset of the first entry to return as received from the previous request; use empty string to get the first chunk of results.
+         */
+        public String offset;
+        /**
+         * The maximum number of gifts to be returned; must be positive and can't be greater than 100. For optimal performance, the number of returned objects is chosen by TDLib and can be smaller than the specified limit.
+         */
+        public int limit;
+
+        /**
+         * Default constructor for a function, which returns gifts received by the given user or chat.
+         *
+         * <p> Returns {@link ReceivedGifts ReceivedGifts} </p>
+         */
+        public GetReceivedGifts() {
+        }
+
+        /**
+         * Creates a function, which returns gifts received by the given user or chat.
+         *
+         * <p> Returns {@link ReceivedGifts ReceivedGifts} </p>
+         *
+         * @param ownerId Identifier of the gift receiver.
+         * @param excludeUnsaved Pass true to exclude gifts that aren't saved to the chat's profile page. Always true for gifts received by other users and channel chats without canPostMessages administrator right.
+         * @param excludeSaved Pass true to exclude gifts that are saved to the chat's profile page; for channel chats with canPostMessages administrator right only.
+         * @param excludeUnlimited Pass true to exclude gifts that can be purchased unlimited number of times; for channel chats with canPostMessages administrator right only.
+         * @param excludeLimited Pass true to exclude gifts that can be purchased limited number of times; for channel chats with canPostMessages administrator right only.
+         * @param excludeUpgraded Pass true to exclude upgraded gifts; for channel chats with canPostMessages administrator right only.
+         * @param sortByPrice Pass true to sort results by gift price instead of send date; for channel chats with canPostMessages administrator right only.
+         * @param offset Offset of the first entry to return as received from the previous request; use empty string to get the first chunk of results.
+         * @param limit The maximum number of gifts to be returned; must be positive and can't be greater than 100. For optimal performance, the number of returned objects is chosen by TDLib and can be smaller than the specified limit.
+         */
+        public GetReceivedGifts(MessageSender ownerId, boolean excludeUnsaved, boolean excludeSaved, boolean excludeUnlimited, boolean excludeLimited, boolean excludeUpgraded, boolean sortByPrice, String offset, int limit) {
+            this.ownerId = ownerId;
+            this.excludeUnsaved = excludeUnsaved;
+            this.excludeSaved = excludeSaved;
+            this.excludeUnlimited = excludeUnlimited;
+            this.excludeLimited = excludeLimited;
+            this.excludeUpgraded = excludeUpgraded;
+            this.sortByPrice = sortByPrice;
+            this.offset = offset;
+            this.limit = limit;
+        }
+
+        /**
+         * Identifier uniquely determining type of the object.
+         */
+        public static final int CONSTRUCTOR = 224594611;
 
         /**
          * @return this.CONSTRUCTOR
@@ -95945,6 +100130,62 @@ public class TdApi {
     }
 
     /**
+     * Returns outline of a sticker; this is an offline request. Returns a 404 error if the outline isn't known.
+     *
+     * <p> Returns {@link Outline Outline} </p>
+     */
+    public static class GetStickerOutline extends Function<Outline> {
+        /**
+         * File identifier of the sticker.
+         */
+        public int stickerFileId;
+        /**
+         * Pass true to get the outline scaled for animated emoji.
+         */
+        public boolean forAnimatedEmoji;
+        /**
+         * Pass true to get the outline scaled for clicked animated emoji message.
+         */
+        public boolean forClickedAnimatedEmojiMessage;
+
+        /**
+         * Default constructor for a function, which returns outline of a sticker; this is an offline request. Returns a 404 error if the outline isn't known.
+         *
+         * <p> Returns {@link Outline Outline} </p>
+         */
+        public GetStickerOutline() {
+        }
+
+        /**
+         * Creates a function, which returns outline of a sticker; this is an offline request. Returns a 404 error if the outline isn't known.
+         *
+         * <p> Returns {@link Outline Outline} </p>
+         *
+         * @param stickerFileId File identifier of the sticker.
+         * @param forAnimatedEmoji Pass true to get the outline scaled for animated emoji.
+         * @param forClickedAnimatedEmojiMessage Pass true to get the outline scaled for clicked animated emoji message.
+         */
+        public GetStickerOutline(int stickerFileId, boolean forAnimatedEmoji, boolean forClickedAnimatedEmojiMessage) {
+            this.stickerFileId = stickerFileId;
+            this.forAnimatedEmoji = forAnimatedEmoji;
+            this.forClickedAnimatedEmojiMessage = forClickedAnimatedEmojiMessage;
+        }
+
+        /**
+         * Identifier uniquely determining type of the object.
+         */
+        public static final int CONSTRUCTOR = -1550504539;
+
+        /**
+         * @return this.CONSTRUCTOR
+         */
+        @Override
+        public int getConstructor() {
+            return CONSTRUCTOR;
+        }
+    }
+
+    /**
      * Returns information about a sticker set by its identifier.
      *
      * <p> Returns {@link StickerSet StickerSet} </p>
@@ -96974,14 +101215,14 @@ public class TdApi {
     /**
      * Returns up to 8 emoji statuses, which must be shown in the emoji status list for chats.
      *
-     * <p> Returns {@link EmojiStatuses EmojiStatuses} </p>
+     * <p> Returns {@link EmojiStatusCustomEmojis EmojiStatusCustomEmojis} </p>
      */
-    public static class GetThemedChatEmojiStatuses extends Function<EmojiStatuses> {
+    public static class GetThemedChatEmojiStatuses extends Function<EmojiStatusCustomEmojis> {
 
         /**
          * Default constructor for a function, which returns up to 8 emoji statuses, which must be shown in the emoji status list for chats.
          *
-         * <p> Returns {@link EmojiStatuses EmojiStatuses} </p>
+         * <p> Returns {@link EmojiStatusCustomEmojis EmojiStatusCustomEmojis} </p>
          */
         public GetThemedChatEmojiStatuses() {
         }
@@ -96989,7 +101230,7 @@ public class TdApi {
         /**
          * Identifier uniquely determining type of the object.
          */
-        public static final int CONSTRUCTOR = -76325707;
+        public static final int CONSTRUCTOR = 1924568314;
 
         /**
          * @return this.CONSTRUCTOR
@@ -97003,14 +101244,14 @@ public class TdApi {
     /**
      * Returns up to 8 emoji statuses, which must be shown right after the default Premium Badge in the emoji status list for self status.
      *
-     * <p> Returns {@link EmojiStatuses EmojiStatuses} </p>
+     * <p> Returns {@link EmojiStatusCustomEmojis EmojiStatusCustomEmojis} </p>
      */
-    public static class GetThemedEmojiStatuses extends Function<EmojiStatuses> {
+    public static class GetThemedEmojiStatuses extends Function<EmojiStatusCustomEmojis> {
 
         /**
          * Default constructor for a function, which returns up to 8 emoji statuses, which must be shown right after the default Premium Badge in the emoji status list for self status.
          *
-         * <p> Returns {@link EmojiStatuses EmojiStatuses} </p>
+         * <p> Returns {@link EmojiStatusCustomEmojis EmojiStatusCustomEmojis} </p>
          */
         public GetThemedEmojiStatuses() {
         }
@@ -97018,7 +101259,7 @@ public class TdApi {
         /**
          * Identifier uniquely determining type of the object.
          */
-        public static final int CONSTRUCTOR = 1791346882;
+        public static final int CONSTRUCTOR = -1468220543;
 
         /**
          * @return this.CONSTRUCTOR
@@ -97165,6 +101406,129 @@ public class TdApi {
     }
 
     /**
+     * Returns information about an upgraded gift by its name.
+     *
+     * <p> Returns {@link UpgradedGift UpgradedGift} </p>
+     */
+    public static class GetUpgradedGift extends Function<UpgradedGift> {
+        /**
+         * Unique name of the upgraded gift.
+         */
+        public String name;
+
+        /**
+         * Default constructor for a function, which returns information about an upgraded gift by its name.
+         *
+         * <p> Returns {@link UpgradedGift UpgradedGift} </p>
+         */
+        public GetUpgradedGift() {
+        }
+
+        /**
+         * Creates a function, which returns information about an upgraded gift by its name.
+         *
+         * <p> Returns {@link UpgradedGift UpgradedGift} </p>
+         *
+         * @param name Unique name of the upgraded gift.
+         */
+        public GetUpgradedGift(String name) {
+            this.name = name;
+        }
+
+        /**
+         * Identifier uniquely determining type of the object.
+         */
+        public static final int CONSTRUCTOR = -1331821135;
+
+        /**
+         * @return this.CONSTRUCTOR
+         */
+        @Override
+        public int getConstructor() {
+            return CONSTRUCTOR;
+        }
+    }
+
+    /**
+     * Returns available upgraded gift emoji statuses for self status.
+     *
+     * <p> Returns {@link EmojiStatuses EmojiStatuses} </p>
+     */
+    public static class GetUpgradedGiftEmojiStatuses extends Function<EmojiStatuses> {
+
+        /**
+         * Default constructor for a function, which returns available upgraded gift emoji statuses for self status.
+         *
+         * <p> Returns {@link EmojiStatuses EmojiStatuses} </p>
+         */
+        public GetUpgradedGiftEmojiStatuses() {
+        }
+
+        /**
+         * Identifier uniquely determining type of the object.
+         */
+        public static final int CONSTRUCTOR = -1748975723;
+
+        /**
+         * @return this.CONSTRUCTOR
+         */
+        @Override
+        public int getConstructor() {
+            return CONSTRUCTOR;
+        }
+    }
+
+    /**
+     * Returns a URL for upgraded gift withdrawal in the TON blockchain as an NFT; requires owner privileges for gifts owned by a chat.
+     *
+     * <p> Returns {@link HttpUrl HttpUrl} </p>
+     */
+    public static class GetUpgradedGiftWithdrawalUrl extends Function<HttpUrl> {
+        /**
+         * Identifier of the gift.
+         */
+        public String receivedGiftId;
+        /**
+         * The 2-step verification password of the current user.
+         */
+        public String password;
+
+        /**
+         * Default constructor for a function, which returns a URL for upgraded gift withdrawal in the TON blockchain as an NFT; requires owner privileges for gifts owned by a chat.
+         *
+         * <p> Returns {@link HttpUrl HttpUrl} </p>
+         */
+        public GetUpgradedGiftWithdrawalUrl() {
+        }
+
+        /**
+         * Creates a function, which returns a URL for upgraded gift withdrawal in the TON blockchain as an NFT; requires owner privileges for gifts owned by a chat.
+         *
+         * <p> Returns {@link HttpUrl HttpUrl} </p>
+         *
+         * @param receivedGiftId Identifier of the gift.
+         * @param password The 2-step verification password of the current user.
+         */
+        public GetUpgradedGiftWithdrawalUrl(String receivedGiftId, String password) {
+            this.receivedGiftId = receivedGiftId;
+            this.password = password;
+        }
+
+        /**
+         * Identifier uniquely determining type of the object.
+         */
+        public static final int CONSTRUCTOR = -784331188;
+
+        /**
+         * @return this.CONSTRUCTOR
+         */
+        @Override
+        public int getConstructor() {
+            return CONSTRUCTOR;
+        }
+    }
+
+    /**
      * Returns information about a user by their identifier. This is an offline request if the current user is not a bot.
      *
      * <p> Returns {@link User User} </p>
@@ -97292,62 +101656,6 @@ public class TdApi {
          * Identifier uniquely determining type of the object.
          */
         public static final int CONSTRUCTOR = -776823720;
-
-        /**
-         * @return this.CONSTRUCTOR
-         */
-        @Override
-        public int getConstructor() {
-            return CONSTRUCTOR;
-        }
-    }
-
-    /**
-     * Returns gifts saved to profile by the given user.
-     *
-     * <p> Returns {@link UserGifts UserGifts} </p>
-     */
-    public static class GetUserGifts extends Function<UserGifts> {
-        /**
-         * Identifier of the user.
-         */
-        public long userId;
-        /**
-         * Offset of the first entry to return as received from the previous request; use empty string to get the first chunk of results.
-         */
-        public String offset;
-        /**
-         * The maximum number of gifts to be returned; must be positive and can't be greater than 100. For optimal performance, the number of returned objects is chosen by TDLib and can be smaller than the specified limit.
-         */
-        public int limit;
-
-        /**
-         * Default constructor for a function, which returns gifts saved to profile by the given user.
-         *
-         * <p> Returns {@link UserGifts UserGifts} </p>
-         */
-        public GetUserGifts() {
-        }
-
-        /**
-         * Creates a function, which returns gifts saved to profile by the given user.
-         *
-         * <p> Returns {@link UserGifts UserGifts} </p>
-         *
-         * @param userId Identifier of the user.
-         * @param offset Offset of the first entry to return as received from the previous request; use empty string to get the first chunk of results.
-         * @param limit The maximum number of gifts to be returned; must be positive and can't be greater than 100. For optimal performance, the number of returned objects is chosen by TDLib and can be smaller than the specified limit.
-         */
-        public GetUserGifts(long userId, String offset, int limit) {
-            this.userId = userId;
-            this.offset = offset;
-            this.limit = limit;
-        }
-
-        /**
-         * Identifier uniquely determining type of the object.
-         */
-        public static final int CONSTRUCTOR = -1211253636;
 
         /**
          * @return this.CONSTRUCTOR
@@ -97576,7 +101884,7 @@ public class TdApi {
     }
 
     /**
-     * Returns RTMP URL for streaming to the chat; requires owner privileges.
+     * Returns RTMP URL for streaming to the chat; requires canManageVideoChats administrator right.
      *
      * <p> Returns {@link RtmpUrl RtmpUrl} </p>
      */
@@ -97587,7 +101895,7 @@ public class TdApi {
         public long chatId;
 
         /**
-         * Default constructor for a function, which returns RTMP URL for streaming to the chat; requires owner privileges.
+         * Default constructor for a function, which returns RTMP URL for streaming to the chat; requires canManageVideoChats administrator right.
          *
          * <p> Returns {@link RtmpUrl RtmpUrl} </p>
          */
@@ -97595,7 +101903,7 @@ public class TdApi {
         }
 
         /**
-         * Creates a function, which returns RTMP URL for streaming to the chat; requires owner privileges.
+         * Creates a function, which returns RTMP URL for streaming to the chat; requires canManageVideoChats administrator right.
          *
          * <p> Returns {@link RtmpUrl RtmpUrl} </p>
          *
@@ -97642,17 +101950,13 @@ public class TdApi {
          */
         public String startParameter;
         /**
-         * Preferred Web App theme; pass null to use the default theme.
-         */
-        public ThemeParameters theme;
-        /**
-         * Short name of the current application; 0-64 English letters, digits, and underscores.
-         */
-        public String applicationName;
-        /**
          * Pass true if the current user allowed the bot to send them messages.
          */
         public boolean allowWriteAccess;
+        /**
+         * Parameters to use to open the Web App.
+         */
+        public WebAppOpenParameters parameters;
 
         /**
          * Default constructor for a function, which returns an HTTPS URL of a Web App to open after a link of the type internalLinkTypeWebApp is clicked.
@@ -97671,24 +101975,66 @@ public class TdApi {
          * @param botUserId Identifier of the target bot.
          * @param webAppShortName Short name of the Web App.
          * @param startParameter Start parameter from internalLinkTypeWebApp.
-         * @param theme Preferred Web App theme; pass null to use the default theme.
-         * @param applicationName Short name of the current application; 0-64 English letters, digits, and underscores.
          * @param allowWriteAccess Pass true if the current user allowed the bot to send them messages.
+         * @param parameters Parameters to use to open the Web App.
          */
-        public GetWebAppLinkUrl(long chatId, long botUserId, String webAppShortName, String startParameter, ThemeParameters theme, String applicationName, boolean allowWriteAccess) {
+        public GetWebAppLinkUrl(long chatId, long botUserId, String webAppShortName, String startParameter, boolean allowWriteAccess, WebAppOpenParameters parameters) {
             this.chatId = chatId;
             this.botUserId = botUserId;
             this.webAppShortName = webAppShortName;
             this.startParameter = startParameter;
-            this.theme = theme;
-            this.applicationName = applicationName;
             this.allowWriteAccess = allowWriteAccess;
+            this.parameters = parameters;
         }
 
         /**
          * Identifier uniquely determining type of the object.
          */
-        public static final int CONSTRUCTOR = 1326379980;
+        public static final int CONSTRUCTOR = 1627284161;
+
+        /**
+         * @return this.CONSTRUCTOR
+         */
+        @Override
+        public int getConstructor() {
+            return CONSTRUCTOR;
+        }
+    }
+
+    /**
+     * Returns a default placeholder for Web Apps of a bot; this is an offline request. Returns a 404 error if the placeholder isn't known.
+     *
+     * <p> Returns {@link Outline Outline} </p>
+     */
+    public static class GetWebAppPlaceholder extends Function<Outline> {
+        /**
+         * Identifier of the target bot.
+         */
+        public long botUserId;
+
+        /**
+         * Default constructor for a function, which returns a default placeholder for Web Apps of a bot; this is an offline request. Returns a 404 error if the placeholder isn't known.
+         *
+         * <p> Returns {@link Outline Outline} </p>
+         */
+        public GetWebAppPlaceholder() {
+        }
+
+        /**
+         * Creates a function, which returns a default placeholder for Web Apps of a bot; this is an offline request. Returns a 404 error if the placeholder isn't known.
+         *
+         * <p> Returns {@link Outline Outline} </p>
+         *
+         * @param botUserId Identifier of the target bot.
+         */
+        public GetWebAppPlaceholder(long botUserId) {
+            this.botUserId = botUserId;
+        }
+
+        /**
+         * Identifier uniquely determining type of the object.
+         */
+        public static final int CONSTRUCTOR = 583470479;
 
         /**
          * @return this.CONSTRUCTOR
@@ -97714,13 +102060,9 @@ public class TdApi {
          */
         public String url;
         /**
-         * Preferred Web App theme; pass null to use the default theme.
+         * Parameters to use to open the Web App.
          */
-        public ThemeParameters theme;
-        /**
-         * Short name of the current application; 0-64 English letters, digits, and underscores.
-         */
-        public String applicationName;
+        public WebAppOpenParameters parameters;
 
         /**
          * Default constructor for a function, which returns an HTTPS URL of a Web App to open from the side menu, a keyboardButtonTypeWebApp button, or an inlineQueryResultsButtonTypeWebApp button.
@@ -97737,20 +102079,18 @@ public class TdApi {
          *
          * @param botUserId Identifier of the target bot.
          * @param url The URL from a keyboardButtonTypeWebApp button, inlineQueryResultsButtonTypeWebApp button, or an empty string when the bot is opened from the side menu.
-         * @param theme Preferred Web App theme; pass null to use the default theme.
-         * @param applicationName Short name of the current application; 0-64 English letters, digits, and underscores.
+         * @param parameters Parameters to use to open the Web App.
          */
-        public GetWebAppUrl(long botUserId, String url, ThemeParameters theme, String applicationName) {
+        public GetWebAppUrl(long botUserId, String url, WebAppOpenParameters parameters) {
             this.botUserId = botUserId;
             this.url = url;
-            this.theme = theme;
-            this.applicationName = applicationName;
+            this.parameters = parameters;
         }
 
         /**
          * Identifier uniquely determining type of the object.
          */
-        public static final int CONSTRUCTOR = 1690578110;
+        public static final int CONSTRUCTOR = -1526784188;
 
         /**
          * @return this.CONSTRUCTOR
@@ -98643,6 +102983,56 @@ public class TdApi {
     }
 
     /**
+     * Informs TDLib that a bot was opened from the list of similar bots.
+     *
+     * <p> Returns {@link Ok Ok} </p>
+     */
+    public static class OpenBotSimilarBot extends Function<Ok> {
+        /**
+         * Identifier of the original bot, which similar bots were requested.
+         */
+        public long botUserId;
+        /**
+         * Identifier of the opened bot.
+         */
+        public long openedBotUserId;
+
+        /**
+         * Default constructor for a function, which informs TDLib that a bot was opened from the list of similar bots.
+         *
+         * <p> Returns {@link Ok Ok} </p>
+         */
+        public OpenBotSimilarBot() {
+        }
+
+        /**
+         * Creates a function, which informs TDLib that a bot was opened from the list of similar bots.
+         *
+         * <p> Returns {@link Ok Ok} </p>
+         *
+         * @param botUserId Identifier of the original bot, which similar bots were requested.
+         * @param openedBotUserId Identifier of the opened bot.
+         */
+        public OpenBotSimilarBot(long botUserId, long openedBotUserId) {
+            this.botUserId = botUserId;
+            this.openedBotUserId = openedBotUserId;
+        }
+
+        /**
+         * Identifier uniquely determining type of the object.
+         */
+        public static final int CONSTRUCTOR = -369688872;
+
+        /**
+         * @return this.CONSTRUCTOR
+         */
+        @Override
+        public int getConstructor() {
+            return CONSTRUCTOR;
+        }
+    }
+
+    /**
      * Informs TDLib that the chat is opened by the user. Many useful activities depend on the chat being opened or closed (e.g., in supergroups and channels all updates are received only for opened chats).
      *
      * <p> Returns {@link Ok Ok} </p>
@@ -98855,14 +103245,6 @@ public class TdApi {
          */
         public String url;
         /**
-         * Preferred Web App theme; pass null to use the default theme.
-         */
-        public ThemeParameters theme;
-        /**
-         * Short name of the current application; 0-64 English letters, digits, and underscores.
-         */
-        public String applicationName;
-        /**
          * If not 0, the message thread identifier in which the message will be sent.
          */
         public long messageThreadId;
@@ -98870,6 +103252,10 @@ public class TdApi {
          * Information about the message or story to be replied in the message sent by the Web App; pass null if none.
          */
         public InputMessageReplyTo replyTo;
+        /**
+         * Parameters to use to open the Web App.
+         */
+        public WebAppOpenParameters parameters;
 
         /**
          * Default constructor for a function, which informs TDLib that a Web App is being opened from the attachment menu, a botMenuButton button, an internalLinkTypeAttachmentMenuBot link, or an inlineKeyboardButtonTypeWebApp button. For each bot, a confirmation alert about data sent to the bot must be shown once.
@@ -98887,25 +103273,23 @@ public class TdApi {
          * @param chatId Identifier of the chat in which the Web App is opened. The Web App can't be opened in secret chats.
          * @param botUserId Identifier of the bot, providing the Web App.
          * @param url The URL from an inlineKeyboardButtonTypeWebApp button, a botMenuButton button, an internalLinkTypeAttachmentMenuBot link, or an empty string otherwise.
-         * @param theme Preferred Web App theme; pass null to use the default theme.
-         * @param applicationName Short name of the current application; 0-64 English letters, digits, and underscores.
          * @param messageThreadId If not 0, the message thread identifier in which the message will be sent.
          * @param replyTo Information about the message or story to be replied in the message sent by the Web App; pass null if none.
+         * @param parameters Parameters to use to open the Web App.
          */
-        public OpenWebApp(long chatId, long botUserId, String url, ThemeParameters theme, String applicationName, long messageThreadId, InputMessageReplyTo replyTo) {
+        public OpenWebApp(long chatId, long botUserId, String url, long messageThreadId, InputMessageReplyTo replyTo, WebAppOpenParameters parameters) {
             this.chatId = chatId;
             this.botUserId = botUserId;
             this.url = url;
-            this.theme = theme;
-            this.applicationName = applicationName;
             this.messageThreadId = messageThreadId;
             this.replyTo = replyTo;
+            this.parameters = parameters;
         }
 
         /**
          * Identifier uniquely determining type of the object.
          */
-        public static final int CONSTRUCTOR = -1339660624;
+        public static final int CONSTRUCTOR = 662795170;
 
         /**
          * @return this.CONSTRUCTOR
@@ -100554,6 +104938,56 @@ public class TdApi {
          * Identifier uniquely determining type of the object.
          */
         public static final int CONSTRUCTOR = -1756934789;
+
+        /**
+         * @return this.CONSTRUCTOR
+         */
+        @Override
+        public int getConstructor() {
+            return CONSTRUCTOR;
+        }
+    }
+
+    /**
+     * Removes the verification status of a user or a chat by an owned bot.
+     *
+     * <p> Returns {@link Ok Ok} </p>
+     */
+    public static class RemoveMessageSenderBotVerification extends Function<Ok> {
+        /**
+         * Identifier of the owned bot, which verified the user or the chat.
+         */
+        public long botUserId;
+        /**
+         * Identifier of the user or the supergroup or channel chat, which verification is removed.
+         */
+        public MessageSender verifiedId;
+
+        /**
+         * Default constructor for a function, which removes the verification status of a user or a chat by an owned bot.
+         *
+         * <p> Returns {@link Ok Ok} </p>
+         */
+        public RemoveMessageSenderBotVerification() {
+        }
+
+        /**
+         * Creates a function, which removes the verification status of a user or a chat by an owned bot.
+         *
+         * <p> Returns {@link Ok Ok} </p>
+         *
+         * @param botUserId Identifier of the owned bot, which verified the user or the chat.
+         * @param verifiedId Identifier of the user or the supergroup or channel chat, which verification is removed.
+         */
+        public RemoveMessageSenderBotVerification(long botUserId, MessageSender verifiedId) {
+            this.botUserId = botUserId;
+            this.verifiedId = verifiedId;
+        }
+
+        /**
+         * Identifier uniquely determining type of the object.
+         */
+        public static final int CONSTRUCTOR = -1710174374;
 
         /**
          * @return this.CONSTRUCTOR
@@ -102581,7 +107015,7 @@ public class TdApi {
     }
 
     /**
-     * Reuses an active subscription and joins the subscribed chat again.
+     * Reuses an active Telegram Star subscription to a channel chat and joins the chat again.
      *
      * <p> Returns {@link Ok Ok} </p>
      */
@@ -102592,7 +107026,7 @@ public class TdApi {
         public String subscriptionId;
 
         /**
-         * Default constructor for a function, which reuses an active subscription and joins the subscribed chat again.
+         * Default constructor for a function, which reuses an active Telegram Star subscription to a channel chat and joins the chat again.
          *
          * <p> Returns {@link Ok Ok} </p>
          */
@@ -102600,7 +107034,7 @@ public class TdApi {
         }
 
         /**
-         * Creates a function, which reuses an active subscription and joins the subscribed chat again.
+         * Creates a function, which reuses an active Telegram Star subscription to a channel chat and joins the chat again.
          *
          * <p> Returns {@link Ok Ok} </p>
          *
@@ -102775,6 +107209,124 @@ public class TdApi {
     }
 
     /**
+     * Saves an inline message to be sent by the given user; for bots only.
+     *
+     * <p> Returns {@link PreparedInlineMessageId PreparedInlineMessageId} </p>
+     */
+    public static class SavePreparedInlineMessage extends Function<PreparedInlineMessageId> {
+        /**
+         * Identifier of the user.
+         */
+        public long userId;
+        /**
+         * The description of the message.
+         */
+        public InputInlineQueryResult result;
+        /**
+         * Types of the chats to which the message can be sent.
+         */
+        public TargetChatTypes chatTypes;
+
+        /**
+         * Default constructor for a function, which saves an inline message to be sent by the given user; for bots only.
+         *
+         * <p> Returns {@link PreparedInlineMessageId PreparedInlineMessageId} </p>
+         */
+        public SavePreparedInlineMessage() {
+        }
+
+        /**
+         * Creates a function, which saves an inline message to be sent by the given user; for bots only.
+         *
+         * <p> Returns {@link PreparedInlineMessageId PreparedInlineMessageId} </p>
+         *
+         * @param userId Identifier of the user.
+         * @param result The description of the message.
+         * @param chatTypes Types of the chats to which the message can be sent.
+         */
+        public SavePreparedInlineMessage(long userId, InputInlineQueryResult result, TargetChatTypes chatTypes) {
+            this.userId = userId;
+            this.result = result;
+            this.chatTypes = chatTypes;
+        }
+
+        /**
+         * Identifier uniquely determining type of the object.
+         */
+        public static final int CONSTRUCTOR = -954963751;
+
+        /**
+         * @return this.CONSTRUCTOR
+         */
+        @Override
+        public int getConstructor() {
+            return CONSTRUCTOR;
+        }
+    }
+
+    /**
+     * Searches affiliate programs that can be connected to the given affiliate.
+     *
+     * <p> Returns {@link FoundAffiliatePrograms FoundAffiliatePrograms} </p>
+     */
+    public static class SearchAffiliatePrograms extends Function<FoundAffiliatePrograms> {
+        /**
+         * The affiliate for which affiliate programs are searched for.
+         */
+        public AffiliateType affiliate;
+        /**
+         * Sort order for the results.
+         */
+        public AffiliateProgramSortOrder sortOrder;
+        /**
+         * Offset of the first affiliate program to return as received from the previous request; use empty string to get the first chunk of results.
+         */
+        public String offset;
+        /**
+         * The maximum number of affiliate programs to return.
+         */
+        public int limit;
+
+        /**
+         * Default constructor for a function, which searches affiliate programs that can be connected to the given affiliate.
+         *
+         * <p> Returns {@link FoundAffiliatePrograms FoundAffiliatePrograms} </p>
+         */
+        public SearchAffiliatePrograms() {
+        }
+
+        /**
+         * Creates a function, which searches affiliate programs that can be connected to the given affiliate.
+         *
+         * <p> Returns {@link FoundAffiliatePrograms FoundAffiliatePrograms} </p>
+         *
+         * @param affiliate The affiliate for which affiliate programs are searched for.
+         * @param sortOrder Sort order for the results.
+         * @param offset Offset of the first affiliate program to return as received from the previous request; use empty string to get the first chunk of results.
+         * @param limit The maximum number of affiliate programs to return.
+         */
+        public SearchAffiliatePrograms(AffiliateType affiliate, AffiliateProgramSortOrder sortOrder, String offset, int limit) {
+            this.affiliate = affiliate;
+            this.sortOrder = sortOrder;
+            this.offset = offset;
+            this.limit = limit;
+        }
+
+        /**
+         * Identifier uniquely determining type of the object.
+         */
+        public static final int CONSTRUCTOR = 681156625;
+
+        /**
+         * @return this.CONSTRUCTOR
+         */
+        @Override
+        public int getConstructor() {
+            return CONSTRUCTOR;
+        }
+    }
+
+    /**
      * Searches for a background by its name.
      *
      * <p> Returns {@link Background Background} </p>
@@ -102864,6 +107416,56 @@ public class TdApi {
          * Identifier uniquely determining type of the object.
          */
         public static final int CONSTRUCTOR = -1942229221;
+
+        /**
+         * @return this.CONSTRUCTOR
+         */
+        @Override
+        public int getConstructor() {
+            return CONSTRUCTOR;
+        }
+    }
+
+    /**
+     * Searches a chat with an affiliate program. Returns the chat if found and the program is active.
+     *
+     * <p> Returns {@link Chat Chat} </p>
+     */
+    public static class SearchChatAffiliateProgram extends Function<Chat> {
+        /**
+         * Username of the chat.
+         */
+        public String username;
+        /**
+         * The referrer from an internalLinkTypeChatAffiliateProgram link.
+         */
+        public String referrer;
+
+        /**
+         * Default constructor for a function, which searches a chat with an affiliate program. Returns the chat if found and the program is active.
+         *
+         * <p> Returns {@link Chat Chat} </p>
+         */
+        public SearchChatAffiliateProgram() {
+        }
+
+        /**
+         * Creates a function, which searches a chat with an affiliate program. Returns the chat if found and the program is active.
+         *
+         * <p> Returns {@link Chat Chat} </p>
+         *
+         * @param username Username of the chat.
+         * @param referrer The referrer from an internalLinkTypeChatAffiliateProgram link.
+         */
+        public SearchChatAffiliateProgram(String username, String referrer) {
+            this.username = username;
+            this.referrer = referrer;
+        }
+
+        /**
+         * Identifier uniquely determining type of the object.
+         */
+        public static final int CONSTRUCTOR = -1339291206;
 
         /**
          * @return this.CONSTRUCTOR
@@ -103463,10 +108065,6 @@ public class TdApi {
          */
         public ChatList chatList;
         /**
-         * Pass true to search only for messages in channels.
-         */
-        public boolean onlyInChannels;
-        /**
          * Query to search for.
          */
         public String query;
@@ -103482,6 +108080,10 @@ public class TdApi {
          * Additional filter for messages to search; pass null to search for all messages. Filters searchMessagesFilterMention, searchMessagesFilterUnreadMention, searchMessagesFilterUnreadReaction, searchMessagesFilterFailedToSend, and searchMessagesFilterPinned are unsupported in this function.
          */
         public SearchMessagesFilter filter;
+        /**
+         * Additional filter for type of the chat of the searched messages; pass null to search for messages in all chats.
+         */
+        public SearchMessagesChatTypeFilter chatTypeFilter;
         /**
          * If not 0, the minimum date of the messages to return.
          */
@@ -103505,21 +108107,21 @@ public class TdApi {
          * <p> Returns {@link FoundMessages FoundMessages} </p>
          *
          * @param chatList Chat list in which to search messages; pass null to search in all chats regardless of their chat list. Only Main and Archive chat lists are supported.
-         * @param onlyInChannels Pass true to search only for messages in channels.
          * @param query Query to search for.
          * @param offset Offset of the first entry to return as received from the previous request; use empty string to get the first chunk of results.
          * @param limit The maximum number of messages to be returned; up to 100. For optimal performance, the number of returned messages is chosen by TDLib and can be smaller than the specified limit.
          * @param filter Additional filter for messages to search; pass null to search for all messages. Filters searchMessagesFilterMention, searchMessagesFilterUnreadMention, searchMessagesFilterUnreadReaction, searchMessagesFilterFailedToSend, and searchMessagesFilterPinned are unsupported in this function.
+         * @param chatTypeFilter Additional filter for type of the chat of the searched messages; pass null to search for messages in all chats.
          * @param minDate If not 0, the minimum date of the messages to return.
          * @param maxDate If not 0, the maximum date of the messages to return.
          */
-        public SearchMessages(ChatList chatList, boolean onlyInChannels, String query, String offset, int limit, SearchMessagesFilter filter, int minDate, int maxDate) {
+        public SearchMessages(ChatList chatList, String query, String offset, int limit, SearchMessagesFilter filter, SearchMessagesChatTypeFilter chatTypeFilter, int minDate, int maxDate) {
             this.chatList = chatList;
-            this.onlyInChannels = onlyInChannels;
             this.query = query;
             this.offset = offset;
             this.limit = limit;
             this.filter = filter;
+            this.chatTypeFilter = chatTypeFilter;
             this.minDate = minDate;
             this.maxDate = maxDate;
         }
@@ -103527,7 +108129,7 @@ public class TdApi {
         /**
          * Identifier uniquely determining type of the object.
          */
-        public static final int CONSTRUCTOR = 838452169;
+        public static final int CONSTRUCTOR = 1225448885;
 
         /**
          * @return this.CONSTRUCTOR
@@ -103795,6 +108397,10 @@ public class TdApi {
      */
     public static class SearchPublicStoriesByTag extends Function<FoundStories> {
         /**
+         * Identifier of the chat that posted the stories to search for; pass 0 to search stories in all chats.
+         */
+        public long storySenderChatId;
+        /**
          * Hashtag or cashtag to search for.
          */
         public String tag;
@@ -103820,11 +108426,13 @@ public class TdApi {
          *
          * <p> Returns {@link FoundStories FoundStories} </p>
          *
+         * @param storySenderChatId Identifier of the chat that posted the stories to search for; pass 0 to search stories in all chats.
          * @param tag Hashtag or cashtag to search for.
          * @param offset Offset of the first entry to return as received from the previous request; use empty string to get the first chunk of results.
          * @param limit The maximum number of stories to be returned; up to 100. For optimal performance, the number of returned stories is chosen by TDLib and can be smaller than the specified limit.
          */
-        public SearchPublicStoriesByTag(String tag, String offset, int limit) {
+        public SearchPublicStoriesByTag(long storySenderChatId, String tag, String offset, int limit) {
+            this.storySenderChatId = storySenderChatId;
             this.tag = tag;
             this.offset = offset;
             this.limit = limit;
@@ -103833,7 +108441,7 @@ public class TdApi {
         /**
          * Identifier uniquely determining type of the object.
          */
-        public static final int CONSTRUCTOR = -1437593502;
+        public static final int CONSTRUCTOR = -1563792893;
 
         /**
          * @return this.CONSTRUCTOR
@@ -104265,9 +108873,21 @@ public class TdApi {
          */
         public StickerType stickerType;
         /**
-         * Space-separated list of emojis to search for; must be non-empty.
+         * Space-separated list of emojis to search for.
          */
         public String emojis;
+        /**
+         * Query to search for; may be empty to search for emoji only.
+         */
+        public String query;
+        /**
+         * List of possible IETF language tags of the user's input language; may be empty if unknown.
+         */
+        public String[] inputLanguageCodes;
+        /**
+         * The offset from which to return the stickers; must be non-negative.
+         */
+        public int offset;
         /**
          * The maximum number of stickers to be returned; 0-100.
          */
@@ -104287,19 +108907,25 @@ public class TdApi {
          * <p> Returns {@link Stickers Stickers} </p>
          *
          * @param stickerType Type of the stickers to return.
-         * @param emojis Space-separated list of emojis to search for; must be non-empty.
+         * @param emojis Space-separated list of emojis to search for.
+         * @param query Query to search for; may be empty to search for emoji only.
+         * @param inputLanguageCodes List of possible IETF language tags of the user's input language; may be empty if unknown.
+         * @param offset The offset from which to return the stickers; must be non-negative.
          * @param limit The maximum number of stickers to be returned; 0-100.
          */
-        public SearchStickers(StickerType stickerType, String emojis, int limit) {
+        public SearchStickers(StickerType stickerType, String emojis, String query, String[] inputLanguageCodes, int offset, int limit) {
             this.stickerType = stickerType;
             this.emojis = emojis;
+            this.query = query;
+            this.inputLanguageCodes = inputLanguageCodes;
+            this.offset = offset;
             this.limit = limit;
         }
 
         /**
          * Identifier uniquely determining type of the object.
          */
-        public static final int CONSTRUCTOR = -1709577973;
+        public static final int CONSTRUCTOR = -1856294754;
 
         /**
          * @return this.CONSTRUCTOR
@@ -104517,22 +109143,18 @@ public class TdApi {
     }
 
     /**
-     * Sells a gift received by the current user for Telegram Stars.
+     * Sells a gift for Telegram Stars.
      *
      * <p> Returns {@link Ok Ok} </p>
      */
     public static class SellGift extends Function<Ok> {
         /**
-         * Identifier of the user that sent the gift.
+         * Identifier of the gift.
          */
-        public long senderUserId;
-        /**
-         * Identifier of the message with the gift in the chat with the user.
-         */
-        public long messageId;
+        public String receivedGiftId;
 
         /**
-         * Default constructor for a function, which sells a gift received by the current user for Telegram Stars.
+         * Default constructor for a function, which sells a gift for Telegram Stars.
          *
          * <p> Returns {@link Ok Ok} </p>
          */
@@ -104540,22 +109162,20 @@ public class TdApi {
         }
 
         /**
-         * Creates a function, which sells a gift received by the current user for Telegram Stars.
+         * Creates a function, which sells a gift for Telegram Stars.
          *
          * <p> Returns {@link Ok Ok} </p>
          *
-         * @param senderUserId Identifier of the user that sent the gift.
-         * @param messageId Identifier of the message with the gift in the chat with the user.
+         * @param receivedGiftId Identifier of the gift.
          */
-        public SellGift(long senderUserId, long messageId) {
-            this.senderUserId = senderUserId;
-            this.messageId = messageId;
+        public SellGift(String receivedGiftId) {
+            this.receivedGiftId = receivedGiftId;
         }
 
         /**
          * Identifier uniquely determining type of the object.
          */
-        public static final int CONSTRUCTOR = 1729857716;
+        public static final int CONSTRUCTOR = 1046653967;
 
         /**
          * @return this.CONSTRUCTOR
@@ -105201,7 +109821,7 @@ public class TdApi {
     }
 
     /**
-     * Sends a gift to another user. May return an error with a message &quot;STARGIFT_USAGE_LIMITED&quot; if the gift was sold out.
+     * Sends a gift to another user or channel chat. May return an error with a message &quot;STARGIFT_USAGE_LIMITED&quot; if the gift was sold out.
      *
      * <p> Returns {@link Ok Ok} </p>
      */
@@ -105211,20 +109831,24 @@ public class TdApi {
          */
         public long giftId;
         /**
-         * Identifier of the user that will receive the gift.
+         * Identifier of the user or the channel chat that will receive the gift.
          */
-        public long userId;
+        public MessageSender ownerId;
         /**
          * Text to show along with the gift; 0-getOption(&quot;gift_text_length_max&quot;) characters. Only Bold, Italic, Underline, Strikethrough, Spoiler, and CustomEmoji entities are allowed.
          */
         public FormattedText text;
         /**
-         * Pass true to show the current user as sender and gift text only to the gift receiver; otherwise, everyone will be able to see them.
+         * Pass true to show gift text and sender only to the gift receiver; otherwise, everyone will be able to see them.
          */
         public boolean isPrivate;
+        /**
+         * Pass true to additionally pay for the gift upgrade and allow the receiver to upgrade it for free.
+         */
+        public boolean payForUpgrade;
 
         /**
-         * Default constructor for a function, which sends a gift to another user. May return an error with a message &quot;STARGIFT_USAGE_LIMITED&quot; if the gift was sold out.
+         * Default constructor for a function, which sends a gift to another user or channel chat. May return an error with a message &quot;STARGIFT_USAGE_LIMITED&quot; if the gift was sold out.
          *
          * <p> Returns {@link Ok Ok} </p>
          */
@@ -105232,26 +109856,28 @@ public class TdApi {
         }
 
         /**
-         * Creates a function, which sends a gift to another user. May return an error with a message &quot;STARGIFT_USAGE_LIMITED&quot; if the gift was sold out.
+         * Creates a function, which sends a gift to another user or channel chat. May return an error with a message &quot;STARGIFT_USAGE_LIMITED&quot; if the gift was sold out.
          *
          * <p> Returns {@link Ok Ok} </p>
          *
          * @param giftId Identifier of the gift to send.
-         * @param userId Identifier of the user that will receive the gift.
+         * @param ownerId Identifier of the user or the channel chat that will receive the gift.
          * @param text Text to show along with the gift; 0-getOption(&quot;gift_text_length_max&quot;) characters. Only Bold, Italic, Underline, Strikethrough, Spoiler, and CustomEmoji entities are allowed.
-         * @param isPrivate Pass true to show the current user as sender and gift text only to the gift receiver; otherwise, everyone will be able to see them.
+         * @param isPrivate Pass true to show gift text and sender only to the gift receiver; otherwise, everyone will be able to see them.
+         * @param payForUpgrade Pass true to additionally pay for the gift upgrade and allow the receiver to upgrade it for free.
          */
-        public SendGift(long giftId, long userId, FormattedText text, boolean isPrivate) {
+        public SendGift(long giftId, MessageSender ownerId, FormattedText text, boolean isPrivate, boolean payForUpgrade) {
             this.giftId = giftId;
-            this.userId = userId;
+            this.ownerId = ownerId;
             this.text = text;
             this.isPrivate = isPrivate;
+            this.payForUpgrade = payForUpgrade;
         }
 
         /**
          * Identifier uniquely determining type of the object.
          */
-        public static final int CONSTRUCTOR = 852064621;
+        public static final int CONSTRUCTOR = -1199356118;
 
         /**
          * @return this.CONSTRUCTOR
@@ -107172,6 +111798,56 @@ public class TdApi {
          * Identifier uniquely determining type of the object.
          */
         public static final int CONSTRUCTOR = -521970415;
+
+        /**
+         * @return this.CONSTRUCTOR
+         */
+        @Override
+        public int getConstructor() {
+            return CONSTRUCTOR;
+        }
+    }
+
+    /**
+     * Changes affiliate program for a bot.
+     *
+     * <p> Returns {@link Ok Ok} </p>
+     */
+    public static class SetChatAffiliateProgram extends Function<Ok> {
+        /**
+         * Identifier of the chat with an owned bot for which affiliate program is changed.
+         */
+        public long chatId;
+        /**
+         * Parameters of the affiliate program; pass null to close the currently active program. If there is an active program, then commission and program duration can only be increased. If the active program is scheduled to be closed, then it can't be changed anymore.
+         */
+        public AffiliateProgramParameters parameters;
+
+        /**
+         * Default constructor for a function, which changes affiliate program for a bot.
+         *
+         * <p> Returns {@link Ok Ok} </p>
+         */
+        public SetChatAffiliateProgram() {
+        }
+
+        /**
+         * Creates a function, which changes affiliate program for a bot.
+         *
+         * <p> Returns {@link Ok Ok} </p>
+         *
+         * @param chatId Identifier of the chat with an owned bot for which affiliate program is changed.
+         * @param parameters Parameters of the affiliate program; pass null to close the currently active program. If there is an active program, then commission and program duration can only be increased. If the active program is scheduled to be closed, then it can't be changed anymore.
+         */
+        public SetChatAffiliateProgram(long chatId, AffiliateProgramParameters parameters) {
+            this.chatId = chatId;
+            this.parameters = parameters;
+        }
+
+        /**
+         * Identifier uniquely determining type of the object.
+         */
+        public static final int CONSTRUCTOR = 14680631;
 
         /**
          * @return this.CONSTRUCTOR
@@ -109599,6 +114275,62 @@ public class TdApi {
     }
 
     /**
+     * Changes the verification status of a user or a chat by an owned bot.
+     *
+     * <p> Returns {@link Ok Ok} </p>
+     */
+    public static class SetMessageSenderBotVerification extends Function<Ok> {
+        /**
+         * Identifier of the owned bot, which will verify the user or the chat.
+         */
+        public long botUserId;
+        /**
+         * Identifier of the user or the supergroup or channel chat, which will be verified by the bot.
+         */
+        public MessageSender verifiedId;
+        /**
+         * Custom description of verification reason; 0-getOption(&quot;bot_verification_custom_description_length_max&quot;). If empty, then &quot;was verified by organization &quot;organization_name&quot;&quot; will be used as description. Can be specified only if the bot is allowed to provide custom description.
+         */
+        public String customDescription;
+
+        /**
+         * Default constructor for a function, which changes the verification status of a user or a chat by an owned bot.
+         *
+         * <p> Returns {@link Ok Ok} </p>
+         */
+        public SetMessageSenderBotVerification() {
+        }
+
+        /**
+         * Creates a function, which changes the verification status of a user or a chat by an owned bot.
+         *
+         * <p> Returns {@link Ok Ok} </p>
+         *
+         * @param botUserId Identifier of the owned bot, which will verify the user or the chat.
+         * @param verifiedId Identifier of the user or the supergroup or channel chat, which will be verified by the bot.
+         * @param customDescription Custom description of verification reason; 0-getOption(&quot;bot_verification_custom_description_length_max&quot;). If empty, then &quot;was verified by organization &quot;organization_name&quot;&quot; will be used as description. Can be specified only if the bot is allowed to provide custom description.
+         */
+        public SetMessageSenderBotVerification(long botUserId, MessageSender verifiedId, String customDescription) {
+            this.botUserId = botUserId;
+            this.verifiedId = verifiedId;
+            this.customDescription = customDescription;
+        }
+
+        /**
+         * Identifier uniquely determining type of the object.
+         */
+        public static final int CONSTRUCTOR = -1262364086;
+
+        /**
+         * @return this.CONSTRUCTOR
+         */
+        @Override
+        public int getConstructor() {
+            return CONSTRUCTOR;
+        }
+    }
+
+    /**
      * Changes the first and last name of the current user.
      *
      * <p> Returns {@link Ok Ok} </p>
@@ -110909,7 +115641,7 @@ public class TdApi {
          */
         public int storyId;
         /**
-         * The new privacy settigs for the story.
+         * The new privacy settings for the story.
          */
         public StoryPrivacySettings privacySettings;
 
@@ -110927,7 +115659,7 @@ public class TdApi {
          * <p> Returns {@link Ok Ok} </p>
          *
          * @param storyId Identifier of the story.
-         * @param privacySettings The new privacy settigs for the story.
+         * @param privacySettings The new privacy settings for the story.
          */
         public SetStoryPrivacySettings(int storyId, StoryPrivacySettings privacySettings) {
             this.storyId = storyId;
@@ -111322,6 +116054,56 @@ public class TdApi {
          * Identifier uniquely determining type of the object.
          */
         public static final int CONSTRUCTOR = -775883218;
+
+        /**
+         * @return this.CONSTRUCTOR
+         */
+        @Override
+        public int getConstructor() {
+            return CONSTRUCTOR;
+        }
+    }
+
+    /**
+     * Changes the emoji status of a user; for bots only.
+     *
+     * <p> Returns {@link Ok Ok} </p>
+     */
+    public static class SetUserEmojiStatus extends Function<Ok> {
+        /**
+         * Identifier of the user.
+         */
+        public long userId;
+        /**
+         * New emoji status; pass null to switch to the default badge.
+         */
+        public EmojiStatus emojiStatus;
+
+        /**
+         * Default constructor for a function, which changes the emoji status of a user; for bots only.
+         *
+         * <p> Returns {@link Ok Ok} </p>
+         */
+        public SetUserEmojiStatus() {
+        }
+
+        /**
+         * Creates a function, which changes the emoji status of a user; for bots only.
+         *
+         * <p> Returns {@link Ok Ok} </p>
+         *
+         * @param userId Identifier of the user.
+         * @param emojiStatus New emoji status; pass null to switch to the default badge.
+         */
+        public SetUserEmojiStatus(long userId, EmojiStatus emojiStatus) {
+            this.userId = userId;
+            this.emojiStatus = emojiStatus;
+        }
+
+        /**
+         * Identifier uniquely determining type of the object.
+         */
+        public static final int CONSTRUCTOR = -451519541;
 
         /**
          * @return this.CONSTRUCTOR
@@ -112784,6 +117566,56 @@ public class TdApi {
     }
 
     /**
+     * Toggles whether the bot can manage emoji status of the current user.
+     *
+     * <p> Returns {@link Ok Ok} </p>
+     */
+    public static class ToggleBotCanManageEmojiStatus extends Function<Ok> {
+        /**
+         * User identifier of the bot.
+         */
+        public long botUserId;
+        /**
+         * Pass true if the bot is allowed to change emoji status of the user; pass false otherwise.
+         */
+        public boolean canManageEmojiStatus;
+
+        /**
+         * Default constructor for a function, which toggles whether the bot can manage emoji status of the current user.
+         *
+         * <p> Returns {@link Ok Ok} </p>
+         */
+        public ToggleBotCanManageEmojiStatus() {
+        }
+
+        /**
+         * Creates a function, which toggles whether the bot can manage emoji status of the current user.
+         *
+         * <p> Returns {@link Ok Ok} </p>
+         *
+         * @param botUserId User identifier of the bot.
+         * @param canManageEmojiStatus Pass true if the bot is allowed to change emoji status of the user; pass false otherwise.
+         */
+        public ToggleBotCanManageEmojiStatus(long botUserId, boolean canManageEmojiStatus) {
+            this.botUserId = botUserId;
+            this.canManageEmojiStatus = canManageEmojiStatus;
+        }
+
+        /**
+         * Identifier uniquely determining type of the object.
+         */
+        public static final int CONSTRUCTOR = 622495770;
+
+        /**
+         * @return this.CONSTRUCTOR
+         */
+        @Override
+        public int getConstructor() {
+            return CONSTRUCTOR;
+        }
+    }
+
+    /**
      * Adds or removes a bot to attachment and side menu. Bot can be added to the menu, only if userTypeBot.canBeAddedToAttachmentMenu == true.
      *
      * <p> Returns {@link Ok Ok} </p>
@@ -113029,6 +117861,56 @@ public class TdApi {
          * Identifier uniquely determining type of the object.
          */
         public static final int CONSTRUCTOR = -2092209084;
+
+        /**
+         * @return this.CONSTRUCTOR
+         */
+        @Override
+        public int getConstructor() {
+            return CONSTRUCTOR;
+        }
+    }
+
+    /**
+     * Toggles whether notifications for new gifts received by a channel chat are sent to the current user; requires canPostMessages administrator right in the chat.
+     *
+     * <p> Returns {@link Ok Ok} </p>
+     */
+    public static class ToggleChatGiftNotifications extends Function<Ok> {
+        /**
+         * Identifier of the channel chat.
+         */
+        public long chatId;
+        /**
+         * Pass true to enable notifications about new gifts owned by the channel chat; pass false to disable the notifications.
+         */
+        public boolean areEnabled;
+
+        /**
+         * Default constructor for a function, which toggles whether notifications for new gifts received by a channel chat are sent to the current user; requires canPostMessages administrator right in the chat.
+         *
+         * <p> Returns {@link Ok Ok} </p>
+         */
+        public ToggleChatGiftNotifications() {
+        }
+
+        /**
+         * Creates a function, which toggles whether notifications for new gifts received by a channel chat are sent to the current user; requires canPostMessages administrator right in the chat.
+         *
+         * <p> Returns {@link Ok Ok} </p>
+         *
+         * @param chatId Identifier of the channel chat.
+         * @param areEnabled Pass true to enable notifications about new gifts owned by the channel chat; pass false to disable the notifications.
+         */
+        public ToggleChatGiftNotifications(long chatId, boolean areEnabled) {
+            this.chatId = chatId;
+            this.areEnabled = areEnabled;
+        }
+
+        /**
+         * Identifier uniquely determining type of the object.
+         */
+        public static final int CONSTRUCTOR = -2069429154;
 
         /**
          * @return this.CONSTRUCTOR
@@ -113508,26 +118390,22 @@ public class TdApi {
     }
 
     /**
-     * Toggles whether a gift is shown on the current user's profile page.
+     * Toggles whether a gift is shown on the current user's or the channel's profile page; requires canPostMessages administrator right in the chat.
      *
      * <p> Returns {@link Ok Ok} </p>
      */
     public static class ToggleGiftIsSaved extends Function<Ok> {
         /**
-         * Identifier of the user that sent the gift.
+         * Identifier of the gift.
          */
-        public long senderUserId;
+        public String receivedGiftId;
         /**
-         * Identifier of the message with the gift in the chat with the user.
-         */
-        public long messageId;
-        /**
-         * Pass true to display the gift on the user's profile page; pass false to remove it from the profile page.
+         * Pass true to display the gift on the user's or the channel's profile page; pass false to remove it from the profile page.
          */
         public boolean isSaved;
 
         /**
-         * Default constructor for a function, which toggles whether a gift is shown on the current user's profile page.
+         * Default constructor for a function, which toggles whether a gift is shown on the current user's or the channel's profile page; requires canPostMessages administrator right in the chat.
          *
          * <p> Returns {@link Ok Ok} </p>
          */
@@ -113535,24 +118413,22 @@ public class TdApi {
         }
 
         /**
-         * Creates a function, which toggles whether a gift is shown on the current user's profile page.
+         * Creates a function, which toggles whether a gift is shown on the current user's or the channel's profile page; requires canPostMessages administrator right in the chat.
          *
          * <p> Returns {@link Ok Ok} </p>
          *
-         * @param senderUserId Identifier of the user that sent the gift.
-         * @param messageId Identifier of the message with the gift in the chat with the user.
-         * @param isSaved Pass true to display the gift on the user's profile page; pass false to remove it from the profile page.
+         * @param receivedGiftId Identifier of the gift.
+         * @param isSaved Pass true to display the gift on the user's or the channel's profile page; pass false to remove it from the profile page.
          */
-        public ToggleGiftIsSaved(long senderUserId, long messageId, boolean isSaved) {
-            this.senderUserId = senderUserId;
-            this.messageId = messageId;
+        public ToggleGiftIsSaved(String receivedGiftId, boolean isSaved) {
+            this.receivedGiftId = receivedGiftId;
             this.isSaved = isSaved;
         }
 
         /**
          * Identifier uniquely determining type of the object.
          */
-        public static final int CONSTRUCTOR = -1849495165;
+        public static final int CONSTRUCTOR = 693198065;
 
         /**
          * @return this.CONSTRUCTOR
@@ -114844,6 +119720,62 @@ public class TdApi {
     }
 
     /**
+     * Sends an upgraded gift to another user or a channel chat.
+     *
+     * <p> Returns {@link Ok Ok} </p>
+     */
+    public static class TransferGift extends Function<Ok> {
+        /**
+         * Identifier of the gift.
+         */
+        public String receivedGiftId;
+        /**
+         * Identifier of the user or the channel chat that will receive the gift.
+         */
+        public MessageSender newOwnerId;
+        /**
+         * The amount of Telegram Stars required to pay for the transfer.
+         */
+        public long starCount;
+
+        /**
+         * Default constructor for a function, which sends an upgraded gift to another user or a channel chat.
+         *
+         * <p> Returns {@link Ok Ok} </p>
+         */
+        public TransferGift() {
+        }
+
+        /**
+         * Creates a function, which sends an upgraded gift to another user or a channel chat.
+         *
+         * <p> Returns {@link Ok Ok} </p>
+         *
+         * @param receivedGiftId Identifier of the gift.
+         * @param newOwnerId Identifier of the user or the channel chat that will receive the gift.
+         * @param starCount The amount of Telegram Stars required to pay for the transfer.
+         */
+        public TransferGift(String receivedGiftId, MessageSender newOwnerId, long starCount) {
+            this.receivedGiftId = receivedGiftId;
+            this.newOwnerId = newOwnerId;
+            this.starCount = starCount;
+        }
+
+        /**
+         * Identifier uniquely determining type of the object.
+         */
+        public static final int CONSTRUCTOR = 1658538791;
+
+        /**
+         * @return this.CONSTRUCTOR
+         */
+        @Override
+        public int getConstructor() {
+            return CONSTRUCTOR;
+        }
+    }
+
+    /**
      * Extracts text or caption of the given message and translates it to the given language. If the current user is a Telegram Premium user, then text formatting is preserved.
      *
      * <p> Returns {@link FormattedText FormattedText} </p>
@@ -115127,6 +120059,62 @@ public class TdApi {
          * Identifier uniquely determining type of the object.
          */
         public static final int CONSTRUCTOR = 300488122;
+
+        /**
+         * @return this.CONSTRUCTOR
+         */
+        @Override
+        public int getConstructor() {
+            return CONSTRUCTOR;
+        }
+    }
+
+    /**
+     * Upgrades a regular gift.
+     *
+     * <p> Returns {@link UpgradeGiftResult UpgradeGiftResult} </p>
+     */
+    public static class UpgradeGift extends Function<UpgradeGiftResult> {
+        /**
+         * Identifier of the gift.
+         */
+        public String receivedGiftId;
+        /**
+         * Pass true to keep the original gift text, sender and receiver in the upgraded gift.
+         */
+        public boolean keepOriginalDetails;
+        /**
+         * The amount of Telegram Stars required to pay for the upgrade. It the gift has prepaidUpgradeStarCount &gt; 0, then pass 0, otherwise, pass gift.upgradeStarCount.
+         */
+        public long starCount;
+
+        /**
+         * Default constructor for a function, which upgrades a regular gift.
+         *
+         * <p> Returns {@link UpgradeGiftResult UpgradeGiftResult} </p>
+         */
+        public UpgradeGift() {
+        }
+
+        /**
+         * Creates a function, which upgrades a regular gift.
+         *
+         * <p> Returns {@link UpgradeGiftResult UpgradeGiftResult} </p>
+         *
+         * @param receivedGiftId Identifier of the gift.
+         * @param keepOriginalDetails Pass true to keep the original gift text, sender and receiver in the upgraded gift.
+         * @param starCount The amount of Telegram Stars required to pay for the upgrade. It the gift has prepaidUpgradeStarCount &gt; 0, then pass 0, otherwise, pass gift.upgradeStarCount.
+         */
+        public UpgradeGift(String receivedGiftId, boolean keepOriginalDetails, long starCount) {
+            this.receivedGiftId = receivedGiftId;
+            this.keepOriginalDetails = keepOriginalDetails;
+            this.starCount = starCount;
+        }
+
+        /**
+         * Identifier uniquely determining type of the object.
+         */
+        public static final int CONSTRUCTOR = 1191312523;
 
         /**
          * @return this.CONSTRUCTOR
